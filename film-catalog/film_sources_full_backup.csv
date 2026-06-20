@@ -1,0 +1,41 @@
+brand,film_category,url,priority,notes
+GeoShield,architectural_window_film,https://geoshieldusa.com/collections/architectural-window-film-1,1,official collection page
+GeoShield,automotive_window_film,https://geoshieldusa.com/collections/automotive-window-film,1,official collection page
+Autobahn,automotive_window_film,https://autobahnwindowfilms.com/products/window-tint/,1,official product page
+SolarFX,automotive_window_film,https://solarfxwindowfilms.com/,2,homepage seed; needs exact product pages
+Rogue,automotive_window_film,https://roguewindowfilms.com/auto-films/,1,official auto film page
+Rogue,architectural_window_film,https://roguewindowfilms.com/architectural-film/,1,official architectural page
+
+3M,automotive_window_film,https://www.3m.com/3M/en_US/p/c/films-sheeting/window/i/automotive/,1,official 3M automotive window film category
+3M,architectural_window_film,https://www.3m.com/3M/en_US/p/c/films-sheeting/window/i/design-construction/architectural-design/,1,official 3M architectural window film category
+3M,architectural_window_film,https://www.3m.com/3M/en_US/p/d/b5005542004/,2,official 3M ceramic architectural series page
+
+LLumar,automotive_window_film,https://llumar.com/en/automotive-window-film/,1,official LLumar automotive category
+LLumar,automotive_window_film,https://llumar.com/en/tint/clear/,2,official LLumar clear automotive film page
+LLumar,architectural_window_film,https://llumar.com/en/coverage/architectural-film/,1,official LLumar architectural category
+LLumar,architectural_window_film,https://llumar.com/en/commercial-window-film/,2,official LLumar commercial window film page
+
+SunTek,automotive_window_film,https://suntekfilms.com/na/en/automotive-window-tint/,1,official SunTek automotive tint page
+SunTek,automotive_window_film,https://suntekfilms.com/na/en/automotive-window-tint/ceramic/,2,official SunTek ceramic tint page
+SunTek,architectural_window_film,https://suntekfilms.com/na/en/architectural-window-film/specialty/,1,official SunTek architectural specialty page
+
+Avery Dennison,automotive_window_film,https://graphics.averydennison.com/en/home/graphics-products/window-films/automotive-window-films.html,1,official Avery automotive window film page
+Avery Dennison,architectural_window_film,https://graphics.averydennison.com/en/home/graphics-products/window-films/architectural-window-films.html,1,official Avery architectural window film page
+
+Madico,automotive_window_film,https://madico.com/automotive/,1,official Madico automotive seed
+Madico,architectural_window_film,https://madico.com/architecture/,1,official Madico architectural seed
+
+Solar Gard,automotive_window_film,https://www.solargard.com/automotive/,1,official Solar Gard automotive seed
+Solar Gard,architectural_window_film,https://www.solargard.com/commercial-residential/,1,official Solar Gard architectural seed
+
+Johnson Window Films,automotive_window_film,https://www.johnsonwindowfilms.com/en/,2,official homepage seed with automotive category
+Johnson Window Films,architectural_window_film,https://www.johnsonwindowfilms.com/en/,2,official homepage seed with residential/commercial category
+
+Global Express,automotive_window_film,https://filmnow.com/,2,authorized Global distributor seed
+Global Express,architectural_window_film,https://filmnow.com/,2,authorized Global distributor seed
+Global Hi-Tech Films,automotive_window_film,https://globalhitechfilms.com/window-films,1,official Global Hi-Tech automotive window film page
+Global Hi-Tech Films,architectural_window_film,https://globalhitechfilms.com/,2,official Global Hi-Tech homepage seed
+
+Garware Hi-Tech Films,automotive_window_film,https://www.garwarehitechfilms.com/,2,official Garware homepage seed
+Garware Hi-Tech Films,architectural_window_film,https://www.garwarehitechfilms.com/architectural-films,1,official Garware architectural films page
+Garware Hi-Tech Films,architectural_window_film,https://www.garwarehitechfilms.com/architectural-films/product-details/Residential,2,official Garware residential architectural product page
