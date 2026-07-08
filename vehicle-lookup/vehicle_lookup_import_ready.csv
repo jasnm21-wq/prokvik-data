@@ -8124,3 +8124,471 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2026,Volvo,EC40,suv,SUV,rules,ok,false
 2026,Volvo,EX40,suv,SUV,rules_model,ok,false
 2026,Volvo,EX30 CC,suv,SUV,rules_model,ok,false
+2000,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2000,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2000,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2000,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2000,Jaguar,Vanden Plas,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2000,Jaguar,XJ8,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2000,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2000,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2000,Jaguar,XK8,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2000,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2000,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2001,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2001,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2001,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2001,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2001,Jaguar,Vanden Plas,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2001,Jaguar,XJ8,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2001,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2001,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2001,Jaguar,XK8,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2001,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2001,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2002,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2002,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,Vanden Plas,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,XJ8,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2002,Jaguar,XK8,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2002,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2002,Land Rover,Freelander,suv,SUV,nhtsa_audit_reviewed,ok,false
+2002,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2003,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2003,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,Vanden Plas,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,XJ8,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2003,Jaguar,XK8,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2003,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2003,Land Rover,Freelander,suv,SUV,nhtsa_audit_reviewed,ok,false
+2003,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2004,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2004,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2004,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,Vanden Plas,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2004,Jaguar,XK8,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2004,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2004,Land Rover,Freelander,suv,SUV,nhtsa_audit_reviewed,ok,false
+2004,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2005,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2005,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2005,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2005,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2005,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2005,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2005,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2005,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2005,Land Rover,Freelander,suv,SUV,nhtsa_audit_reviewed,ok,false
+2005,Land Rover,LR3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2005,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2006,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2006,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2006,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2006,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2006,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2006,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2006,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2006,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2006,Land Rover,LR3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2006,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2006,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2007,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2007,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2007,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2007,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2007,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2007,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2007,Jaguar,XJR,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2007,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2007,Land Rover,LR3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2007,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2007,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2008,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2008,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2008,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2008,Jaguar,S-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2008,Jaguar,X-Type,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2008,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2008,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2008,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2008,Land Rover,LR3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2008,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2008,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2009,Bentley,Arnage,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2009,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2009,Bentley,Brooklands,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2009,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2009,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2009,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2009,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2009,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2009,Land Rover,LR3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2009,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2009,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2010,Bentley,Azure,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2010,Bentley,Brooklands,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2010,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2010,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2010,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2010,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2010,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2010,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2010,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2010,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2011,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2011,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2011,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2011,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2011,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2011,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2011,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2011,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2011,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2012,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2012,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2012,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2012,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2012,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2012,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2012,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2012,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2012,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2012,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2012,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2013,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2013,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2013,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2013,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2013,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2013,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2013,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2013,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2013,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2013,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2013,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2014,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2014,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2014,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2014,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2014,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2014,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2014,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2014,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2014,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2014,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2014,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2014,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2014,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2014,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2014,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2015,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2015,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2015,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2015,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2015,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2015,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2015,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2015,Jaguar,XK,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2015,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Land Rover,LR2,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2015,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2016,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2016,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2016,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2016,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2016,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2016,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2016,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2016,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2016,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Land Rover,LR4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2016,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2017,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2017,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2017,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2017,Jaguar,XE,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2017,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2017,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2018,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2018,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2018,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2018,Jaguar,XE,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2018,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2018,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2019,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2019,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2019,Fiat,500,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,XE,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Jaguar,XJ,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2019,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2019,Polestar,Polestar 1,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2020,Alfa Romeo,4C,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2020,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2020,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2020,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2020,Bentley,Mulsanne,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2020,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2020,Fiat,500L,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2020,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Jaguar,XE,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2020,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2020,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2020,Polestar,Polestar 1,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2021,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2021,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2021,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2021,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2021,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2021,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Jaguar,XE,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2021,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2021,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2021,Polestar,Polestar 1,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2021,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2022,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2022,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2022,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2022,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2022,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2022,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2022,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Lucid,Air,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2022,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2022,Rivian,R1S,suv,SUV,nhtsa_audit_reviewed,ok,false
+2022,Rivian,R1T,truck,Truck,nhtsa_audit_reviewed,ok,false
+2023,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2023,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2023,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2023,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2023,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2023,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2023,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Lucid,Air,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2023,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2023,Rivian,R1S,suv,SUV,nhtsa_audit_reviewed,ok,false
+2023,Rivian,R1T,truck,Truck,nhtsa_audit_reviewed,ok,false
+2024,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Alfa Romeo,Tonale,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2024,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2024,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2024,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Lucid,Air,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Rivian,R1S,suv,SUV,nhtsa_audit_reviewed,ok,false
+2024,Rivian,R1T,truck,Truck,nhtsa_audit_reviewed,ok,false
+2025,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Alfa Romeo,Tonale,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2025,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2025,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2025,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Lucid,Air,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Lucid,Gravity,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Polestar,Polestar 3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Polestar,Polestar 4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Rivian,R1S,suv,SUV,nhtsa_audit_reviewed,ok,false
+2025,Rivian,R1T,truck,Truck,nhtsa_audit_reviewed,ok,false
+2026,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Alfa Romeo,Tonale,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2026,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2026,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2026,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Lucid,Air,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Lucid,Gravity,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Polestar,Polestar 3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Polestar,Polestar 4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Rivian,R1S,suv,SUV,nhtsa_audit_reviewed,ok,false
+2026,Rivian,R1T,truck,Truck,nhtsa_audit_reviewed,ok,false
+2027,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2027,Alfa Romeo,Stelvio,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Alfa Romeo,Tonale,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Bentley,Bentayga,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Bentley,Continental,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2027,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2027,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2027,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2027,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Jaguar,F-TYPE,coupe,Coupe,nhtsa_audit_reviewed,ok,false
+2027,Jaguar,I-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Jaguar,XF,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2027,Land Rover,Discovery,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Land Rover,Discovery Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Land Rover,Range Rover,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Land Rover,Range Rover Evoque,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Land Rover,Range Rover Sport,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Land Rover,Range Rover Velar,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Lucid,Air,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2027,Lucid,Gravity,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Polestar,Polestar 2,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2027,Polestar,Polestar 3,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Polestar,Polestar 4,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Rivian,R1S,suv,SUV,nhtsa_audit_reviewed,ok,false
+2027,Rivian,R1T,truck,Truck,nhtsa_audit_reviewed,ok,false
+2027,Rivian,R2,suv,SUV,nhtsa_audit_reviewed,ok,false
