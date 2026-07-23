@@ -1,0 +1,73 @@
+brand,product_line,canonical_film_type,type_order,aliases,status,source_url,verified_at,notes
+3M,FX-PM,Dyed,10,FX PM,legacy,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,Obsidian,Dyed,10,,current,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,Color Stable Legacy,Carbon,20,ColorStable Legacy,legacy,https://www.3m.com/3M/en_US/car-personalization-us/support/,2026-07-22,Legacy nano-carbon generation. Existing tenant overrides remain authoritative. Generic current Color Stable naming is intentionally not assigned to this legacy row.
+3M,Black Chrome,Metalized,30,,legacy,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,FX-HP,Metalized,30,FX HP,legacy,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,Ceramic IR,Ceramic,40,Ceramic IR Series,current,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,Color Stable IR,Ceramic,40,CS IR|Color Stable CS IR|Color Stable|ColorStable|Color Stable Series,current,https://www.3m.com/3M/en_US/p/d/b00016620/,2026-07-22,Current 3M Color Stable product uses IR-rejecting ceramic nano-technology with patented dye technology.
+3M,Crystalline,Crystalline,60,Crystalline Series,current,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+Autobahn,Autobahn Black,Dyed,10,Black,current,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Autobahn,Black Ceramic,Ceramic,40,,current,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Autobahn,Ceramic i3,Super Ceramic,50,i3,current,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Autobahn,Ceramic i3+,Super Ceramic,50,i3+|Ceramic i3 Plus,current,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Flexfilm,Duraflex,Carbon,20,Duraflex Carbon Core,current,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+Flexfilm,Terraflex,Carbon,20,Terraflex Carbon,current,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+Flexfilm,Panaflex,Ceramic,40,Panaflex Ceramic,current,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+Flexfilm,Nanoflex,Super Ceramic,50,Nanoflex Premium Ceramic,current,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+FormulaOne,Classic,Dyed,10,FormulaOne Classic,current,https://llumar.com/na/en/automotive/window-tint/formulaone/,2026-07-22,
+FormulaOne,Pinnacle,Ceramic,40,FormulaOne Pinnacle,current,https://llumar.com/na/en/automotive/window-tint/formulaone/,2026-07-22,
+FormulaOne,Stratos,Super Ceramic,50,FormulaOne Stratos,current,https://llumar.com/na/en/automotive/window-tint/formulaone/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+GeoShield,Pro Classic,Dyed,10,ProClassic,current,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,
+GeoShield,C2,Carbon,20,C2 Carbon,current,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,
+GeoShield,C2 Ceramic,Ceramic,40,C2C,current,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,
+GeoShield,ProNano,Ceramic,40,Pro Nano,current,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,
+GeoShield,Apex Ultra,Super Ceramic,50,ApexUltra,current,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,
+Global,HP Charcoal,Metalized,30,Global HP|Global HP Charcoal|GHP|High Performance Charcoal,current,https://globalwindowfilms.com/automotive-films/,2026-07-22,
+Global,QDP Ceramic Charcoal,Ceramic,40,QDP Ceramic|Global QDP Ceramic,current,https://globalwindowfilms.com/premium-automotive-films/,2026-07-22,
+Johnson Window Films,PlexShade,Dyed,10,Plex Shade,current,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Renegade,Dyed,10,Johnson Renegade,current,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Ray Guard Carbon,Carbon,20,RayGuard Carbon|Ray Guard,current,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Marathon,Metalized,30,Johnson Marathon,current,https://johnsonwindowfilms.com/automotive/window-film-products/marathon/,2026-07-22,
+Johnson Window Films,InsulatIR,Ceramic,40,Insulat IR,current,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Summit,Ceramic,40,Johnson Summit,current,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Supreme IR,Super Ceramic,50,SupremeIR,current,https://johnsonwindowfilms.com/automotive/window-film-products/supreme-ir/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+LLumar,ATC,Dyed,10,,current,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,ATR,Metalized,30,,current,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,AIR,Ceramic,40,AIR Series,current,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,CTX,Ceramic,40,,current,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,IRX,Super Ceramic,50,IRX Series,current,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category and is tenant-overridable.
+Madico,Black Pearl Non-Reflective,Dyed,10,Black Pearl NR|BP NR,current,https://madico.com/automotive/,2026-07-22,
+Madico,Charcool,Dyed,10,Char Cool,current,https://madico.com/automotive/,2026-07-22,
+Madico,GP Max,Dyed,10,GPMAX,current,https://madico.com/automotive/,2026-07-22,
+Madico,Shadow,Dyed,10,,current,https://madico.com/automotive/,2026-07-22,
+Madico,Onyx,Metalized,30,,current,https://madico.com/automotive/window-tint/onyx,2026-07-22,Current manufacturer product page identifies Onyx as a high-performance metallized automotive window film.
+Madico,Black Pearl Nano-Ceramic,Ceramic,40,Black Pearl NC|BP NC,current,https://madico.com/automotive/,2026-07-22,
+Madico,WINCOS,Ceramic,40,,current,https://madico.com/automotive/,2026-07-22,
+Rayno,MonoCarbon,Carbon,20,Mono Carbon,current,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Phantom S5,Ceramic,40,Phantom 5|S5,current,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Phantom S7,Ceramic,40,Phantom 7|S7,current,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Platinum Air 7090,Ceramic,40,Platinum Air|PA 7090,current,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Phantom S9,Super Ceramic,50,Phantom 9|S9,current,https://www.raynofilm.com/automotive,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+Rogue,Eclipse CS,Dyed,10,,current,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Rogue,Eclipse Carbon,Carbon,20,,current,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Rogue,Eclipse Carbon Ceramic,Ceramic,40,,current,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Rogue,Eclipse IR,Super Ceramic,50,,current,https://roguewindowfilms.com/auto-films/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+SolarFX,CarbonFX Series,Dyed,10,CarbonFX|Carbon FX,current,https://solarfxwindowfilms.com/,2026-07-22,Manufacturer describes this color-stable product as using advanced dyes.
+SolarFX,Classic Series,Dyed,10,Classic,current,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,HybridFX Series,Metalized,30,HybridFX|Hybrid FX,current,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,FXtreme2 Series,Ceramic,40,FXtreme2|FXtreme 2,current,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,FX Plus Series,Super Ceramic,50,FX Plus|FXPLUS,current,https://solarfxwindowfilms.com/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+SunTek,Standard Series,Dyed,10,Standard,current,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,Carbon Series,Carbon,20,Carbon,current,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,CXP,Carbon,20,CXP Series,current,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,Ceramic,Ceramic,40,Ceramic Series,current,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,Infrared Series,Super Ceramic,50,Evolve|SunTek Evolve,current,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+UCA Window Film,UCArbon Series,Carbon,20,UCA Carbon|UCA Carbon Series|UCArbon,current,https://ucafilm.com/,2026-07-22,
+UCA Window Film,Thermal IR Series,Ceramic,40,UCA Thermal IR|Thermal IR,current,https://ucafilm.com/,2026-07-22,
+UCA Window Film,Redzone IR Series,Super Ceramic,50,UCA Redzone IR|Redzone IR,current,https://ucafilm.com/,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.
+XPEL,PRIME CS,Dyed,10,,current,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME HP,Metalized,30,PRIME HP Black,current,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME XR Black,Ceramic,40,,current,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME XR Blue,Ceramic,40,,current,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME XR Plus,Super Ceramic,50,XR Plus,current,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,Super Ceramic is Prokvik's premium ceramic sales category.

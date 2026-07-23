@@ -1,0 +1,32 @@
+{
+  "source_sha256": "693ee600915a2f4a7ea45d0bbdf3926bbd9e944a67a9be84f82101407d636d9e",
+  "brand_count": 28,
+  "product_count": 72,
+  "film_type_order": {
+    "Dyed": 10,
+    "Carbon": 20,
+    "Metalized": 30,
+    "Ceramic": 40,
+    "Super Ceramic": 50,
+    "Crystalline": 60
+  },
+  "products_by_film_type": {
+    "Dyed": 17,
+    "Carbon": 10,
+    "Metalized": 8,
+    "Ceramic": 23,
+    "Super Ceramic": 13,
+    "Crystalline": 1
+  },
+  "brands_by_status": {
+    "mapped": 15,
+    "needs_product_review": 13
+  },
+  "products_by_status": {
+    "current": 68,
+    "legacy": 4
+  },
+  "verified_dates": [
+    "2026-07-22"
+  ]
+}
