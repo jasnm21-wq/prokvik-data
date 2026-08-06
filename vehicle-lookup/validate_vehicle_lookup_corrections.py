@@ -130,8 +130,20 @@ def regenerate_and_validate(
     corrections_dir: Path,
     write: bool = False,
 ) -> dict[str, int]:
-    with tempfile.TemporaryDirectory() as directory:
-        output_path = Path(directory) / lookup_path.name
+    lookup_path = lookup_path.resolve()
+    corrections_dir = corrections_dir.resolve()
+    lookup_path.parent.mkdir(parents=True, exist_ok=True)
+
+    temporary = tempfile.NamedTemporaryFile(
+        prefix=f".{lookup_path.name}.",
+        suffix=".tmp",
+        dir=lookup_path.parent,
+        delete=False,
+    )
+    output_path = Path(temporary.name)
+    temporary.close()
+
+    try:
         apply_result = apply_corrections(
             lookup_path,
             corrections_dir,
@@ -145,8 +157,9 @@ def regenerate_and_validate(
 
         if write:
             output_path.replace(lookup_path)
-
-    return {**apply_result, **validation}
+        return {**apply_result, **validation}
+    finally:
+        output_path.unlink(missing_ok=True)
 
 
 def parse_args() -> argparse.Namespace:
