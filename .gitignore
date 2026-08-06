@@ -1,2 +1,4 @@
 vehicle-lookup/audit-output/
 vehicle-lookup/.nhtsa-cache/
+__pycache__/
+*.py[cod]
