@@ -1,0 +1,6 @@
+make,model,vehicle_class,pricing_group,classification_source,review_status,is_commercial
+Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
