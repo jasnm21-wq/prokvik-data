@@ -37,7 +37,7 @@ class VehicleLookupCorrectionTests(unittest.TestCase):
             MODULE_DIR / "corrections",
         )
 
-        self.assertEqual(result["total_rows"], 8126)
+        self.assertEqual(result["total_rows"], 8593)
         self.assertEqual(result["correction_keys"], 5)
         self.assertIn(result["changed_rows"], (0, 46))
 
@@ -162,6 +162,68 @@ class VehicleLookupCorrectionTests(unittest.TestCase):
                 second_output,
             )
             self.assertEqual(second_result["changed_rows"], 0)
+
+    def test_write_replaces_catalog_atomically_on_same_filesystem(self):
+        fieldnames = [
+            "year",
+            "make",
+            "model",
+            "vehicle_class",
+            "pricing_group",
+            "classification_source",
+            "review_status",
+            "is_commercial",
+        ]
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            lookup = root / "lookup.csv"
+            corrections_dir = root / "corrections"
+            corrections_dir.mkdir()
+
+            with lookup.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerow({
+                    "year": "2021",
+                    "make": "Infiniti",
+                    "model": "Q50",
+                    "vehicle_class": "suv",
+                    "pricing_group": "SUV",
+                    "classification_source": "rules_model",
+                    "review_status": "ok",
+                    "is_commercial": "false",
+                })
+
+            with (corrections_dir / "infiniti.csv").open(
+                "w",
+                newline="",
+                encoding="utf-8",
+            ) as handle:
+                writer = csv.DictWriter(handle, fieldnames=fieldnames[1:])
+                writer.writeheader()
+                writer.writerow({
+                    "make": "Infiniti",
+                    "model": "Q50",
+                    "vehicle_class": "sedan",
+                    "pricing_group": "Sedan",
+                    "classification_source": "manual",
+                    "review_status": "ok",
+                    "is_commercial": "false",
+                })
+
+            result = validate_module.regenerate_and_validate(
+                lookup,
+                corrections_dir,
+                write=True,
+            )
+
+            self.assertEqual(result["changed_rows"], 1)
+            with lookup.open(newline="", encoding="utf-8") as handle:
+                row = next(csv.DictReader(handle))
+            self.assertEqual(row["vehicle_class"], "sedan")
+            self.assertEqual(row["pricing_group"], "Sedan")
+            self.assertEqual(list(root.glob(".lookup.csv.*.tmp")), [])
 
     def test_validator_rejects_unreviewed_catalog_changes(self):
         fieldnames = [
