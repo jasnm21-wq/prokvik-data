@@ -1,17 +1,21 @@
 import csv
 import importlib.util
+import sys
 import tempfile
 import unittest
 from pathlib import Path
 
 
 MODULE_DIR = Path(__file__).parent
+if str(MODULE_DIR) not in sys.path:
+    sys.path.insert(0, str(MODULE_DIR))
 
 
 def load_module(name: str, filename: str):
     spec = importlib.util.spec_from_file_location(name, MODULE_DIR / filename)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
+    sys.modules[name] = module
     spec.loader.exec_module(module)
     return module
 
