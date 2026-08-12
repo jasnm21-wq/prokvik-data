@@ -4,7 +4,6 @@ import argparse
 import csv
 import hashlib
 import json
-import pprint
 import sys
 from collections import Counter
 from pathlib import Path
@@ -55,30 +54,26 @@ def source_sha256():
 
 
 def normalized_brands(rows):
-    result = []
-
-    for row in rows:
-        result.append({
+    return [
+        {
             "brand": clean(row.get("brand")),
             "aliases": split_aliases(row.get("aliases")),
             "official_url": clean(row.get("official_url")),
             "catalog_status": clean(row.get("catalog_status")),
             "notes": clean(row.get("notes")),
-        })
-
-    return result
+        }
+        for row in rows
+    ]
 
 
 def normalized_products(rows):
     result = []
 
     for row in rows:
-        film_type = clean(row.get("canonical_film_type"))
-
         result.append({
             "brand": clean(row.get("brand")),
             "product_line": clean(row.get("product_line")),
-            "canonical_film_type": film_type,
+            "canonical_film_type": clean(row.get("canonical_film_type")),
             "type_order": int(clean(row.get("type_order"))),
             "aliases": split_aliases(row.get("aliases")),
             "status": clean(row.get("status")),
@@ -90,25 +85,51 @@ def normalized_products(rows):
     return result
 
 
-def json_literal(value):
-    return json.dumps(
-        value,
-        ensure_ascii=False,
-        indent=2,
-        sort_keys=False,
-    )
+def compact_json_rows(rows):
+    return "[\n" + "\n".join(
+        "  " + json.dumps(
+            row,
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ) + ","
+        for row in rows
+    ) + "\n]"
 
 
-def python_literal(value):
-    return pprint.pformat(
-        value,
-        width=100,
-        sort_dicts=False,
-    )
+def compact_python_rows(rows):
+    return "(\n" + "\n".join(
+        f"    {tuple(row)!r},"
+        for row in rows
+    ) + "\n)"
 
 
 def build_javascript(source_hash, brands, products):
-    return f"""// AUTO-GENERATED FILE — DO NOT EDIT DIRECTLY.
+    brand_rows = [
+        [
+            brand["brand"],
+            brand["aliases"],
+            brand["official_url"],
+            brand["catalog_status"],
+            brand["notes"],
+        ]
+        for brand in brands
+    ]
+    product_rows = [
+        [
+            product["brand"],
+            product["product_line"],
+            product["canonical_film_type"],
+            product["type_order"],
+            product["aliases"],
+            product["status"],
+            product["source_url"],
+            product["verified_at"],
+            product["notes"],
+        ]
+        for product in products
+    ]
+
+    return """// AUTO-GENERATED FILE — DO NOT EDIT DIRECTLY.
 // Source:
 //   prokvik-data/film-catalog/automotive_film_brands.csv
 //   prokvik-data/film-catalog/automotive_film_catalog.csv
@@ -118,24 +139,90 @@ def build_javascript(source_hash, brands, products):
 //     --frontend-root ~/obsidian-saas-app \\
 //     --backend-root ~/obsidian-saas
 
-export const FILM_CATALOG_SOURCE_SHA256 = {json.dumps(source_hash)}
+export const FILM_CATALOG_SOURCE_SHA256 = %s
 
-export const FILM_TYPE_ORDER = Object.freeze(
-{json_literal(TYPE_ORDER)}
+export const FILM_TYPE_ORDER = Object.freeze(%s)
+
+const AUTOMOTIVE_FILM_BRAND_ROWS = Object.freeze(
+%s
+)
+
+const AUTOMOTIVE_FILM_PRODUCT_ROWS = Object.freeze(
+%s
 )
 
 export const AUTOMOTIVE_FILM_BRANDS = Object.freeze(
-{json_literal(brands)}
+  AUTOMOTIVE_FILM_BRAND_ROWS.map(
+    ([brand, aliases, official_url, catalog_status, notes]) => ({
+      brand,
+      aliases,
+      official_url,
+      catalog_status,
+      notes,
+    })
+  )
 )
 
 export const AUTOMOTIVE_FILM_PRODUCTS = Object.freeze(
-{json_literal(products)}
+  AUTOMOTIVE_FILM_PRODUCT_ROWS.map(
+    ([
+      brand,
+      product_line,
+      canonical_film_type,
+      type_order,
+      aliases,
+      status,
+      source_url,
+      verified_at,
+      notes,
+    ]) => ({
+      brand,
+      product_line,
+      canonical_film_type,
+      type_order,
+      aliases,
+      status,
+      source_url,
+      verified_at,
+      notes,
+    })
+  )
 )
-"""
+""" % (
+        json.dumps(source_hash),
+        json.dumps(TYPE_ORDER, ensure_ascii=False),
+        compact_json_rows(brand_rows),
+        compact_json_rows(product_rows),
+    )
 
 
 def build_python(source_hash, brands, products):
-    return f'''"""AUTO-GENERATED automotive film catalog.
+    brand_rows = [
+        (
+            brand["brand"],
+            tuple(brand["aliases"]),
+            brand["official_url"],
+            brand["catalog_status"],
+            brand["notes"],
+        )
+        for brand in brands
+    ]
+    product_rows = [
+        (
+            product["brand"],
+            product["product_line"],
+            product["canonical_film_type"],
+            product["type_order"],
+            tuple(product["aliases"]),
+            product["status"],
+            product["source_url"],
+            product["verified_at"],
+            product["notes"],
+        )
+        for product in products
+    ]
+
+    return '''"""AUTO-GENERATED automotive film catalog.
 
 Do not edit this file directly.
 
@@ -144,14 +231,55 @@ Source:
     prokvik-data/film-catalog/automotive_film_catalog.csv
 """
 
-FILM_CATALOG_SOURCE_SHA256 = {source_hash!r}
+FILM_CATALOG_SOURCE_SHA256 = %r
 
-FILM_TYPE_ORDER = {python_literal(TYPE_ORDER)}
+FILM_TYPE_ORDER = %r
 
-AUTOMOTIVE_FILM_BRANDS = {python_literal(tuple(brands))}
+_AUTOMOTIVE_FILM_BRAND_ROWS = %s
 
-AUTOMOTIVE_FILM_PRODUCTS = {python_literal(tuple(products))}
-'''
+_AUTOMOTIVE_FILM_PRODUCT_ROWS = %s
+
+AUTOMOTIVE_FILM_BRANDS = tuple(
+    {
+        "brand": brand,
+        "aliases": list(aliases),
+        "official_url": official_url,
+        "catalog_status": catalog_status,
+        "notes": notes,
+    }
+    for brand, aliases, official_url, catalog_status, notes in _AUTOMOTIVE_FILM_BRAND_ROWS
+)
+
+AUTOMOTIVE_FILM_PRODUCTS = tuple(
+    {
+        "brand": brand,
+        "product_line": product_line,
+        "canonical_film_type": canonical_film_type,
+        "type_order": type_order,
+        "aliases": list(aliases),
+        "status": status,
+        "source_url": source_url,
+        "verified_at": verified_at,
+        "notes": notes,
+    }
+    for (
+        brand,
+        product_line,
+        canonical_film_type,
+        type_order,
+        aliases,
+        status,
+        source_url,
+        verified_at,
+        notes,
+    ) in _AUTOMOTIVE_FILM_PRODUCT_ROWS
+)
+''' % (
+        source_hash,
+        TYPE_ORDER,
+        compact_python_rows(brand_rows),
+        compact_python_rows(product_rows),
+    )
 
 
 def build_manifest(source_hash, brands, products):
@@ -159,17 +287,14 @@ def build_manifest(source_hash, brands, products):
         product["canonical_film_type"]
         for product in products
     )
-
     product_status_counts = Counter(
         product["status"]
         for product in products
     )
-
     brand_status_counts = Counter(
         brand["catalog_status"]
         for brand in brands
     )
-
     verified_dates = sorted({
         product["verified_at"]
         for product in products
@@ -197,9 +322,7 @@ def write_or_check(path, content, check):
             print(f"DRIFT: missing generated file: {path}")
             return False
 
-        current = path.read_text(encoding="utf-8")
-
-        if current != content:
+        if path.read_text(encoding="utf-8") != content:
             print(f"DRIFT: generated file differs: {path}")
             return False
 
@@ -248,18 +371,12 @@ def main():
         / "lib"
         / "generatedAutomotiveFilmCatalog.js"
     )
-
     python_path = (
         backend_root
         / "core"
         / "generated_automotive_film_catalog.py"
     )
-
-    manifest = build_manifest(
-        source_hash,
-        brands,
-        products,
-    )
+    manifest = build_manifest(source_hash, brands, products)
 
     results = [
         write_or_check(
