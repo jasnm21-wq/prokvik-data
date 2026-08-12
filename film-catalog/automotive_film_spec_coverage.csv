@@ -1,0 +1,115 @@
+brand,product_line,spec_status,source_kind,source_url,verified_at,notes
+3M,FX-PM,catalog_only,manufacturer_web,https://www.3m.com/3M/en_US/p/dc/v000330217/,2026-08-12,
+3M,Obsidian,verified_shade_level,manufacturer_tds,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,Color Stable Legacy,legacy_reference,manufacturer_web,https://www.3m.com/3M/en_US/car-personalization-us/support/,2026-07-22,
+3M,Black Chrome,catalog_only,manufacturer_web,https://www.3m.com/3M/en_US/p/d/b00016650/,2026-08-12,
+3M,FX-HP,catalog_only,manufacturer_web,https://www.3m.com/3M/en_US/p/dc/v000090639/,2026-08-12,
+3M,Ceramic IR,verified_shade_level,manufacturer_tds,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+3M,Color Stable Series,verified_shade_level,manufacturer_tds,https://www.3m.com/3M/en_US/p/d/b00016620/,2026-08-12,
+3M,Crystalline,verified_shade_level,manufacturer_tds,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,2026-07-22,
+Autobahn,Autobahn Black,verified_shade_level,manufacturer_web,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Autobahn,Black Ceramic,verified_shade_level,manufacturer_web,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Autobahn,Ceramic i3,verified_shade_level,manufacturer_web,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Autobahn,Ceramic i3+,verified_shade_level,manufacturer_web,https://autobahnwindowfilms.com/products/window-tint/,2026-07-22,
+Ceramic Pro / KAVACA,Carbon X,verified_shade_level,manufacturer_web,https://ceramicpro.com/kavaca/window-tint/carbon-x-window-tint/,2026-08-12,
+Ceramic Pro / KAVACA,Ceramic X,verified_shade_level,manufacturer_web,https://ceramicpro.com/ceramic-x/,2026-08-12,
+Ceramic Pro / KAVACA,Ceramic IR,verified_shade_level,manufacturer_web,https://ceramicpro.com/kavaca/window-tint/ceramic-ir-window-tint/,2026-08-12,
+Ceramic Pro / KAVACA,Ultimate IR,verified_shade_level,manufacturer_web,https://ceramicpro.com/ultimate-ir/,2026-08-12,
+Edge Film Technologies,Carbon Crystalline,verified_shade_level,manufacturer_web,https://programedge.com/carbon-crystalline/,2026-08-12,Official automotive product pages publish shade-level performance for mapped products.
+Edge Film Technologies,Ceramic XR,verified_shade_level,manufacturer_web,https://programedge.com/ceramic-xr/,2026-08-12,Official automotive product pages publish shade-level performance for mapped products.
+Flexfilm,Duraflex,verified_shade_level,manufacturer_web,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+Flexfilm,Terraflex,verified_shade_level,manufacturer_web,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+Flexfilm,Panaflex,verified_shade_level,manufacturer_web,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+Flexfilm,Nanoflex,verified_shade_level,manufacturer_web,https://flexfilmstore.com/collections/automotive-window-tint,2026-07-22,
+FormulaOne,Classic,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/formulaone/,2026-07-22,
+FormulaOne,Comfort,verified_shade_level,manufacturer_web,https://llumar.com/en/tint/metallized/formulaone-comfort/,2026-08-12,
+FormulaOne,Pinnacle,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/formulaone/,2026-07-22,
+FormulaOne,Stratos,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/formulaone/,2026-07-22,
+GeoShield,Pro Classic,verified_product_level,manufacturer_web,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,Official comparison table publishes offered VLTs and product-level TSER/IR ranges; shade-level performance table not captured.
+GeoShield,C2,verified_product_level,manufacturer_web,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,Official comparison table publishes offered VLTs and product-level TSER/IR ranges; shade-level performance table not captured.
+GeoShield,C2 Ceramic,verified_product_level,manufacturer_web,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,Official comparison table publishes offered VLTs and product-level TSER/IR ranges; shade-level performance table not captured.
+GeoShield,ProNano,verified_product_level,manufacturer_web,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,Official comparison table publishes offered VLTs and product-level TSER/IR ranges; shade-level performance table not captured.
+GeoShield,Apex Ultra,verified_product_level,manufacturer_web,https://geoshieldusa.com/collections/automotive-window-film,2026-07-22,Official comparison table publishes offered VLTs and product-level TSER/IR ranges; shade-level performance table not captured.
+Global,HP Charcoal,verified_shade_level,manufacturer_web,https://globalwindowfilms.com/automotive-films/,2026-07-22,
+Global,QDP Ceramic Charcoal,verified_shade_level,manufacturer_web,https://globalwindowfilms.com/premium-automotive-films/,2026-07-22,
+Helios Window Films,Orbit,verified_shade_level,manufacturer_web,https://helioswindowfilm.com/automotive/,2026-08-12,"Official product chart publishes shade-level VLT, TSER, and UV rejection; other metrics may be unavailable."
+Helios Window Films,Nova,verified_shade_level,manufacturer_web,https://helioswindowfilm.com/automotive/,2026-08-12,"Official product chart publishes shade-level VLT, TSER, and UV rejection; other metrics may be unavailable."
+Helios Window Films,Super Nova,verified_shade_level,manufacturer_web,https://helioswindowfilm.com/automotive/,2026-08-12,"Official product chart publishes shade-level VLT, TSER, and UV rejection; other metrics may be unavailable."
+HITEK,Classic Black,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+HITEK,Standard Black,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+HITEK,Carbon IR,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+HITEK,Hybrid,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+HITEK,Ceramic Black,conflicting,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Current public manufacturer sources do not provide a consistent complete shade table; retain only source-specific exact values.
+HITEK,Ceramic IR,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+HITEK,Ceramic Plus,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+HITEK,Ceramic Ultra,verified_shade_level,manufacturer_web,https://hitekfilms.com/automotive-window-tint/,2026-08-12,Manufacturer spec card publishes VLT/TSER/IRR/glare/UV by shade.
+Johnson Window Films,PlexShade,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Renegade,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Ray Guard Carbon,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Marathon,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/marathon/,2026-07-22,
+Johnson Window Films,InsulatIR,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Summit,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/,2026-07-22,
+Johnson Window Films,Supreme IR,verified_shade_level,manufacturer_web,https://johnsonwindowfilms.com/automotive/window-film-products/supreme-ir/,2026-07-22,
+KDX,Cosmic IR,verified_shade_level,manufacturer_web,https://kdxfilms.com/automotive-film/,2026-08-12,
+KDX,Nova Carbon,verified_shade_level,manufacturer_web,https://kdxfilms.com/automotive-film/,2026-08-12,
+KDX,King,verified_shade_level,manufacturer_web,https://kdxfilms.com/automotive-film/,2026-08-12,
+KDX,Stellar Ceramic,verified_shade_level,manufacturer_web,https://kdxfilms.com/automotive-film/,2026-08-12,
+LLumar,ATC,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,ATR,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,AIR,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,CTX,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+LLumar,IRX,verified_shade_level,manufacturer_web,https://llumar.com/na/en/automotive/window-tint/,2026-07-22,
+Madico,Black Pearl HP,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-08-12,
+Madico,Black Pearl Non-Reflective,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-07-22,
+Madico,Charcool,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-07-22,
+Madico,GP Max,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-07-22,
+Madico,Shadow,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-07-22,
+Madico,Onyx,verified_shade_level,manufacturer_web,https://madico.com/automotive/window-tint/onyx,2026-07-22,
+Madico,Black Pearl Nano-Ceramic,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-07-22,
+Madico,WINCOS,verified_shade_level,manufacturer_web,https://madico.com/automotive/,2026-07-22,
+Rayno,MonoCarbon,verified_product_level,manufacturer_web,https://www.raynofilm.com/automotive,2026-07-22,Official public page confirms product performance and construction; complete shade-level table not captured in the evidence set.
+Rayno,Phantom S5,verified_shade_level,manufacturer_web,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Phantom S7,verified_shade_level,manufacturer_web,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Platinum Air 7090,verified_shade_level,manufacturer_web,https://www.raynofilm.com/automotive,2026-07-22,
+Rayno,Phantom S9,verified_shade_level,manufacturer_web,https://www.raynofilm.com/automotive,2026-07-22,
+Rogue,Eclipse CS,verified_shade_level,manufacturer_web,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Rogue,Eclipse Carbon,verified_shade_level,manufacturer_web,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Rogue,Eclipse Carbon Ceramic,verified_shade_level,manufacturer_web,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Rogue,Eclipse IR,verified_shade_level,manufacturer_web,https://roguewindowfilms.com/auto-films/,2026-07-22,
+Scorpion,Carbon Plus Series,partial,manufacturer_web,https://scorpionwindowfilm.com/automotive-film/,2026-08-12,"Manufacturer series card provides construction, VLT range, UV rejection and warranty; complete shade-level TSER/IRR is not public in the captured evidence."
+Scorpion,Carbon Series,partial,manufacturer_web,https://scorpionwindowfilm.com/automotive-film/,2026-08-12,"Manufacturer series card provides construction, VLT range, UV rejection and warranty; complete shade-level TSER/IRR is not public in the captured evidence."
+Scorpion,King Pro Series,partial,manufacturer_web,https://scorpionwindowfilm.com/automotive-film/,2026-08-12,"Manufacturer series card provides construction, VLT range, UV rejection and warranty; complete shade-level TSER/IRR is not public in the captured evidence."
+Scorpion,Shield Series,partial,manufacturer_web,https://scorpionwindowfilm.com/automotive-film/,2026-08-12,"Manufacturer series card provides construction, VLT range, UV rejection and warranty; complete shade-level TSER/IRR is not public in the captured evidence."
+Scorpion,Shield Plus,partial,manufacturer_web,https://scorpionwindowfilm.com/automotive-film/,2026-08-12,"Manufacturer series card provides construction, VLT range, UV rejection and warranty; complete shade-level TSER/IRR is not public in the captured evidence."
+SolarFX,CarbonFX Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,Classic Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,Vintage Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/vintage-series-window-film-solarfx/,2026-08-12,
+SolarFX,HybridFX Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,Black FX3 Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/black-fx3-series-window-film-solarfx-window-films/,2026-08-12,
+SolarFX,FXtreme2 Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/,2026-07-22,
+SolarFX,IRFX Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/irfx-series-window-film-solarfx/,2026-08-12,
+SolarFX,FX Plus Series,verified_shade_level,manufacturer_web,https://solarfxwindowfilms.com/,2026-07-22,
+STEK,ACTION,verified_shade_level,manufacturer_web,https://www.stekautomotive.com/brands/stek/window-film,2026-08-12,
+STEK,VISION 70,verified_shade_level,manufacturer_web,https://www.stekautomotive.com/brands/stek/window-film,2026-08-12,
+STEK,ICY,verified_shade_level,manufacturer_web,https://www.stekautomotive.com/brands/stek/window-film,2026-08-12,
+STEK,SMART,verified_shade_level,manufacturer_web,https://www.stekautomotive.com/brands/stek/window-film,2026-08-12,
+STEK,NEX,verified_shade_level,manufacturer_web,https://www.stekautomotive.com/brands/stek/window-film,2026-08-12,
+SunTek,Standard Pro,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive-window-tint/,2026-08-12,
+SunTek,Standard Series,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,Carbon Series,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,CXP,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive-window-tint/,2026-07-22,
+SunTek,High Performance,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive-window-tint/,2026-08-12,
+SunTek,Ceramic,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive/window-tint/,2026-07-22,
+SunTek,CoolSight 90,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive-window-tint/,2026-08-12,
+SunTek,Evolve,verified_shade_level,manufacturer_web,https://suntekfilms.com/na/en/automotive/window-tint/,2026-08-12,
+UCA Window Film,UCArbon Series,verified_shade_level,manufacturer_web,https://ucafilm.com/,2026-07-22,
+UCA Window Film,Thermal IR Series,verified_shade_level,manufacturer_web,https://ucafilm.com/,2026-07-22,
+UCA Window Film,Redzone IR Series,verified_shade_level,manufacturer_web,https://ucafilm.com/,2026-07-22,
+Uviron,PUREMAX Supreme Carbon,conflicting,manufacturer_web,https://uviron.com/collections/window-film,2026-08-12,Current manufacturer overview and individual product pages publish conflicting summary TSER/IR values; do not reconcile or present as shade-level facts.
+Uviron,KOOLMAX Supreme Ceramic,conflicting,manufacturer_web,https://uviron.com/collections/window-film,2026-08-12,Current manufacturer overview and individual product pages publish conflicting summary TSER/IR values; do not reconcile or present as shade-level facts.
+Uviron,MEGAMAX Ultimate Ceramic,conflicting,manufacturer_web,https://uviron.com/collections/window-film,2026-08-12,Current manufacturer overview and individual product pages publish conflicting summary TSER/IR values; do not reconcile or present as shade-level facts.
+XPEL,PRIME CS,verified_shade_level,manufacturer_web,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME HP,verified_shade_level,manufacturer_web,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME XR Black,verified_shade_level,manufacturer_web,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME XR Blue,verified_shade_level,manufacturer_web,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
+XPEL,PRIME XR Plus,verified_shade_level,manufacturer_web,https://www.xpel.com/products/window-film/automotive-window-tint,2026-07-22,
