@@ -1,7 +1,7 @@
 {
-  "source_sha256": "693ee600915a2f4a7ea45d0bbdf3926bbd9e944a67a9be84f82101407d636d9e",
-  "brand_count": 28,
-  "product_count": 72,
+  "source_sha256": "62645cef4f1d648639806d132fefa9125760624bbf379b56791b786383089da4",
+  "brand_count": 35,
+  "product_count": 114,
   "film_type_order": {
     "Dyed": 10,
     "Carbon": 20,
@@ -11,22 +11,23 @@
     "Crystalline": 60
   },
   "products_by_film_type": {
-    "Dyed": 17,
-    "Carbon": 10,
-    "Metalized": 8,
-    "Ceramic": 23,
-    "Super Ceramic": 13,
+    "Dyed": 23,
+    "Carbon": 20,
+    "Metalized": 14,
+    "Ceramic": 36,
+    "Super Ceramic": 20,
     "Crystalline": 1
   },
   "brands_by_status": {
-    "mapped": 15,
-    "needs_product_review": 13
+    "mapped": 23,
+    "needs_product_review": 12
   },
   "products_by_status": {
-    "current": 68,
-    "legacy": 4
+    "current": 113,
+    "legacy": 1
   },
   "verified_dates": [
-    "2026-07-22"
+    "2026-07-22",
+    "2026-08-12"
   ]
 }

@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
 import csv
-import sys
-from collections import Counter, defaultdict
-from datetime import date
+from collections import Counter
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
-BRANDS_PATH = ROOT / "automotive_film_brands.csv"
-CATALOG_PATH = ROOT / "automotive_film_catalog.csv"
+BASE_DIR = Path(__file__).resolve().parent
+BRANDS_PATH = BASE_DIR / "automotive_film_brands.csv"
+CATALOG_PATH = BASE_DIR / "automotive_film_catalog.csv"
+COVERAGE_PATH = BASE_DIR / "automotive_film_spec_coverage.csv"
+SPECS_PATH = BASE_DIR / "automotive_film_specs.csv"
 
 ALLOWED_TYPES = {
     "Dyed": 10,
@@ -20,15 +20,47 @@ ALLOWED_TYPES = {
     "Crystalline": 60,
 }
 
-ALLOWED_PRODUCT_STATUSES = {
-    "current",
-    "legacy",
-    "discontinued",
+ALLOWED_BRAND_STATUSES = {"mapped", "needs_product_review"}
+ALLOWED_PRODUCT_STATUSES = {"current", "legacy"}
+ALLOWED_COVERAGE_STATUSES = {
+    "verified_shade_level",
+    "verified_product_level",
+    "partial",
+    "conflicting",
+    "catalog_only",
+    "legacy_reference",
 }
-
-ALLOWED_BRAND_STATUSES = {
-    "mapped",
-    "needs_product_review",
+ALLOWED_SPEC_SCOPES = {"shade", "product"}
+ALLOWED_SPEC_STATUSES = {
+    "verified",
+    "verified_product_level",
+    "partial",
+    "conflicting",
+}
+NON_TINT_BRAND_TOKENS = {"exoshield"}
+NON_STANDARD_TINT_PRODUCT_TOKENS = {
+    "action safety",
+    "safety security",
+    "security film",
+}
+SPEC_FACT_FIELDS = {
+    "measured_vlt_pct",
+    "vlr_exterior_pct",
+    "vlr_interior_pct",
+    "uv_rejection",
+    "tser_pct",
+    "tser_range",
+    "glare_reduction_pct",
+    "ir_primary_value",
+    "ir_secondary_value",
+    "solar_transmittance_pct",
+    "solar_reflectance_pct",
+    "solar_absorbance_pct",
+    "shading_coefficient",
+    "shgc",
+    "thickness_mil",
+    "construction",
+    "warranty",
 }
 
 
@@ -36,229 +68,246 @@ def clean(value):
     return " ".join(str(value or "").split()).strip()
 
 
-def normalize(value):
+def key_text(value):
     return clean(value).casefold()
 
 
-def split_aliases(value):
-    return [
-        clean(alias)
-        for alias in str(value or "").split("|")
-        if clean(alias)
-    ]
-
-
-def read_csv(path):
+def read_rows(path):
     with path.open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
 
 
-def fail(errors):
-    print("\nCATALOG VALIDATION FAILED")
-    for error in errors:
-        print(f" - {error}")
-    raise SystemExit(1)
+def duplicate_values(values):
+    counts = Counter(values)
+    return sorted(value for value, count in counts.items() if count > 1)
 
 
-def main():
-    errors = []
+def validate_required_files(errors):
+    for path in (BRANDS_PATH, CATALOG_PATH, COVERAGE_PATH, SPECS_PATH):
+        if not path.exists():
+            errors.append(f"Missing required catalog file: {path.name}")
 
-    for required in (BRANDS_PATH, CATALOG_PATH):
-        if not required.exists():
-            errors.append(f"Missing required file: {required}")
 
-    if errors:
-        fail(errors)
+def validate_brands(errors, rows):
+    names = [clean(row.get("brand")) for row in rows]
 
-    brands = read_csv(BRANDS_PATH)
-    products = read_csv(CATALOG_PATH)
+    for duplicate in duplicate_values(name.casefold() for name in names if name):
+        errors.append(f"Duplicate brand: {duplicate}")
 
-    brand_map = {}
-    brand_alias_owner = {}
-
-    for index, row in enumerate(brands, start=2):
+    for index, row in enumerate(rows, start=2):
         brand = clean(row.get("brand"))
         status = clean(row.get("catalog_status"))
 
         if not brand:
-            errors.append(f"{BRANDS_PATH.name}:{index}: blank brand")
-            continue
-
-        key = normalize(brand)
-        if key in brand_map:
-            errors.append(
-                f"{BRANDS_PATH.name}:{index}: duplicate brand {brand!r}"
-            )
-        brand_map[key] = row
-
+            errors.append(f"brands.csv row {index}: missing brand")
         if status not in ALLOWED_BRAND_STATUSES:
             errors.append(
-                f"{BRANDS_PATH.name}:{index}: invalid catalog_status "
-                f"{status!r} for {brand!r}"
+                f"brands.csv row {index}: invalid catalog_status {status!r}"
+            )
+        if any(token in key_text(brand) for token in NON_TINT_BRAND_TOKENS):
+            errors.append(
+                f"brands.csv row {index}: exterior/non-tint brand {brand!r} does not belong in the automotive tint catalog"
             )
 
-        for alias in [brand, *split_aliases(row.get("aliases"))]:
-            alias_key = normalize(alias)
-            existing = brand_alias_owner.get(alias_key)
 
-            if existing and existing != brand:
-                errors.append(
-                    f"{BRANDS_PATH.name}:{index}: brand alias {alias!r} "
-                    f"collides between {existing!r} and {brand!r}"
-                )
-            brand_alias_owner[alias_key] = brand
+def validate_products(errors, brands, rows):
+    brand_lookup = {
+        key_text(row.get("brand")): row
+        for row in brands
+        if clean(row.get("brand"))
+    }
+    product_keys = []
 
-    product_key_owner = {}
-    alias_owner_by_brand = {}
-    type_counts = Counter()
-    brand_product_counts = Counter()
-    status_counts = Counter()
-
-    for index, row in enumerate(products, start=2):
+    for index, row in enumerate(rows, start=2):
         brand = clean(row.get("brand"))
         product = clean(row.get("product_line"))
         film_type = clean(row.get("canonical_film_type"))
         status = clean(row.get("status"))
-        source_url = clean(row.get("source_url"))
-        verified_at = clean(row.get("verified_at"))
+        order_text = clean(row.get("type_order"))
+        key = (key_text(brand), key_text(product))
+        product_keys.append(key)
 
-        if not brand:
-            errors.append(f"{CATALOG_PATH.name}:{index}: blank brand")
-        if not product:
-            errors.append(f"{CATALOG_PATH.name}:{index}: blank product_line")
-
-        brand_key = normalize(brand)
-        product_key = normalize(product)
-
-        if brand_key not in brand_map:
+        if not brand or not product:
             errors.append(
-                f"{CATALOG_PATH.name}:{index}: brand {brand!r} "
-                "is missing from the brand registry"
-            )
-        elif clean(brand_map[brand_key].get("catalog_status")) != "mapped":
-            errors.append(
-                f"{CATALOG_PATH.name}:{index}: brand {brand!r} has products "
-                "but is not marked mapped"
+                f"catalog.csv row {index}: brand and product_line are required"
             )
 
-        compound_key = (brand_key, product_key)
-        if compound_key in product_key_owner:
+        brand_row = brand_lookup.get(key_text(brand))
+        if not brand_row:
+            errors.append(f"catalog.csv row {index}: unknown brand {brand!r}")
+        elif clean(brand_row.get("catalog_status")) != "mapped":
             errors.append(
-                f"{CATALOG_PATH.name}:{index}: duplicate product "
-                f"{brand!r} / {product!r}"
+                f"catalog.csv row {index}: product {brand} / {product} belongs to review-only brand"
             )
-        product_key_owner[compound_key] = index
 
         if film_type not in ALLOWED_TYPES:
             errors.append(
-                f"{CATALOG_PATH.name}:{index}: invalid film type "
-                f"{film_type!r} for {brand!r} / {product!r}"
+                f"catalog.csv row {index}: invalid canonical_film_type {film_type!r}"
             )
         else:
-            expected_order = ALLOWED_TYPES[film_type]
             try:
-                actual_order = int(clean(row.get("type_order")))
+                order = int(order_text)
             except ValueError:
-                actual_order = None
-
-            if actual_order != expected_order:
+                order = None
+            if order != ALLOWED_TYPES[film_type]:
                 errors.append(
-                    f"{CATALOG_PATH.name}:{index}: type_order must be "
-                    f"{expected_order} for {film_type!r}"
+                    f"catalog.csv row {index}: type_order {order_text!r} does not match {film_type}"
                 )
 
         if status not in ALLOWED_PRODUCT_STATUSES:
+            errors.append(f"catalog.csv row {index}: invalid status {status!r}")
+
+        product_text = key_text(product)
+        if any(token in product_text for token in NON_STANDARD_TINT_PRODUCT_TOKENS):
             errors.append(
-                f"{CATALOG_PATH.name}:{index}: invalid product status "
-                f"{status!r}"
+                f"catalog.csv row {index}: safety/security product {product!r} must be modeled outside standard tint"
             )
 
-        if not source_url.startswith(("https://", "http://")):
+    for duplicate in duplicate_values(product_keys):
+        errors.append(f"Duplicate catalog product: {duplicate}")
+
+    return set(product_keys)
+
+
+def validate_coverage(errors, product_keys, rows):
+    coverage_keys = []
+
+    for index, row in enumerate(rows, start=2):
+        key = (key_text(row.get("brand")), key_text(row.get("product_line")))
+        coverage_keys.append(key)
+        status = clean(row.get("spec_status"))
+
+        if key not in product_keys:
+            errors.append(f"coverage.csv row {index}: unknown product {key}")
+        if status not in ALLOWED_COVERAGE_STATUSES:
             errors.append(
-                f"{CATALOG_PATH.name}:{index}: missing or invalid source_url "
-                f"for {brand!r} / {product!r}"
+                f"coverage.csv row {index}: invalid spec_status {status!r}"
+            )
+        if not clean(row.get("verified_at")):
+            errors.append(f"coverage.csv row {index}: verified_at is required")
+
+    for duplicate in duplicate_values(coverage_keys):
+        errors.append(f"Duplicate coverage product: {duplicate}")
+
+    coverage_key_set = set(coverage_keys)
+    for key in sorted(product_keys - coverage_key_set):
+        errors.append(f"Missing coverage row for catalog product: {key}")
+    for key in sorted(coverage_key_set - product_keys):
+        errors.append(f"Coverage row has no catalog product: {key}")
+
+
+def validate_specs(errors, product_keys, rows):
+    seen_rows = set()
+
+    for index, row in enumerate(rows, start=2):
+        brand = clean(row.get("brand"))
+        product = clean(row.get("product_line"))
+        scope = clean(row.get("record_scope"))
+        shade = clean(row.get("nominal_shade"))
+        source_kind = clean(row.get("source_kind"))
+        source_url = clean(row.get("source_url"))
+        verified_at = clean(row.get("verified_at"))
+        data_status = clean(row.get("data_status"))
+        product_key = (key_text(brand), key_text(product))
+
+        if product_key not in product_keys:
+            errors.append(
+                f"specs.csv row {index}: unknown product {brand!r} / {product!r}"
+            )
+        if scope not in ALLOWED_SPEC_SCOPES:
+            errors.append(
+                f"specs.csv row {index}: invalid record_scope {scope!r}"
+            )
+        if scope == "shade" and not shade:
+            errors.append(
+                f"specs.csv row {index}: shade record requires nominal_shade"
+            )
+        if scope == "product" and shade:
+            errors.append(
+                f"specs.csv row {index}: product record must not set nominal_shade"
+            )
+        if data_status not in ALLOWED_SPEC_STATUSES:
+            errors.append(
+                f"specs.csv row {index}: invalid data_status {data_status!r}"
+            )
+        if not source_kind or not source_url:
+            errors.append(
+                f"specs.csv row {index}: source_kind and source_url are required"
+            )
+        if not verified_at:
+            errors.append(f"specs.csv row {index}: verified_at is required")
+
+        if not any(clean(row.get(field)) for field in SPEC_FACT_FIELDS):
+            errors.append(
+                f"specs.csv row {index}: no factual specification fields are populated"
             )
 
-        try:
-            verified_date = date.fromisoformat(verified_at)
-            if verified_date > date.today():
-                errors.append(
-                    f"{CATALOG_PATH.name}:{index}: verified_at is in the future"
-                )
-        except ValueError:
+        primary_metric = clean(row.get("ir_primary_metric"))
+        primary_value = clean(row.get("ir_primary_value"))
+        secondary_metric = clean(row.get("ir_secondary_metric"))
+        secondary_value = clean(row.get("ir_secondary_value"))
+        if bool(primary_metric) != bool(primary_value):
             errors.append(
-                f"{CATALOG_PATH.name}:{index}: invalid verified_at "
-                f"{verified_at!r}"
+                f"specs.csv row {index}: primary IR metric/value must be populated together"
+            )
+        if bool(secondary_metric) != bool(secondary_value):
+            errors.append(
+                f"specs.csv row {index}: secondary IR metric/value must be populated together"
             )
 
-        local_aliases = set()
-
-        for alias in [product, *split_aliases(row.get("aliases"))]:
-            alias_key = normalize(alias)
-
-            if alias_key in local_aliases:
-                errors.append(
-                    f"{CATALOG_PATH.name}:{index}: duplicate alias "
-                    f"{alias!r} within {brand!r} / {product!r}"
-                )
-                continue
-
-            local_aliases.add(alias_key)
-            alias_compound = (brand_key, alias_key)
-            existing = alias_owner_by_brand.get(alias_compound)
-
-            if existing and existing != product:
-                errors.append(
-                    f"{CATALOG_PATH.name}:{index}: alias {alias!r} under "
-                    f"{brand!r} collides between {existing!r} and {product!r}"
-                )
-
-            alias_owner_by_brand[alias_compound] = product
-
-        type_counts[film_type] += 1
-        brand_product_counts[brand] += 1
-        status_counts[status] += 1
-
-    mapped_brands = {
-        clean(row.get("brand"))
-        for row in brands
-        if clean(row.get("catalog_status")) == "mapped"
-    }
-
-    for brand in sorted(mapped_brands):
-        if brand_product_counts[brand] == 0:
+        identity = (
+            product_key,
+            scope.casefold(),
+            shade.casefold(),
+            source_kind.casefold(),
+            source_url.casefold(),
+            clean(row.get("source_date")).casefold(),
+        )
+        if identity in seen_rows:
             errors.append(
-                f"{BRANDS_PATH.name}: brand {brand!r} is marked mapped "
-                "but has no product rows"
+                f"specs.csv row {index}: duplicate source-specific spec record for {brand} / {product} / {shade or 'product'}"
             )
+        seen_rows.add(identity)
+
+
+def main():
+    errors = []
+    validate_required_files(errors)
 
     if errors:
-        fail(errors)
+        for error in errors:
+            print(f"ERROR: {error}")
+        return 1
 
-    print("AUTOMOTIVE FILM CATALOG VALID")
-    print(f"Brands in registry: {len(brands)}")
-    print(f"Mapped brands: {len(mapped_brands)}")
-    print(
-        "Brands awaiting product review: "
-        f"{sum(1 for row in brands if clean(row.get('catalog_status')) == 'needs_product_review')}"
-    )
-    print(f"Verified products: {len(products)}")
+    brands = read_rows(BRANDS_PATH)
+    products = read_rows(CATALOG_PATH)
+    coverage = read_rows(COVERAGE_PATH)
+    specs = read_rows(SPECS_PATH)
 
-    print("\nProducts by AI film type:")
-    for film_type, order in sorted(ALLOWED_TYPES.items(), key=lambda item: item[1]):
-        print(f"  {film_type}: {type_counts[film_type]}")
+    validate_brands(errors, brands)
+    product_keys = validate_products(errors, brands, products)
+    validate_coverage(errors, product_keys, coverage)
+    validate_specs(errors, product_keys, specs)
 
-    print("\nProducts by brand:")
-    for brand, count in sorted(
-        brand_product_counts.items(),
-        key=lambda item: item[0].casefold(),
-    ):
-        print(f"  {brand}: {count}")
+    if errors:
+        for error in errors:
+            print(f"ERROR: {error}")
+        print()
+        print(f"Validation failed with {len(errors)} error(s).")
+        return 1
 
-    print("\nProduct statuses:")
-    for status, count in sorted(status_counts.items()):
-        print(f"  {status}: {count}")
+    coverage_counts = Counter(clean(row.get("spec_status")) for row in coverage)
+    spec_status_counts = Counter(clean(row.get("data_status")) for row in specs)
+
+    print("Automotive film catalog validation passed.")
+    print(f"Brands: {len(brands)}")
+    print(f"Products: {len(products)}")
+    print(f"Coverage rows: {len(coverage)}")
+    print(f"Normalized spec records: {len(specs)}")
+    print(f"Coverage statuses: {dict(sorted(coverage_counts.items()))}")
+    print(f"Spec record statuses: {dict(sorted(spec_status_counts.items()))}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
