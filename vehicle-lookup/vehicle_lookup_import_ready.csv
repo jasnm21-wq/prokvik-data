@@ -94,7 +94,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2000,Hyundai,Elantra,sedan,Sedan,rules_model,ok,false
 2000,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2000,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
-2000,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2000,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2000,Infiniti,QX4,suv,SUV,rules_model,ok,false
 2000,Jeep,Wrangler,suv,SUV,rules_model,ok,false
 2000,Jeep,Liberty,suv,SUV,manual_bulk_review,ok,false
@@ -285,7 +285,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2001,Hyundai,Elantra,sedan,Sedan,rules_model,ok,false
 2001,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2001,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
-2001,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2001,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2001,Infiniti,QX4,suv,SUV,rules_model,ok,false
 2001,Jeep,Wrangler,suv,SUV,rules_model,ok,false
 2001,Jeep,Liberty,suv,SUV,manual_bulk_review,ok,false
@@ -487,7 +487,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2002,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2002,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
 2002,Hyundai,Santa Fe,suv,SUV,rules_model,ok,false
-2002,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2002,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2002,Infiniti,QX4,suv,SUV,rules_model,ok,false
 2002,Jeep,Wrangler,suv,SUV,rules_model,ok,false
 2002,Jeep,Liberty,suv,SUV,manual_bulk_review,ok,false
@@ -698,7 +698,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2003,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2003,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
 2003,Hyundai,Santa Fe,suv,SUV,rules_model,ok,false
-2003,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2003,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2003,Infiniti,G35,coupe,Coupe,manual_bulk_review,ok,false
 2003,Infiniti,M45,sedan,Sedan,manual_bulk_review,ok,false
 2003,Infiniti,FX35,suv,SUV,rules_model,ok,false
@@ -929,7 +929,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2004,Hyundai,Elantra,sedan,Sedan,rules_model,ok,false
 2004,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2004,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
-2004,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2004,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2004,Infiniti,G35,coupe,Coupe,manual_bulk_review,ok,false
 2004,Infiniti,M45,sedan,Sedan,manual_bulk_review,ok,false
 2004,Infiniti,FX35,suv,SUV,rules_model,ok,false
@@ -1166,7 +1166,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2005,Hyundai,Elantra,sedan,Sedan,rules_model,ok,false
 2005,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2005,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
-2005,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2005,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2005,Infiniti,G35,coupe,Coupe,manual_bulk_review,ok,false
 2005,Infiniti,FX35,suv,SUV,rules_model,ok,false
 2005,Infiniti,FX45,suv,SUV,rules_model,ok,false
@@ -1408,7 +1408,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2006,Hyundai,Santa Fe,suv,SUV,rules_model,ok,false
 2006,Hyundai,Tucson,suv,SUV,rules_model,ok,false
 2006,Hyundai,Entourage,suv,SUV,rules,ok,false
-2006,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2006,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2006,Infiniti,G35,coupe,Coupe,manual_bulk_review,ok,false
 2006,Infiniti,M35,sedan,Sedan,manual_bulk_review,ok,false
 2006,Infiniti,M45,sedan,Sedan,manual_bulk_review,ok,false
@@ -1661,7 +1661,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2007,Hyundai,Accent,sedan,Sedan,rules_model,ok,false
 2007,Hyundai,Tiburon,coupe,Coupe,manual_bulk_review,ok,false
 2007,Hyundai,Entourage,suv,SUV,rules,ok,false
-2007,Infiniti,Q45,suv,SUV,manual_bulk_review,ok,false
+2007,Infiniti,Q45,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2007,Infiniti,G35,coupe,Coupe,manual_bulk_review,ok,false
 2007,Infiniti,M35,sedan,Sedan,manual_bulk_review,ok,false
 2007,Infiniti,M45,sedan,Sedan,manual_bulk_review,ok,false
@@ -3634,9 +3634,9 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2014,Hyundai,Entourage,suv,SUV,rules,ok,false
 2014,Hyundai,Santa Fe Sport,suv,SUV,rules_model,ok,false
 2014,Infiniti,QX50,suv,SUV,rules_model,ok,false
-2014,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2014,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2014,Infiniti,Q70,suv,SUV,rules_model,ok,false
+2014,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2014,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2014,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2014,Infiniti,QX70,suv,SUV,rules_model,ok,false
 2014,Infiniti,QX80,suv,SUV,rules,ok,false
 2014,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -3947,10 +3947,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2015,Hyundai,Tucson,suv,SUV,rules_model,ok,false
 2015,Hyundai,Santa Fe Sport,suv,SUV,rules_model,ok,false
 2015,Infiniti,QX50,suv,SUV,rules_model,ok,false
-2015,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2015,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2015,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2015,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2015,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2015,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2015,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2015,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2015,Infiniti,QX70,suv,SUV,rules_model,ok,false
 2015,Infiniti,QX80,suv,SUV,rules,ok,false
 2015,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -4265,9 +4265,9 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2016,Hyundai,Tucson,suv,SUV,rules_model,ok,false
 2016,Hyundai,Santa Fe Sport,suv,SUV,rules_model,ok,false
 2016,Infiniti,QX50,suv,SUV,rules_model,ok,false
-2016,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2016,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2016,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2016,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2016,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2016,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2016,Infiniti,QX70,suv,SUV,rules_model,ok,false
 2016,Infiniti,QX80,suv,SUV,rules,ok,false
 2016,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -4601,10 +4601,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2017,Hyundai,Tucson,suv,SUV,rules_model,ok,false
 2017,Hyundai,Santa Fe Sport,suv,SUV,rules_model,ok,false
 2017,Infiniti,QX50,suv,SUV,rules_model,ok,false
-2017,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2017,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2017,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2017,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2017,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2017,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2017,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2017,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2017,Infiniti,QX30,suv,SUV,rules_model,ok,false
 2017,Infiniti,QX70,suv,SUV,rules_model,ok,false
 2017,Infiniti,QX80,suv,SUV,rules,ok,false
@@ -4944,10 +4944,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2018,Hyundai,Tucson,suv,SUV,rules_model,ok,false
 2018,Hyundai,Santa Fe Sport,suv,SUV,rules_model,ok,false
 2018,Hyundai,Kona,suv,SUV,rules,ok,false
-2018,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2018,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2018,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2018,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2018,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2018,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2018,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2018,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2018,Infiniti,QX30,suv,SUV,rules_model,ok,false
 2018,Infiniti,QX70,suv,SUV,rules_model,ok,false
 2018,Infiniti,QX80,suv,SUV,rules,ok,false
@@ -5292,10 +5292,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2019,Hyundai,Kona,suv,SUV,rules,ok,false
 2019,Hyundai,Santa Fe XL,suv,SUV,rules_model,ok,false
 2019,Hyundai,Nexo,suv,SUV,rules,ok,false
-2019,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2019,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2019,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2019,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2019,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2019,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2019,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2019,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2019,Infiniti,QX30,suv,SUV,rules_model,ok,false
 2019,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2019,Infiniti,QX80,suv,SUV,rules,ok,false
@@ -5652,10 +5652,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2020,Hyundai,Santa Fe XL,suv,SUV,rules_model,ok,false
 2020,Hyundai,Nexo,suv,SUV,rules,ok,false
 2020,Hyundai,Palisade,suv,SUV,rules_model,ok,false
-2020,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2020,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2020,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2020,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2020,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2020,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2020,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2020,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2020,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2020,Infiniti,QX80,suv,SUV,rules,ok,false
 2020,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -6021,10 +6021,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2021,Hyundai,Santa Fe XL,suv,SUV,rules_model,ok,false
 2021,Hyundai,Nexo,suv,SUV,rules,ok,false
 2021,Hyundai,Palisade,suv,SUV,rules_model,ok,false
-2021,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2021,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2021,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2021,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2021,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2021,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2021,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2021,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2021,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2021,Infiniti,QX80,suv,SUV,rules,ok,false
 2021,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -6395,10 +6395,10 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2022,Hyundai,Palisade,suv,SUV,rules_model,ok,false
 2022,Hyundai,Ioniq 5,suv,SUV,rules_model,ok,false
 2022,Hyundai,Kona N,suv,SUV,rules,ok,false
-2022,Infiniti,Q50,suv,SUV,rules_model,ok,false
-2022,Infiniti,Q60,suv,SUV,manual_bulk_review,ok,false
-2022,Infiniti,Q70,suv,SUV,rules_model,ok,false
-2022,Infiniti,Q70L,suv,SUV,rules_model,ok,false
+2022,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2022,Infiniti,Q60,coupe,Coupe,manual_correction_infiniti_q_series,ok,false
+2022,Infiniti,Q70,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
+2022,Infiniti,Q70L,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2022,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2022,Infiniti,QX80,suv,SUV,rules,ok,false
 2022,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -6779,7 +6779,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2023,Hyundai,Palisade,suv,SUV,rules_model,ok,false
 2023,Hyundai,Ioniq 5,suv,SUV,rules_model,ok,false
 2023,Hyundai,Kona N,suv,SUV,rules,ok,false
-2023,Infiniti,Q50,suv,SUV,rules_model,ok,false
+2023,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2023,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2023,Infiniti,QX80,suv,SUV,rules,ok,false
 2023,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -7158,7 +7158,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2024,Hyundai,Palisade,suv,SUV,rules_model,ok,false
 2024,Hyundai,Ioniq 5,suv,SUV,rules_model,ok,false
 2024,Hyundai,Kona N,suv,SUV,rules,ok,false
-2024,Infiniti,Q50,suv,SUV,rules_model,ok,false
+2024,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2024,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2024,Infiniti,QX80,suv,SUV,rules,ok,false
 2024,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -7545,7 +7545,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2025,Hyundai,Ioniq 5,suv,SUV,rules_model,ok,false
 2025,Hyundai,Kona N,suv,SUV,rules,ok,false
 2025,Hyundai,Ioniq 5 N,suv,SUV,rules_model,ok,false
-2025,Infiniti,Q50,suv,SUV,rules_model,ok,false
+2025,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2025,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2025,Infiniti,QX80,suv,SUV,rules,ok,false
 2025,Infiniti,QX60,suv,SUV,rules_model,ok,false
@@ -7929,7 +7929,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2026,Hyundai,Kona N,suv,SUV,rules,ok,false
 2026,Hyundai,Ioniq 5 N,suv,SUV,rules_model,ok,false
 2026,Hyundai,Ioniq 9,suv,SUV,rules,ok,false
-2026,Infiniti,Q50,suv,SUV,rules_model,ok,false
+2026,Infiniti,Q50,sedan,Sedan,manual_correction_infiniti_q_series,ok,false
 2026,Infiniti,QX50,suv,SUV,rules_model,ok,false
 2026,Infiniti,QX80,suv,SUV,rules,ok,false
 2026,Infiniti,QX60,suv,SUV,rules_model,ok,false
