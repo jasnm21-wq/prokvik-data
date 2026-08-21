@@ -15,6 +15,8 @@
 
 The PR gate validates the automotive film catalog, vehicle lookup corrections, vehicle correction tests, and CSV structural integrity.
 
+The exact required GitHub status check name is `Data integrity gate`. Branch protection for `main` should require that check before merge.
+
 Generated application artifacts remain versioned in their owning frontend/backend repositories. Data changes that require regenerated artifacts must be followed by the normal frontend/backend PR gates before production deployment.
 
 ## Emergency changes
