@@ -1,0 +1,71 @@
+name: Prokvik data integrity
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: data-integrity-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  data-integrity-gate:
+    name: Data integrity gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate automotive film catalog
+        run: python film-catalog/validate_automotive_film_catalog.py
+
+      - name: Validate vehicle lookup corrections
+        run: python vehicle-lookup/validate_vehicle_lookup_corrections.py
+
+      - name: Run vehicle lookup correction tests
+        run: >-
+          python -m unittest discover
+          -s vehicle-lookup
+          -p 'test_*.py'
+          -v
+
+      - name: Parse canonical CSV files
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+
+          csv_files = sorted(Path('.').glob('**/*.csv'))
+          if not csv_files:
+              raise SystemExit('No CSV files found')
+
+          for path in csv_files:
+              with path.open(newline='', encoding='utf-8-sig') as handle:
+                  reader = csv.reader(handle)
+                  header = next(reader, None)
+                  if not header:
+                      raise SystemExit(f'{path}: missing header')
+                  if any(not column.strip() for column in header):
+                      raise SystemExit(f'{path}: blank header column')
+                  for row_number, row in enumerate(reader, start=2):
+                      if len(row) != len(header):
+                          raise SystemExit(
+                              f'{path}:{row_number}: expected '
+                              f'{len(header)} columns, found {len(row)}'
+                          )
+
+          print(f'Validated CSV structure for {len(csv_files)} files.')
+          PY
