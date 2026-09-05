@@ -21,6 +21,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Reset canonical lookup to main baseline
+        run: |
+          git fetch origin main --depth=1
+          git show FETCH_HEAD:vehicle-lookup/vehicle_lookup_import_ready.csv \
+            > vehicle-lookup/vehicle_lookup_import_ready.csv
       - name: Audit 2027 passenger vehicles against NHTSA vPIC
         run: |
           python vehicle-lookup/audit_vehicle_lookup_against_nhtsa.py \
@@ -53,6 +58,7 @@ jobs:
           print('reviewed_2027_rows:', len(rows))
           print('reviewed_makes:', len({row['make'] for row in rows}))
           print('classes:', sorted({row['vehicle_class'] for row in rows}))
+          print("ford_quote_34:", any(row['make'] == 'Ford' and row['model'] == "'34" for row in rows))
           PY
           git diff --stat
       - name: Commit generated catalog artifacts
