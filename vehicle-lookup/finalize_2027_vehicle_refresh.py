@@ -54,11 +54,18 @@ def combined_corrections_dir(root: Path) -> Path:
     return combined
 
 
+def optional_corrections(corrections_dir: Path) -> dict:
+    """Load correction manifests when present; normalization tests may use none."""
+    if not any(corrections_dir.glob("*.csv")):
+        return {}
+    return load_corrections(corrections_dir)
+
+
 def review_snapshot(
     snapshot: list[dict[str, str]],
     corrections_dir: Path,
 ) -> list[dict[str, str]]:
-    corrections = load_corrections(corrections_dir)
+    corrections = optional_corrections(corrections_dir)
     reviewed: dict[tuple[str, str], dict[str, str]] = {}
 
     for source in snapshot:
