@@ -24,13 +24,13 @@ The reviewed 2027 source snapshot is `vehicle-lookup/model-years/2027_reviewed.c
 The September 5, 2026 refresh uses live NHTSA vPIC model-year data but does **not** import raw vPIC output directly. The refresh pipeline:
 
 1. Requires an exact normalized NHTSA manufacturer match. This prevents partial-name contamination such as `Ford` matching `Stanford Customs`, `Mini` matching `Mini Big Trucks`, or `Land Rover` matching `Land Rover Santana`.
-2. Excludes obvious commercial/heavy-only vehicles while retaining normal shop vehicles such as F-150/F-250/F-350, Silverado/Sierra, Ram pickups, Tacoma/Tundra, Transit, Sprinter, Express/Savana, and ProMaster.
+2. Excludes obvious commercial/heavy-only vehicles using exact/model-aware rules while retaining normal shop vehicles such as F-150/F-250/F-350, Silverado/Sierra, Ram pickups, Tacoma/Tundra, Transit, Sprinter, Express/Savana, and ProMaster. Loose substring filters are prohibited because they can create false positives such as treating `Santa Fe` as a heavy-truck match.
 3. Normalizes customer-facing model labels where NHTSA exposes internal/type suffixes.
 4. Applies reviewed vehicle-class clarifications before the model-year snapshot is finalized.
 5. Replaces only the target model year in the canonical CSV and preserves all other model-year rows and their ordering.
 6. Rejects duplicate `(year, make, model)` identities.
 
-The reviewed 2027 snapshot contains **306 customer-facing rows**. Replacing the previous incomplete/stale 2027 rows brings the canonical catalog to **8,871 rows**.
+The reviewed 2027 snapshot contains **308 customer-facing rows across 38 makes**. Replacing the previous incomplete/stale 2027 rows brings the canonical catalog to **8,873 rows**.
 
 To regenerate the reviewed 2027 artifacts from current vPIC data:
 
