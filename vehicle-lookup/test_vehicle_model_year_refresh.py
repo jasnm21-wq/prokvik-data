@@ -29,6 +29,7 @@ class VehicleModelYearRefreshTests(unittest.TestCase):
     def test_commercial_rows_are_excluded(self):
         for make, model in (
             ("Chevrolet", "BrightDrop"),
+            ("Ford", "F-450 Super Duty"),
             ("Ford", "F-550"),
             ("Ford", "F-600"),
             ("Hyundai", "Xcient"),
@@ -37,6 +38,9 @@ class VehicleModelYearRefreshTests(unittest.TestCase):
         ):
             with self.subTest(make=make, model=model):
                 self.assertFalse(refresh.is_customer_facing_model(make, model))
+
+    def test_shop_relevant_models_with_fe_are_not_filtered(self):
+        self.assertTrue(refresh.is_customer_facing_model("Hyundai", "Santa Fe"))
 
     def test_shop_relevant_trucks_and_vans_remain_allowed(self):
         for make, model in (
@@ -56,6 +60,8 @@ class VehicleModelYearRefreshTests(unittest.TestCase):
 
     def test_reviewed_class_clarifications(self):
         cases = (
+            ("500e", "Passenger Car", ("coupe", "Coupe")),
+            ("Hardtop", "Passenger Car", ("coupe", "Coupe")),
             ("Mustang Mach-E", "Passenger Car", ("suv", "SUV")),
             ("GV80", "Passenger Car", ("suv", "SUV")),
             ("Hummer EV Pickup", "Passenger Car", ("truck", "Truck")),
@@ -65,6 +71,8 @@ class VehicleModelYearRefreshTests(unittest.TestCase):
             ("QX80", "Passenger Car", ("suv", "SUV")),
             ("Nissan Z", "Passenger Car", ("coupe", "Coupe")),
             ("Corolla Cross", "Passenger Car", ("suv", "SUV")),
+            ("UX", "Passenger Car", ("suv", "SUV")),
+            ("Santa Fe", "Passenger Car", ("suv", "SUV")),
             ("Jetta", "Passenger Car", ("sedan", "Sedan")),
             ("Odyssey", "Multipurpose Passenger Vehicle (MPV)", ("van", "Van")),
             ("Ridgeline", "Truck", ("truck", "Truck")),
