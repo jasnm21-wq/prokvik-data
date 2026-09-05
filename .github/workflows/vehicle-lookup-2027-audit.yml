@@ -1,0 +1,44 @@
+name: Vehicle Lookup 2027 Audit
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'vehicle-lookup/**'
+      - '.github/workflows/vehicle-lookup-2027-audit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit-2027:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit 2027 passenger vehicles against NHTSA vPIC
+        run: |
+          python vehicle-lookup/audit_vehicle_lookup_against_nhtsa.py \
+            --start-year 2027 \
+            --end-year 2027 \
+            --refresh-cache \
+            --sleep 0.05
+      - name: Print 2027 audit reports
+        if: always()
+        run: |
+          for report in \
+            missing_make_years.csv \
+            missing_models.csv \
+            missing_selector_makes_by_year.csv \
+            extra_local_models.csv \
+            api_errors.csv; do
+            echo "===== ${report} ====="
+            if [ -f "vehicle-lookup/audit-output/${report}" ]; then
+              cat "vehicle-lookup/audit-output/${report}"
+            else
+              echo "missing report"
+            fi
+          done
