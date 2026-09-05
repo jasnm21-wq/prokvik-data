@@ -5323,7 +5323,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2019,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2019,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2019,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2019,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2019,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2019,Lexus,LX,suv,SUV,rules,ok,false
 2019,Lexus,RX,suv,SUV,rules,ok,false
 2019,Lexus,GX,suv,SUV,rules,ok,false
@@ -5684,7 +5684,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2020,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2020,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2020,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2020,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2020,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2020,Lexus,LX,suv,SUV,rules,ok,false
 2020,Lexus,RX,suv,SUV,rules,ok,false
 2020,Lexus,GX,suv,SUV,rules,ok,false
@@ -6053,7 +6053,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2021,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2021,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2021,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2021,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2021,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2021,Lexus,LX,suv,SUV,rules,ok,false
 2021,Lexus,RX,suv,SUV,rules,ok,false
 2021,Lexus,GX,suv,SUV,rules,ok,false
@@ -6431,7 +6431,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2022,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2022,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2022,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2022,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2022,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2022,Lexus,LX,suv,SUV,rules,ok,false
 2022,Lexus,RX,suv,SUV,rules,ok,false
 2022,Lexus,GX,suv,SUV,rules,ok,false
@@ -6812,7 +6812,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2023,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2023,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2023,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2023,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2023,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2023,Lexus,LX,suv,SUV,rules,ok,false
 2023,Lexus,RX,suv,SUV,rules,ok,false
 2023,Lexus,GX,suv,SUV,rules,ok,false
@@ -7192,7 +7192,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2024,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2024,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2024,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2024,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2024,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2024,Lexus,LX,suv,SUV,rules,ok,false
 2024,Lexus,RX,suv,SUV,rules,ok,false
 2024,Lexus,GX,suv,SUV,rules,ok,false
@@ -7579,7 +7579,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2025,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2025,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2025,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2025,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2025,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2025,Lexus,LX,suv,SUV,rules,ok,false
 2025,Lexus,RX,suv,SUV,rules,ok,false
 2025,Lexus,GX,suv,SUV,rules,ok,false
@@ -7963,7 +7963,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2026,Lexus,ES,sedan,Sedan,manual_bulk_review,ok,false
 2026,Lexus,RC,coupe,Coupe,manual_bulk_review,ok,false
 2026,Lexus,LC,coupe,Coupe,manual_bulk_review,ok,false
-2026,Lexus,UX,suv,SUV,manual_bulk_review,ok,false
+2026,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2026,Lexus,LX,suv,SUV,rules,ok,false
 2026,Lexus,RX,suv,SUV,rules,ok,false
 2026,Lexus,GX,suv,SUV,rules,ok,false
@@ -8493,7 +8493,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2024,Bentley,Continental,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2024,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
 2024,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
-2024,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2024,Fiat,500e,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2024,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
 2024,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
 2024,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
@@ -8517,7 +8517,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2025,Bentley,Continental,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2025,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
 2025,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
-2025,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2025,Fiat,500e,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2025,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
 2025,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
 2025,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
@@ -8544,7 +8544,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2026,Bentley,Continental,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2026,Bentley,Flying Spur,sedan,Sedan,nhtsa_audit_reviewed,ok,false
 2026,Fiat,124 Spider,coupe,Coupe,nhtsa_audit_reviewed,ok,false
-2026,Fiat,500e,sedan,Sedan,nhtsa_audit_reviewed,ok,false
+2026,Fiat,500e,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2026,Fiat,500X,suv,SUV,nhtsa_audit_reviewed,ok,false
 2026,Jaguar,E-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
 2026,Jaguar,F-PACE,suv,SUV,nhtsa_audit_reviewed,ok,false
@@ -8655,7 +8655,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Chrysler,Pacifica,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Dodge,Charger,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Dodge,Durango,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Fiat,500e,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Fiat,500e,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2027,Ford,Bronco,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Bronco Sport,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Escape,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -8710,6 +8710,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Hyundai,Nexo,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Hyundai,Palisade,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Santa Cruz,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
+2027,Hyundai,Santa Fe,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Sonata,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Tucson,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Venue,suv,SUV,manual_vehicle_class_review_20260905,ok,false
@@ -8738,6 +8739,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Kia,Sorento,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,Sportage,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,Telluride,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Land Rover,Defender,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Land Rover,Discovery,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Land Rover,Discovery Sport,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Land Rover,Range Rover,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -8753,7 +8755,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Lexus,RX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,RZ,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,TX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
-2027,Lexus,UX,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Lexus,UX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Lincoln,Aviator,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lincoln,Corsair,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lincoln,Nautilus,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -8781,7 +8783,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Mercedes-Benz,Sprinter,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mini,Cooper Convertible,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mini,Countryman,suv,SUV,manual_vehicle_class_review_20260905,ok,false
-2027,Mini,Hardtop,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Mini,Hardtop,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mitsubishi,Outlander,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Mitsubishi,Outlander Sport,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Nissan,Altima,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false

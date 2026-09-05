@@ -100,7 +100,7 @@ values
   (2027, 'Chrysler', 'Pacifica', 'van', 'Van', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Dodge', 'Charger', 'sedan', 'Sedan', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Dodge', 'Durango', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
-  (2027, 'Fiat', '500e', 'sedan', 'Sedan', 'nhtsa_vpic_2027_reviewed', 'ok', false),
+  (2027, 'Fiat', '500e', 'coupe', 'Coupe', 'manual_vehicle_class_review_20260905', 'ok', false),
   (2027, 'Ford', 'Bronco', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Ford', 'Bronco Sport', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Ford', 'Escape', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
@@ -155,6 +155,7 @@ values
   (2027, 'Hyundai', 'Nexo', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
   (2027, 'Hyundai', 'Palisade', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Hyundai', 'Santa Cruz', 'truck', 'Truck', 'nhtsa_vpic_2027_reviewed', 'ok', false),
+  (2027, 'Hyundai', 'Santa Fe', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Hyundai', 'Sonata', 'sedan', 'Sedan', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Hyundai', 'Tucson', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Hyundai', 'Venue', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
@@ -183,6 +184,7 @@ values
   (2027, 'Kia', 'Sorento', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Kia', 'Sportage', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Kia', 'Telluride', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
+  (2027, 'Land Rover', 'Defender', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Land Rover', 'Discovery', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Land Rover', 'Discovery Sport', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Land Rover', 'Range Rover', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
@@ -198,7 +200,7 @@ values
   (2027, 'Lexus', 'RX', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Lexus', 'RZ', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Lexus', 'TX', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
-  (2027, 'Lexus', 'UX', 'sedan', 'Sedan', 'nhtsa_vpic_2027_reviewed', 'ok', false),
+  (2027, 'Lexus', 'UX', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
   (2027, 'Lincoln', 'Aviator', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Lincoln', 'Corsair', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Lincoln', 'Nautilus', 'suv', 'SUV', 'nhtsa_vpic_2027_reviewed', 'ok', false),
@@ -226,7 +228,7 @@ values
   (2027, 'Mercedes-Benz', 'Sprinter', 'van', 'Van', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Mini', 'Cooper Convertible', 'coupe', 'Coupe', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Mini', 'Countryman', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
-  (2027, 'Mini', 'Hardtop', 'sedan', 'Sedan', 'nhtsa_vpic_2027_reviewed', 'ok', false),
+  (2027, 'Mini', 'Hardtop', 'coupe', 'Coupe', 'nhtsa_vpic_2027_reviewed', 'ok', false),
   (2027, 'Mitsubishi', 'Outlander', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
   (2027, 'Mitsubishi', 'Outlander Sport', 'suv', 'SUV', 'manual_vehicle_class_review_20260905', 'ok', false),
   (2027, 'Nissan', 'Altima', 'sedan', 'Sedan', 'nhtsa_vpic_2027_reviewed', 'ok', false),
@@ -479,6 +481,7 @@ values
   ('hyundai', 'nexo'),
   ('hyundai', 'palisade'),
   ('hyundai', 'santa cruz'),
+  ('hyundai', 'santa fe'),
   ('hyundai', 'sonata'),
   ('hyundai', 'tucson'),
   ('hyundai', 'venue'),
@@ -507,6 +510,7 @@ values
   ('kia', 'sorento'),
   ('kia', 'sportage'),
   ('kia', 'telluride'),
+  ('land rover', 'defender'),
   ('land rover', 'discovery'),
   ('land rover', 'discovery sport'),
   ('land rover', 'range rover'),
@@ -663,6 +667,10 @@ set vehicle_class = 'van', pricing_group = 'Van', classification_source = 'manua
 where lower(trim(make)) = 'chrysler'
   and lower(trim(model)) = 'voyager';
 update public.vehicle_lookup
+set vehicle_class = 'coupe', pricing_group = 'Coupe', classification_source = 'manual_vehicle_class_review_20260905', review_status = 'ok', is_commercial = false
+where lower(trim(make)) = 'fiat'
+  and lower(trim(model)) = '500e';
+update public.vehicle_lookup
 set vehicle_class = 'suv', pricing_group = 'SUV', classification_source = 'manual_vehicle_class_review_20260905', review_status = 'ok', is_commercial = false
 where lower(trim(make)) = 'ford'
   and lower(trim(model)) = 'mustang mach-e';
@@ -770,6 +778,10 @@ update public.vehicle_lookup
 set vehicle_class = 'suv', pricing_group = 'SUV', classification_source = 'manual_vehicle_class_review_20260905', review_status = 'ok', is_commercial = false
 where lower(trim(make)) = 'lexus'
   and lower(trim(model)) = 'tx';
+update public.vehicle_lookup
+set vehicle_class = 'suv', pricing_group = 'SUV', classification_source = 'manual_vehicle_class_review_20260905', review_status = 'ok', is_commercial = false
+where lower(trim(make)) = 'lexus'
+  and lower(trim(model)) = 'ux';
 update public.vehicle_lookup
 set vehicle_class = 'suv', pricing_group = 'SUV', classification_source = 'manual_vehicle_class_review_20260905', review_status = 'ok', is_commercial = false
 where lower(trim(make)) = 'lincoln'
