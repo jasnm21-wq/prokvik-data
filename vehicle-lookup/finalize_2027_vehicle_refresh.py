@@ -8,13 +8,17 @@ import shutil
 import tempfile
 from pathlib import Path
 
-from apply_vehicle_lookup_corrections import load_corrections, normalize_key
+from apply_vehicle_lookup_corrections import (
+    apply_corrections,
+    load_corrections,
+    normalize_key,
+)
 from refresh_vehicle_model_year import (
     DEFAULT_LOOKUP,
     DEFAULT_MODEL_YEAR_DIR,
     build_hosted_sql,
     build_snapshot,
-    merge_model_year,
+    read_catalog,
     write_rows,
 )
 
@@ -99,6 +103,73 @@ def review_snapshot(
     )
 
 
+def merge_model_year_preserving_order(
+    lookup_path: Path,
+    year: int,
+    snapshot_rows: list[dict[str, str]],
+    corrections_dir: Path,
+    output_path: Path,
+) -> dict[str, int]:
+    fieldnames, current_rows = read_catalog(lookup_path)
+    target_year = str(year)
+    merged_rows: list[dict[str, str]] = []
+    inserted = False
+
+    for row in current_rows:
+        if row.get("year", "").strip() == target_year:
+            if not inserted:
+                merged_rows.extend(
+                    {field: snapshot.get(field, "") for field in fieldnames}
+                    for snapshot in snapshot_rows
+                )
+                inserted = True
+            continue
+        merged_rows.append(row)
+
+    if not inserted:
+        merged_rows.extend(
+            {field: snapshot.get(field, "") for field in fieldnames}
+            for snapshot in snapshot_rows
+        )
+
+    identities: set[tuple[str, str, str]] = set()
+    for row in merged_rows:
+        identity = (
+            row.get("year", "").strip(),
+            normalize_key(row.get("make", "")),
+            normalize_key(row.get("model", "")),
+        )
+        if identity in identities:
+            raise ValueError(f"Duplicate vehicle identity after refresh: {identity}")
+        identities.add(identity)
+
+    with tempfile.NamedTemporaryFile(
+        prefix=f".{output_path.name}.",
+        suffix=".pre-corrections",
+        dir=output_path.parent,
+        delete=False,
+    ) as temporary:
+        pre_corrections = Path(temporary.name)
+
+    try:
+        write_rows(pre_corrections, fieldnames, merged_rows)
+        apply_result = apply_corrections(
+            pre_corrections,
+            corrections_dir,
+            output_path,
+        )
+    finally:
+        pre_corrections.unlink(missing_ok=True)
+
+    return {
+        "before_rows": len(current_rows),
+        "after_rows": len(merged_rows),
+        "year_rows": len(snapshot_rows),
+        "correction_keys": apply_result["correction_keys"],
+        "correction_changed_rows": apply_result["changed_rows"],
+    }
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--lookup", type=Path, default=DEFAULT_LOOKUP)
@@ -131,7 +202,7 @@ def main() -> int:
         write_rows(snapshot_path, snapshot_fields, snapshot)
 
         merged = temp_root / "vehicle_lookup_import_ready.csv"
-        result = merge_model_year(
+        result = merge_model_year_preserving_order(
             args.lookup,
             year,
             snapshot,
