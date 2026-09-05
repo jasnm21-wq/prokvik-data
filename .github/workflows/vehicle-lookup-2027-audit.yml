@@ -1,0 +1,94 @@
+name: Vehicle Lookup 2027 Audit
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'vehicle-lookup/**'
+      - '.github/workflows/vehicle-lookup-2027-audit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit-2027:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reset canonical lookup to main baseline
+        run: |
+          git fetch origin main --depth=1
+          git show FETCH_HEAD:vehicle-lookup/vehicle_lookup_import_ready.csv \
+            > vehicle-lookup/vehicle_lookup_import_ready.csv
+      - name: Audit 2027 passenger vehicles against NHTSA vPIC
+        run: |
+          python vehicle-lookup/audit_vehicle_lookup_against_nhtsa.py \
+            --start-year 2027 \
+            --end-year 2027 \
+            --refresh-cache \
+            --sleep 0.05
+      - name: Generate reviewed 2027 snapshot and canonical catalog
+        run: |
+          python vehicle-lookup/finalize_2027_vehicle_refresh.py \
+            --refresh-cache \
+            --sleep 0.05 \
+            --write
+      - name: Validate correction finalization
+        run: python vehicle-lookup/validate_vehicle_lookup_corrections.py
+      - name: Run vehicle lookup tests
+        run: |
+          python -m unittest discover \
+            -s vehicle-lookup \
+            -p 'test_*.py' \
+            -v
+      - name: Show generated 2027 summary
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          snapshot = Path('vehicle-lookup/model-years/2027_reviewed.csv')
+          with snapshot.open(newline='', encoding='utf-8') as handle:
+              rows = list(csv.DictReader(handle))
+          print('reviewed_2027_rows:', len(rows))
+          print('reviewed_makes:', len({row['make'] for row in rows}))
+          print('classes:', sorted({row['vehicle_class'] for row in rows}))
+          print("ford_quote_34:", any(row['make'] == 'Ford' and row['model'] == "'34" for row in rows))
+          PY
+          git diff --stat
+      - name: Commit generated catalog artifacts
+        if: github.event_name == 'pull_request' && github.head_ref == 'chore/2027-vehicle-refresh'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            vehicle-lookup/vehicle_lookup_import_ready.csv \
+            vehicle-lookup/model-years/2027_reviewed.csv \
+            vehicle-lookup/model-years/2027_hosted.sql
+          if git diff --cached --quiet; then
+            echo 'Generated catalog is already current.'
+            exit 0
+          fi
+          git commit -m 'data: refresh reviewed 2027 vehicle catalog'
+          git push origin HEAD:chore/2027-vehicle-refresh
+      - name: Print raw audit reports
+        if: always()
+        run: |
+          for report in \
+            missing_make_years.csv \
+            missing_models.csv \
+            missing_selector_makes_by_year.csv \
+            extra_local_models.csv \
+            api_errors.csv; do
+            echo "===== ${report} ====="
+            if [ -f "vehicle-lookup/audit-output/${report}" ]; then
+              cat "vehicle-lookup/audit-output/${report}"
+            else
+              echo "missing report"
+            fi
+          done
