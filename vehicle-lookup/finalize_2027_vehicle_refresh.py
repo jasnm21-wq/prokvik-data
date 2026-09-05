@@ -8,6 +8,7 @@ import shutil
 import tempfile
 from pathlib import Path
 
+from apply_vehicle_lookup_corrections import load_corrections, normalize_key
 from refresh_vehicle_model_year import (
     DEFAULT_LOOKUP,
     DEFAULT_MODEL_YEAR_DIR,
@@ -22,6 +23,22 @@ MODULE_DIR = Path(__file__).parent
 BASE_CORRECTIONS = MODULE_DIR / "corrections"
 CLASS_CORRECTIONS = MODULE_DIR / "classification-corrections"
 
+# vPIC can contain exact-make rows that are technically registered data but are not
+# useful customer-facing production choices for Prokvik's shop selector.
+EXCLUDED_IDENTITIES = {
+    ("ford", "'34"),
+}
+
+# Keep customer-facing model labels clean instead of exposing NHTSA platform/type
+# suffixes that customers do not normally use when identifying their vehicle.
+MODEL_ALIASES = {
+    ("alfa romeo", "giulia (952)"): "Giulia",
+    ("nissan", "ariya mpv"): "Ariya",
+    ("nissan", "kicks mpv"): "Kicks",
+    ("toyota", "prius prime (phev)"): "Prius Prime",
+    ("toyota", "rav4 prime (phev)"): "RAV4 Prime",
+}
+
 
 def combined_corrections_dir(root: Path) -> Path:
     combined = root / "combined-corrections"
@@ -31,6 +48,55 @@ def combined_corrections_dir(root: Path) -> Path:
             target = combined / f"{source_dir.name}__{path.name}"
             shutil.copyfile(path, target)
     return combined
+
+
+def review_snapshot(
+    snapshot: list[dict[str, str]],
+    corrections_dir: Path,
+) -> list[dict[str, str]]:
+    corrections = load_corrections(corrections_dir)
+    reviewed: dict[tuple[str, str], dict[str, str]] = {}
+
+    for source in snapshot:
+        row = dict(source)
+        raw_identity = (
+            normalize_key(row["make"]),
+            normalize_key(row["model"]),
+        )
+        if raw_identity in EXCLUDED_IDENTITIES:
+            continue
+
+        alias = MODEL_ALIASES.get(raw_identity)
+        if alias:
+            row["model"] = alias
+
+        identity = (
+            normalize_key(row["make"]),
+            normalize_key(row["model"]),
+        )
+        correction = corrections.get(identity)
+        if correction:
+            for column in (
+                "vehicle_class",
+                "pricing_group",
+                "classification_source",
+                "review_status",
+                "is_commercial",
+            ):
+                value = correction.get(column, "")
+                if value:
+                    row[column] = value
+
+        if identity in reviewed:
+            raise ValueError(
+                f"Duplicate reviewed 2027 identity after normalization: {identity}"
+            )
+        reviewed[identity] = row
+
+    return sorted(
+        reviewed.values(),
+        key=lambda row: (row["make"].lower(), row["model"].lower()),
+    )
 
 
 def parse_args() -> argparse.Namespace:
@@ -47,8 +113,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     year = 2027
-    snapshot = build_snapshot(year, args.cache_dir, args.refresh_cache, args.sleep)
-    if not snapshot:
+    raw_snapshot = build_snapshot(year, args.cache_dir, args.refresh_cache, args.sleep)
+    if not raw_snapshot:
         raise SystemExit("No reviewed 2027 vehicle rows were generated")
 
     snapshot_fields = [
@@ -57,11 +123,13 @@ def main() -> int:
     ]
     snapshot_path = args.model_year_dir / "2027_reviewed.csv"
     sql_path = args.model_year_dir / "2027_hosted.sql"
-    write_rows(snapshot_path, snapshot_fields, snapshot)
 
     with tempfile.TemporaryDirectory() as directory:
         temp_root = Path(directory)
         combined = combined_corrections_dir(temp_root)
+        snapshot = review_snapshot(raw_snapshot, combined)
+        write_rows(snapshot_path, snapshot_fields, snapshot)
+
         merged = temp_root / "vehicle_lookup_import_ready.csv"
         result = merge_model_year(
             args.lookup,
