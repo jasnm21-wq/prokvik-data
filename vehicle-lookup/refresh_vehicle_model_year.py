@@ -3,7 +3,7 @@
 
 The refresh is intentionally stricter than the audit report:
 - NHTSA make names must exactly match the requested customer-facing make.
-- Commercial/heavy rows are excluded.
+- Commercial/heavy rows are excluded with model-aware rules (never loose substrings).
 - Customer-facing classes are limited to coupe, sedan, suv, truck, van.
 - Reviewed make/model corrections are applied after the model-year replacement.
 
@@ -22,7 +22,6 @@ from apply_vehicle_lookup_corrections import apply_corrections, load_corrections
 from audit_vehicle_lookup_against_nhtsa import (
     FRONTEND_MAKES,
     fetch_nhtsa_models,
-    is_likely_commercial_model,
     norm_make,
 )
 
@@ -65,13 +64,16 @@ VAN_MODELS = {
 
 # Stable two-door/coupe customer pricing clarifications.
 COUPE_MODELS = {
+    "500e",
     "911",
     "430i",
     "brz",
     "cle",
     "cooper convertible",
     "corvette",
+    "cybercab",
     "gr86",
+    "hardtop",
     "lc",
     "m2",
     "m240i",
@@ -84,13 +86,12 @@ COUPE_MODELS = {
     "prelude",
     "sl-class",
     "supra",
-    "cybercab",
 }
 
 # Crossovers/SUVs that vPIC sometimes exposes as Passenger Car rather than MPV.
 SUV_MODELS = {
-    "bZ".lower(),
-    "bZ Woodland".lower(),
+    "bz",
+    "bz woodland",
     "c-hr",
     "corolla cross",
     "countryman",
@@ -128,9 +129,11 @@ SUV_MODELS = {
     "prologue",
     "qx80",
     "recon",
+    "santa fe",
     "solterra",
     "trailseeker",
     "tx",
+    "ux",
     "uncharted",
     "v60cc",
     "v90cc",
@@ -142,7 +145,9 @@ TRUCK_MODELS = {
     "hummer ev pickup",
 }
 
-# Explicit customer-facing exclusions beyond the general commercial detector.
+# Explicit customer-facing exclusions. These are exact model keys or prefixes,
+# not loose substrings. The previous generic helper contained "fe" as a truck
+# marker, which incorrectly filtered legitimate models such as Hyundai Santa Fe.
 EXCLUDED_MODEL_KEYS = {
     "brightdrop",
     "edv",
@@ -153,6 +158,41 @@ EXCLUDED_MODEL_KEYS = {
     "semi",
     "xcient",
 }
+
+EXCLUDED_MODEL_PREFIXES = (
+    "f-450",
+    "f450",
+    "f-550",
+    "f550",
+    "f-600",
+    "f600",
+    "f-650",
+    "f650",
+    "f-750",
+    "f750",
+    "silverado 4500",
+    "silverado 5500",
+    "silverado 6500",
+    "ram 4500",
+    "ram 5500",
+    "npr",
+    "nqr",
+    "nrr",
+)
+
+COMMERCIAL_PHRASES = (
+    "cab chassis",
+    "chassis cab",
+    "cutaway",
+    "incomplete",
+    "strip chassis",
+    "low cab forward",
+    "school bus",
+    "shuttle bus",
+    "step van",
+    "box truck",
+    "straight truck",
+)
 
 VOLVO_COMMERCIAL_MODEL_KEYS = {
     "cab behind engine",
@@ -181,9 +221,13 @@ def is_customer_facing_model(make: str, model: str) -> bool:
         return False
     if model_key in EXCLUDED_MODEL_KEYS:
         return False
+    if any(model_key.startswith(prefix) for prefix in EXCLUDED_MODEL_PREFIXES):
+        return False
+    if any(phrase in model_key for phrase in COMMERCIAL_PHRASES):
+        return False
     if norm_make(make) == "volvo" and model_key in VOLVO_COMMERCIAL_MODEL_KEYS:
         return False
-    return not is_likely_commercial_model(make, model)
+    return True
 
 
 def classify_customer_vehicle(model: str, vehicle_type: str) -> tuple[str, str]:
