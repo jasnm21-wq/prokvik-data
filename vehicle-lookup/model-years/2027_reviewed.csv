@@ -4,7 +4,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Acura,MDX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Acura,RDX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Acura,ZDX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Alfa Romeo,Giulia (952),sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Alfa Romeo,Giulia,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Alfa Romeo,Stelvio,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Alfa Romeo,Tonale,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Audi,A3,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
@@ -33,7 +33,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Audi,SQ8,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Audi,SQ9,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Bentley,Bentayga,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Bentley,Continental,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Bentley,Continental,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2027,Bentley,Flying Spur,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,BMW,228,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,BMW,430i,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
@@ -57,7 +57,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,BMW,X6,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,BMW,X7,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,BMW,XM,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Buick,Enclave,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Buick,Enclave,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Buick,Encore GX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Buick,Envision,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Buick,Envista,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -91,7 +91,6 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Dodge,Charger,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Dodge,Durango,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Fiat,500e,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Ford,'34,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Bronco,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Bronco Sport,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Escape,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -104,20 +103,20 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Ford,Maverick,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Mustang,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Mustang GTD,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
-2027,Ford,Mustang Mach-E,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Ford,Mustang Mach-E,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Ford,Ranger,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Ford,Transit,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Genesis,G70,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Genesis,G80,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Genesis,G90,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Genesis,GV60,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Genesis,GV60,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Genesis,GV60 Magma,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Genesis,GV70,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Genesis,GV80,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Genesis,GV70,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Genesis,GV80,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,GMC,Acadia,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,GMC,Canyon,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
-2027,GMC,Hummer EV Pickup,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
-2027,GMC,Hummer EV SUV,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,GMC,Hummer EV Pickup,truck,Truck,manual_vehicle_class_review_20260905,ok,false
+2027,GMC,Hummer EV SUV,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,GMC,Savana,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,GMC,Sierra,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,GMC,Sierra HD,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
@@ -133,35 +132,35 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Honda,Odyssey,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Honda,Passport,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Honda,Pilot,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Honda,Prelude,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
-2027,Honda,Prologue,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Honda,Prelude,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
+2027,Honda,Prologue,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Honda,Ridgeline,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Elantra,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Elantra N,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Hyundai,Ioniq 5,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Hyundai,Ioniq 5 N,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Hyundai,Ioniq 5,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Hyundai,Ioniq 5 N,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Hyundai,Ioniq 6 N,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Hyundai,Ioniq 9,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Hyundai,Kona,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Hyundai,Nexo,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Hyundai,Ioniq 9,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Hyundai,Kona,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Hyundai,Nexo,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Hyundai,Palisade,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Santa Cruz,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Sonata,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Hyundai,Tucson,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Hyundai,Venue,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Hyundai,Venue,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Infiniti,QX60,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Infiniti,QX65,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Infiniti,QX80,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Infiniti,QX80,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Jaguar,F-PACE,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Jeep,Cherokee,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Jeep,Compass,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Jeep,Gladiator,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Jeep,Grand Cherokee,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Jeep,Grand Cherokee L,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Jeep,Grand Wagoneer,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Jeep,Grand Wagoneer L,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Jeep,Recon,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Jeep,Wagoneer S,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Jeep,Grand Wagoneer,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Jeep,Grand Wagoneer L,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Jeep,Recon,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Jeep,Wagoneer S,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Jeep,Wrangler,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,Carnival,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,EV3,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -169,7 +168,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Kia,EV9,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,K4,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,K5,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Kia,Niro,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Kia,Niro,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Kia,Seltos,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,Sorento,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Kia,Sportage,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -183,18 +182,18 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Lexus,ES,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,IS,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,LC,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
-2027,Lexus,LS,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Lexus,LS,sedan,Sedan,manual_vehicle_class_review_20260905,ok,false
 2027,Lexus,LX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,NX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,RX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lexus,RZ,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Lexus,TX,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Lexus,TX,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Lexus,UX,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lincoln,Aviator,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lincoln,Corsair,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lincoln,Nautilus,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lincoln,Navigator,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Lincoln,Navigator L,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Lincoln,Navigator L,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Lucid,Air,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Lucid,Gravity,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mazda,CX-30,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -203,31 +202,31 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Mazda,CX-70,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mazda,CX-90,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mazda,Mazda3,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mazda,MX-5,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
+2027,Mazda,MX-5,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2027,Mercedes-Benz,CLA-Class,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mercedes-Benz,CLE,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mercedes-Benz,E-Class,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mercedes-Benz,EQE-Class SUV,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mercedes-Benz,EQS-Class SUV,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Mercedes-Benz,EQE-Class SUV,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Mercedes-Benz,EQS-Class SUV,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Mercedes-Benz,eSprinter,van,Van,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mercedes-Benz,G-Class,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mercedes-Benz,GLC-Class,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Mercedes-Benz,G-Class,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Mercedes-Benz,GLC-Class,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Mercedes-Benz,S-Class,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mercedes-Benz,SL-Class,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mercedes-Benz,Sprinter,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Mini,Cooper Convertible,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mini,Countryman,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Mini,Countryman,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Mini,Hardtop,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mitsubishi,Outlander,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Mitsubishi,Outlander Sport,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Mitsubishi,Outlander,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Mitsubishi,Outlander Sport,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Nissan,Altima,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Nissan,Ariya MPV,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Nissan,Ariya,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Nissan,Armada,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Nissan,Frontier,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
-2027,Nissan,Kicks MPV,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Nissan,Kicks,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Nissan,Leaf,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Nissan,Murano,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Nissan,Nissan Z,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
+2027,Nissan,Nissan Z,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2027,Nissan,Pathfinder,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Nissan,Rogue,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Nissan,Sentra,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
@@ -249,28 +248,28 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Rivian,R1T,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Rivian,R2,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Subaru,Ascent,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Subaru,BRZ,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
+2027,Subaru,BRZ,coupe,Coupe,manual_vehicle_class_review_20260905,ok,false
 2027,Subaru,Crosstrek,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Subaru,Forester,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Subaru,Impreza,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Subaru,Outback,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Subaru,Solterra,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Subaru,Trailseeker,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Subaru,Uncharted,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Subaru,WRX,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Subaru,Solterra,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Subaru,Trailseeker,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Subaru,Uncharted,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Subaru,WRX,sedan,Sedan,manual_vehicle_class_review_20260905,ok,false
 2027,Tesla,Cybercab,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Tesla,Cybertruck,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Tesla,Model 3,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Tesla,Model Y,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,4Runner,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,bZ,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,bZ Woodland,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,C-HR,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Toyota,bZ,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Toyota,bZ Woodland,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Toyota,C-HR,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Toyota,Camry,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Corolla,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,Corolla Cross,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Toyota,Corolla Cross,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Toyota,Crown,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,Crown Signia,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Toyota,Crown Signia,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Toyota,GR Corolla,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,GR86,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Grand Highlander,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -278,20 +277,20 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Toyota,Land Cruiser,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Mirai,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Prius,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,Prius Prime (PHEV),sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Toyota,Prius Prime,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,RAV4,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Toyota,RAV4 Prime (PHEV),suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Toyota,RAV4 Prime,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Sequoia,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Sienna,van,Van,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Supra,coupe,Coupe,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Tacoma,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
 2027,Toyota,Tundra,truck,Truck,nhtsa_vpic_2027_reviewed,ok,false
-2027,Volkswagen,Atlas,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Volkswagen,Atlas,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Volkswagen,Golf GTI,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volkswagen,Golf R,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volkswagen,ID.4,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Volkswagen,Jetta,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Volkswagen,Jetta GLI,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
+2027,Volkswagen,Jetta,sedan,Sedan,manual_vehicle_class_review_20260905,ok,false
+2027,Volkswagen,Jetta GLI,sedan,Sedan,manual_vehicle_class_review_20260905,ok,false
 2027,Volkswagen,Taos,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volkswagen,Tiguan,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volvo,EC40,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
@@ -301,8 +300,8 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2027,Volvo,EX60,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volvo,EX90,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volvo,S90,sedan,Sedan,nhtsa_vpic_2027_reviewed,ok,false
-2027,Volvo,V60CC,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
-2027,Volvo,V90CC,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
+2027,Volvo,V60CC,suv,SUV,manual_vehicle_class_review_20260905,ok,false
+2027,Volvo,V90CC,suv,SUV,manual_vehicle_class_review_20260905,ok,false
 2027,Volvo,XC40,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volvo,XC60,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
 2027,Volvo,XC90,suv,SUV,nhtsa_vpic_2027_reviewed,ok,false
