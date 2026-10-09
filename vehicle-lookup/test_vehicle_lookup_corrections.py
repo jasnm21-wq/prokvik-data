@@ -45,6 +45,31 @@ class VehicleLookupCorrectionTests(unittest.TestCase):
         self.assertEqual(result["changed_rows"], 0)
         self.assertEqual(result["already_correct_keys"], expected_keys)
 
+    def test_mercedes_roadsters_are_coupes_for_every_catalog_year(self):
+        lookup = MODULE_DIR / "vehicle_lookup_import_ready.csv"
+        with lookup.open(newline="", encoding="utf-8") as handle:
+            roadsters = [
+                row for row in csv.DictReader(handle)
+                if row["make"] == "Mercedes-Benz"
+                and row["model"] in {"SLK-Class", "SLC-Class"}
+            ]
+
+        expected_years = {
+            "SLK-Class": set(range(2000, 2017)),
+            "SLC-Class": set(range(2017, 2021)),
+        }
+        self.assertEqual(len(roadsters), 21)
+        for model, years in expected_years.items():
+            entries = [row for row in roadsters if row["model"] == model]
+            self.assertEqual({int(row["year"]) for row in entries}, years)
+            for row in entries:
+                self.assertEqual(row["vehicle_class"], "coupe")
+                self.assertEqual(row["pricing_group"], "Coupe")
+                self.assertEqual(
+                    row["classification_source"],
+                    "manual_correction_mercedes_roadsters_20261009",
+                )
+
     def test_correction_is_idempotent_and_preserves_unlisted_qx_model(self):
         fieldnames = [
             "year", "make", "model", "vehicle_class", "pricing_group",

@@ -70,6 +70,8 @@ class VehicleModelYearRefreshTests(unittest.TestCase):
             ("Ioniq 5", "Passenger Car", ("suv", "SUV")),
             ("QX80", "Passenger Car", ("suv", "SUV")),
             ("Nissan Z", "Passenger Car", ("coupe", "Coupe")),
+            ("SLK-Class", "Passenger Car", ("coupe", "Coupe")),
+            ("SLC-Class", "Passenger Car", ("coupe", "Coupe")),
             ("Corolla Cross", "Passenger Car", ("suv", "SUV")),
             ("UX", "Passenger Car", ("suv", "SUV")),
             ("Santa Fe", "Passenger Car", ("suv", "SUV")),

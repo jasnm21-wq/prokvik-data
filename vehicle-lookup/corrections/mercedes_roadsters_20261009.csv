@@ -1,0 +1,3 @@
+make,model,vehicle_class,pricing_group,classification_source,review_status,is_commercial
+Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
+Mercedes-Benz,SLC-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
