@@ -85,6 +85,8 @@ COUPE_MODELS = {
     "nissan z",
     "prelude",
     "sl-class",
+    "slc-class",
+    "slk-class",
     "supra",
 }
 
