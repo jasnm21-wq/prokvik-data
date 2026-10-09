@@ -116,7 +116,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2000,Mazda,B-Series,truck,Truck,manual_bulk_review,ok,false
 2000,Mazda,MPV,suv,SUV,rules,ok,false
 2000,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2000,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2000,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2000,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2000,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
 2000,Mercedes-Benz,S-Class,sedan,Sedan,rules_model,ok,false
@@ -313,7 +313,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2001,Mazda,Tribute,suv,SUV,rules,ok,false
 2001,Mazda,MPV,suv,SUV,rules,ok,false
 2001,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2001,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2001,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2001,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2001,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
 2001,Mercedes-Benz,S-Class,sedan,Sedan,rules_model,ok,false
@@ -515,7 +515,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2002,Mazda,Tribute,suv,SUV,rules,ok,false
 2002,Mazda,MPV,suv,SUV,rules,ok,false
 2002,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2002,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2002,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2002,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2002,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
 2002,Mercedes-Benz,S-Class,sedan,Sedan,rules_model,ok,false
@@ -733,7 +733,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2003,Mazda,Tribute,suv,SUV,rules,ok,false
 2003,Mazda,MPV,suv,SUV,rules,ok,false
 2003,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2003,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2003,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2003,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2003,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
 2003,Mercedes-Benz,S-Class,sedan,Sedan,rules_model,ok,false
@@ -965,7 +965,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2004,Mazda,B-Series,truck,Truck,manual_bulk_review,ok,false
 2004,Mazda,Tribute,suv,SUV,rules,ok,false
 2004,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2004,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2004,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2004,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2004,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
 2004,Mercedes-Benz,S-Class,sedan,Sedan,rules_model,ok,false
@@ -1202,7 +1202,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2005,Mazda,Tribute,suv,SUV,rules,ok,false
 2005,Mazda,MPV,suv,SUV,rules,ok,false
 2005,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2005,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2005,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2005,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2005,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2005,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -1447,7 +1447,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2006,Mazda,Tribute,suv,SUV,rules,ok,false
 2006,Mazda,MPV,suv,SUV,rules,ok,false
 2006,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2006,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2006,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2006,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2006,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2006,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -1703,7 +1703,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2007,Mazda,CX-7,suv,SUV,rules_model,ok,false
 2007,Mazda,CX-9,suv,SUV,rules,ok,false
 2007,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2007,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2007,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2007,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2007,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2007,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -1972,7 +1972,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2008,Mazda,CX-7,suv,SUV,rules_model,ok,false
 2008,Mazda,CX-9,suv,SUV,rules,ok,false
 2008,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2008,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2008,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2008,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2008,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2008,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -2246,7 +2246,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2009,Mazda,CX-7,suv,SUV,rules_model,ok,false
 2009,Mazda,CX-9,suv,SUV,rules,ok,false
 2009,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2009,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2009,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2009,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2009,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2009,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -2522,7 +2522,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2010,Mazda,Tribute,suv,SUV,rules,ok,false
 2010,Mazda,CX-7,suv,SUV,rules_model,ok,false
 2010,Mazda,CX-9,suv,SUV,rules,ok,false
-2010,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2010,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2010,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2010,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2010,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -2793,7 +2793,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2011,Mazda,CX-7,suv,SUV,rules_model,ok,false
 2011,Mazda,CX-9,suv,SUV,rules,ok,false
 2011,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2011,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2011,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2011,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2011,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2011,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -3070,7 +3070,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2012,Mazda,CX-7,suv,SUV,rules_model,ok,false
 2012,Mazda,CX-9,suv,SUV,rules,ok,false
 2012,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2012,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2012,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2012,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2012,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2012,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -3365,7 +3365,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2013,Mazda,CX-9,suv,SUV,rules,ok,false
 2013,Mazda,CX-5,suv,SUV,rules_model,ok,false
 2013,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2013,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2013,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2013,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2013,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2013,Mercedes-Benz,C-Class,sedan,Sedan,rules_model,ok,false
@@ -3676,7 +3676,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2014,Mazda,CX-9,suv,SUV,rules,ok,false
 2014,Mazda,CX-5,suv,SUV,rules_model,ok,false
 2014,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2014,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2014,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2014,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2014,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2014,Mercedes-Benz,CLA-Class,sedan,Sedan,rules_model,ok,false
@@ -3995,7 +3995,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2015,Mazda,CX-9,suv,SUV,rules,ok,false
 2015,Mazda,CX-5,suv,SUV,rules_model,ok,false
 2015,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2015,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2015,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2015,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2015,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2015,Mercedes-Benz,CLA-Class,sedan,Sedan,rules_model,ok,false
@@ -4313,7 +4313,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2016,Mazda,CX-9,suv,SUV,rules,ok,false
 2016,Mazda,CX-5,suv,SUV,rules_model,ok,false
 2016,Mercedes-Benz,SL-Class,sedan,Sedan,rules_model,ok,false
-2016,Mercedes-Benz,SLK-Class,sedan,Sedan,rules_model,ok,false
+2016,Mercedes-Benz,SLK-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2016,Mercedes-Benz,E-Class,sedan,Sedan,rules_model,ok,false
 2016,Mercedes-Benz,CLS-Class,sedan,Sedan,rules_model,ok,false
 2016,Mercedes-Benz,CLA-Class,sedan,Sedan,rules_model,ok,false
@@ -4661,7 +4661,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2017,Mercedes-Benz,SLS-Class,sedan,Sedan,rules_model,ok,false
 2017,Mercedes-Benz,B-Class,sedan,Sedan,rules_model,ok,false
 2017,Mercedes-Benz,AMG GT,coupe,Coupe,manual_bulk_review,ok,false
-2017,Mercedes-Benz,SLC-Class,sedan,Sedan,rules_model,ok,false
+2017,Mercedes-Benz,SLC-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2017,Mercedes-Benz,Sprinter,van,Van,rules_model,ok,false
 2017,Mercedes-Benz,Metris,van,Van,manual_bulk_review,ok,false
 2017,Mercedes-Benz,M-Class,sedan,Sedan,rules_model,ok,false
@@ -5005,7 +5005,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2018,Mercedes-Benz,SLS-Class,sedan,Sedan,rules_model,ok,false
 2018,Mercedes-Benz,B-Class,sedan,Sedan,rules_model,ok,false
 2018,Mercedes-Benz,AMG GT,coupe,Coupe,manual_bulk_review,ok,false
-2018,Mercedes-Benz,SLC-Class,sedan,Sedan,rules_model,ok,false
+2018,Mercedes-Benz,SLC-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2018,Mercedes-Benz,Sprinter,van,Van,rules_model,ok,false
 2018,Mercedes-Benz,Metris,van,Van,manual_bulk_review,ok,false
 2018,Mercedes-Benz,M-Class,sedan,Sedan,rules_model,ok,false
@@ -5352,7 +5352,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2019,Mercedes-Benz,SLS-Class,sedan,Sedan,rules_model,ok,false
 2019,Mercedes-Benz,B-Class,sedan,Sedan,rules_model,ok,false
 2019,Mercedes-Benz,AMG GT,coupe,Coupe,manual_bulk_review,ok,false
-2019,Mercedes-Benz,SLC-Class,sedan,Sedan,rules_model,ok,false
+2019,Mercedes-Benz,SLC-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2019,Mercedes-Benz,A-Class,sedan,Sedan,rules_model,ok,false
 2019,Mercedes-Benz,Sprinter,van,Van,rules_model,ok,false
 2019,Mercedes-Benz,Metris,van,Van,manual_bulk_review,ok,false
@@ -5714,7 +5714,7 @@ year,make,model,vehicle_class,pricing_group,classification_source,review_status,
 2020,Mercedes-Benz,SLS-Class,sedan,Sedan,rules_model,ok,false
 2020,Mercedes-Benz,B-Class,sedan,Sedan,rules_model,ok,false
 2020,Mercedes-Benz,AMG GT,coupe,Coupe,manual_bulk_review,ok,false
-2020,Mercedes-Benz,SLC-Class,sedan,Sedan,rules_model,ok,false
+2020,Mercedes-Benz,SLC-Class,coupe,Coupe,manual_correction_mercedes_roadsters_20261009,ok,false
 2020,Mercedes-Benz,A-Class,sedan,Sedan,rules_model,ok,false
 2020,Mercedes-Benz,Sprinter,van,Van,rules_model,ok,false
 2020,Mercedes-Benz,Metris,van,Van,manual_bulk_review,ok,false
