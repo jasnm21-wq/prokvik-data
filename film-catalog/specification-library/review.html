@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prokvik Film Specification Library</title>
+<style>
+:root{color-scheme:light;--ink:#102b2c;--muted:#526969;--paper:#f5f7f3;--panel:#fff;--line:#d6e0d9;--accent:#006450;--tint:#e7f1eb;--warn:#855822;font:16px/1.5 "Aptos","Segoe UI",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink)}header{padding:2.6rem max(1.25rem,calc((100% - 1290px)/2));color:white;background:#103938}header h1{font-family:Georgia,serif;line-height:1.08;font-size:clamp(2.2rem,5vw,4rem);margin:.3rem 0 .8rem;letter-spacing:-.035em}header p{max-width:48rem;margin:.2rem 0;color:#dfefdf}.eyebrow{font-weight:700;letter-spacing:.11em;font-size:.76rem;text-transform:uppercase}
+main{max-width:1330px;padding:1.35rem 1rem 4rem;margin:auto}.totals{display:flex;flex-wrap:wrap;gap:.65rem 1.75rem;padding:.7rem 0 1.3rem;color:var(--muted)}.totals b{color:var(--ink);font-variant-numeric:tabular-nums}
+.controls,.card{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:1.1rem;margin-bottom:1rem}.controls{display:grid;grid-template-columns:1.1fr 1.2fr .8fr;gap:1rem;margin-bottom:1.2rem}.controls label{display:grid;gap:.25rem;font-weight:600;font-size:.92rem}select,input,button{font:inherit;color:inherit;background:white;border:1px solid #a9bfaf;border-radius:7px;padding:.47rem .6rem;min-width:0}.controls select{width:100%}
+button{cursor:pointer;font-weight:600;color:var(--accent)}button:hover{background:var(--tint)}a{color:var(--accent);overflow-wrap:anywhere}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #e0a843;outline-offset:2px}h2{margin:0 0 .75rem;font-size:1.48rem}h3{margin:.7rem 0 .3rem;font-size:1.05rem}p{margin:.45rem 0 .85rem}.muted{color:var(--muted)}.tokens{display:flex;gap:.4rem;flex-wrap:wrap}.tag{font-size:.75rem;padding:.16rem .5rem;background:var(--tint);border-radius:1rem;color:#08513e}.tag.warn{background:#fff0dc;color:var(--warn)}.callout{border-left:3px solid #c69649;padding:.4rem .8rem;background:#fbf3e6;border-radius:4px}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:.55rem .5rem}th{font-weight:600;background:#edf4ed}td.num{white-space:nowrap}th:first-child,td:first-child{min-width:4rem}.section-row{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;flex-wrap:wrap}.split{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.sub-card{padding:.75rem;min-width:0;background:#f1f6f0;border-radius:8px}.sub-card p{font-size:.9rem}.source-list{padding-left:1.15rem}.source-list li{margin:.55rem 0}.source-list code{font-size:.69rem;word-break:break-all}summary{cursor:pointer;font-weight:650}.empty{padding:.5rem 0;color:var(--muted)} ul{padding-left:1.25rem} .tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:0 0 1rem}.tabs button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent)}
+@media(max-width:720px){.controls,.split{grid-template-columns:1fr}.controls{gap:.65rem}header{padding:1.7rem 1rem}td,th{padding:.42rem .36rem}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Prokvik Data · Manufacturer evidence</div>
+<h1>Automotive film specifications</h1>
+<p>Review shade measurements, test conditions, warranties, and source differences before using catalog values in Prokvik.</p>
+</header>
+<main>
+<div class="totals" id="totals"></div>
+<nav class="tabs" aria-label="Review section">
+<button type="button" data-tab="catalog" aria-pressed="true">Catalog</button>
+<button type="button" data-tab="compare" aria-pressed="false">Compare records</button>
+<button type="button" data-tab="coverage" aria-pressed="false">Coverage and sources</button>
+</nav>
+<div class="controls" id="catalog-controls">
+<label>Manufacturer <select id="manufacturer"></select></label>
+<label>Product series <select id="product"></select></label>
+<label>Nominal shade <select id="shade"></select></label>
+</div>
+<div id="view"></div>
+</main>
+<script id="library" type="application/json">__LIBRARY__</script>
+<script>
+"use strict";
+const db = JSON.parse(document.getElementById("library").textContent);
+const byId = id => document.getElementById(id);
+const make = (tag, text = "", cls = "") => {
+  const item = document.createElement(tag);
+  if (cls) item.className = cls;
+  if (text) item.textContent = text;
+  return item;
+};
+const productKey = item => JSON.stringify([item.brand, item.product_line]);
+const products = new Map(db.products.map(item => [productKey(item), item]));
+const metricNames = {
+  measured_vlt_pct:"Measured VLT", vlr_exterior_pct:"Exterior VLR", vlr_interior_pct:"Interior VLR", vlr_unspecified_pct:"VLR (side unspecified)",
+  tser_pct:"TSER", irr_pct:"IRR", irer_pct:"IRER", sirr_pct:"SIRR", uv_rejection:"UV rejection", glare_reduction_pct:"Glare reduction",
+  solar_transmittance_pct:"Solar transmission", solar_reflectance_pct:"Solar reflection", solar_absorbance_pct:"Solar absorption",
+  solar_ir_absorption_pct:"Solar IR absorption", uv_transmittance_pct:"UV transmission", narrow_band_ir_as_published_pct:"NB (as published)",
+  ir_aswf_78_25_pct:"IR (78–25 as printed)", ir_aswf_09_10_pct:"IR (09–10 as printed)", ssir_as_published_pct:"SSIR (as printed)",
+  irr_short_pct:"IRR (900–1000 nm)", irr_long_pct:"IRR (780–2500 nm)",
+  visible_absorbance_pct:"Visible absorption", emissivity:"Emissivity",
+  shgc:"SHGC", shading_coefficient:"Shading coefficient", thickness_mil:"Thickness (mil)", ply_count:"Ply count", u_factor:"U-factor", privacy_pct:"Privacy"
+};
+const preferred = ["measured_vlt_pct","tser_pct","irr_pct","irer_pct","sirr_pct","uv_rejection","glare_reduction_pct","vlr_exterior_pct","vlr_interior_pct","vlr_unspecified_pct"];
+const allMetrics = [...preferred, ...Object.keys(metricNames).filter(k => !preferred.includes(k))];
+const percent = field => field.endsWith("_pct") || field === "uv_rejection";
+const fmt = (field, value) => value == null ? "—" : value + (percent(field) ? "%" : "");
+const rShade = record => record.source_shade ? record.source_shade : "Series level";
+const pairNames = record => record.brand + " · " + record.product_line;
+function card(title) {
+  const section = make("section", "", "card");
+  section.append(make("h2", title));
+  return section;
+}
+function sourceLink(source, page) {
+  const label = source.paths?.[0] || source.subject || source.url || source.id;
+  let href = source.url;
+  if (!href && db.originals_uri && source.paths?.length) {
+    href = db.originals_uri + "/" + source.paths[0].split("/").map(encodeURIComponent).join("/");
+    if (page && source.paths[0].toLowerCase().endsWith(".pdf")) href += "#page=" + page;
+  }
+  if (!href) return make("span", label);
+  const a = make("a", label);
+  a.href = href;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  return a;
+}
+function table(headers, entries) {
+  const container = make("div", "", "table-scroll");
+  const node = make("table");
+  const head = make("thead"), tr = make("tr"), body = make("tbody");
+  headers.forEach(text => { const cell=make("th", text); cell.scope="col"; tr.append(cell); });
+  head.append(tr);
+  for (const cells of entries) {
+    const row = make("tr");
+    for (const cell of cells) {
+      const td = make("td");
+      td.append(cell instanceof Node ? cell : document.createTextNode(String(cell ?? "—")));
+      row.append(td);
+    }
+    body.append(row);
+  }
+  node.append(head, body);
+  container.append(node);
+  return container;
+}
+function options(select, values) {
+  const previous = select.value;
+  select.replaceChildren(...values.map(([key, label]) => {
+    const option = make("option", label);
+    option.value = key;
+    return option;
+  }));
+  if (values.some(([key]) => key === previous)) select.value = previous;
+}
+function shadesFor(records, facts) {
+  return [...new Set([...records.flatMap(r => r.nominal_shade ? [r.nominal_shade] : r.available_shades || []),
+                      ...facts.flatMap(f => f.available_shades)])].sort((a,b) => parseFloat(a)-parseFloat(b) || a.localeCompare(b));
+}
+function methodLabel(record) {
+  const m = db.methods[record.method];
+  return [m.basis.replaceAll("_", " "), m.glass, m.glass_mm ? m.glass_mm + " mm" : "", m.standard].filter(Boolean).join(" · ");
+}
+function sourceLabel(record) {
+  const s = db.sources[record.source];
+  const wrap = make("span");
+  wrap.append(sourceLink(s, record.page));
+  if (record.page) wrap.append(make("span", " · p. " + record.page, "muted"));
+  if (s.revision) wrap.append(make("span", " · " + s.revision, "muted"));
+  return wrap;
+}
+function detail(record) {
+  const m = db.methods[record.method];
+  const d = make("div");
+  d.append(make("span", methodLabel(record)));
+  if (record.generation) d.append(make("div", record.generation, "muted"));
+  if (m.notes) d.append(make("div", m.notes, "muted"));
+  if (record.reported_substrate || record.reported_test_standard) {
+    d.append(make("div", [record.reported_substrate, record.reported_test_standard].filter(Boolean).join(" · "), "muted"));
+  }
+  const ir = record.published_ir || [];
+  for (const metric of ir) d.append(make("div", [metric.label + " " + metric.value + "%", metric.wavelength_nm && metric.wavelength_nm + " nm"].filter(Boolean).join(" · ")));
+  const wavelengths = Object.entries(m.wavelength_nm || {}).filter(([field]) => field in record.measurements);
+  if (wavelengths.length) d.append(make("div", wavelengths.map(([f,w]) => metricNames[f] + " " + w + " nm").join(" · "), "muted"));
+  if (record.available_shades?.length) d.append(make("div", "Offered shades " + record.available_shades.join(", "), "muted"));
+  if (record.tser_range) d.append(make("div", "Series TSER " + record.tser_range + "%"));
+  if (record.notes) d.append(make("div", record.notes, "muted"));
+  if (record.evidence === "existing_catalog") d.append(make("div", "Inherited catalog entry", "muted"));
+  return d;
+}
+function showCatalog() {
+  const brand = byId("manufacturer").value;
+  const matching = db.products.filter(p => p.brand === brand);
+  options(byId("product"), matching.map(p => [productKey(p), p.product_line]));
+  const key = byId("product").value;
+  const p = products.get(key);
+  const all = db.records.filter(r => productKey(r) === key);
+  const facts = db.facts.filter(r => productKey(r) === key);
+  const shades = shadesFor(all, facts);
+  options(byId("shade"), [["", "All shades"], ...shades.map(shade=>[shade, shade])]);
+  const shade = byId("shade").value;
+  const listed = all.filter(r => !shade || r.nominal_shade === shade);
+  const research = db.research.find(r=>r.brand===brand);
+  const intro = card(p?.product_line || brand);
+  const tags = make("div", "", "tokens");
+  if (p) {
+    for (const label of [p.canonical_film_type,p.status,shades.length + " shades listed"]) tags.append(make("span",label,"tag"));
+    if (p.aliases) intro.append(make("p","Aliases · " + p.aliases.replaceAll("|",", "),"muted"));
+  } else tags.append(make("span","Identity review required","tag warn"));
+  intro.append(tags);
+  if (research) intro.append(make("p",research.notes,"muted"),sourceLink(db.sources["R-"+brand]));
+  if (p?.notes) intro.append(make("p",p.notes));
+  for (const f of facts) {
+    const paragraph = make("p", [f.construction,f.description,f.roll_sizes,f.notes].filter(Boolean).join(" · ") + " ");
+    paragraph.append(sourceLink(db.sources[f.source]));
+    intro.append(paragraph);
+  }
+
+  const specs = card("Shade specifications");
+  if (!listed.length) specs.append(make("p","No reviewed shade measurement available for this selection.","empty"));
+  if (listed.length) {
+    const fields = allMetrics.filter(f => listed.some(r => f in r.measurements));
+    if (fields.length) specs.append(table(["Shade",...fields.map(f=>metricNames[f]),"Test method","Source"],
+        listed.map(r=>[rShade(r),...fields.map(f=>fmt(f,r.measurements[f])),detail(r),sourceLabel(r)])));
+    else for (const r of listed) specs.append(detail(r),sourceLabel(r));
+    const absent = preferred.filter(f=>!all.some(r=>f in r.measurements));
+    if (absent.length) specs.append(make("p","Missing standardized fields · " + absent.map(f=>metricNames[f]).join(", "),"muted"));
+  }
+
+  const warranty = card("Warranty information");
+  const matchingWarranties = db.warranties.filter(w=>w.brand===brand && (!w.products.length || w.products.includes(p?.product_line)));
+  if (!matchingWarranties.length) warranty.append(make("p","No verified warranty record for this selection.","empty"));
+  for (const w of matchingWarranties) {
+    warranty.append(make("h3", w.duration), make("p",[w.market,w.evidence.replaceAll("_"," "), w.products.length?"Product-specific":"Manufacturer-level reference"].join(" · "),"muted"),
+      make("p",w.coverage), make("p",w.restrictions), make("p",w.transfer), sourceLink(db.sources[w.source]));
+  }
+  const archived = card("Source differences and references");
+  const issues = db.discrepancies.filter(i=>productKey(i)===key && (!shade || i.shade===shade));
+  for (const conflict of issues) {
+    archived.append(make("p", [conflict.shade,metricNames[conflict.metric],conflict.kind.replaceAll("_"," ")].join(" · "), "callout"));
+    archived.append(table(["Source","Method","Reported value"], conflict.alternatives.map(a=>[
+      sourceLink(db.sources[a.source]),a.method,fmt(conflict.metric,a.value)
+    ])));
+  }
+  for (const warning of db.validation_warnings.filter(i=>productKey(i)===key && (!shade || i.shade===shade))) {
+    const note=make("p", "Shade " + warning.shade + " · Published solar transmission, reflection and absorption total " +
+      warning.total + "%. Readings are retained for manufacturer confirmation. ", "callout");
+    note.append(sourceLink(db.sources[warning.source],warning.page));
+    archived.append(note);
+  }
+  const references = Object.values(db.sources).filter(s=>s.brand===brand && (!s.products?.length || s.products.includes(p?.product_line)));
+  const ul = make("ul","","source-list");
+  for (const s of references) {
+    const li=make("li");
+    li.append(sourceLink(s), make("span", " · " + [s.kind.replaceAll("_"," "),s.revision,s.verified_at,s.review_status].filter(Boolean).join(" · "),"muted"));
+    if (s.notes) li.append(make("div",s.notes, "muted"));
+    if (s.sha256) li.append(make("div",""),make("code", "SHA-256 " + s.sha256));
+    ul.append(li);
+  }
+  archived.append(ul);
+  byId("view").replaceChildren(intro,specs,warranty,archived);
+}
+const comparePicks = ["", ""];
+function showCompare() {
+  const panel=card("Compare measurements");
+  const selects=make("div","","split");
+  const comparable=db.records.map((r,index)=>[r,index]).filter(([r])=>r.nominal_shade && Object.keys(r.measurements).length);
+  for (let i=0; i<2; i++) {
+    const block=make("div","","sub-card");
+    const label=make("label",i===0?"First film record":"Second film record");
+    const select=make("select");
+    select.setAttribute("aria-label",label.textContent);
+    select.style.width="100%";
+    options(select,[["","Choose a shade and source"],...comparable.map(([r,index])=>[String(index),
+        [pairNames(r),rShade(r),r.generation, r.method, db.sources[r.source].id].filter(Boolean).join(" · ")])]);
+    select.value=comparePicks[i];
+    select.onchange=()=>{comparePicks[i]=select.value;showCompare();};
+    label.append(select);block.append(label);selects.append(block);
+  }
+  panel.append(selects);
+  if (comparePicks.every(Boolean)) {
+    const [a,b]=comparePicks.map(i=>db.records[Number(i)]);
+    const methodKnown=a.method===b.method && db.methods[a.method].basis!=="unknown";
+    const fields=allMetrics.filter(f=>f in a.measurements || f in b.measurements);
+    panel.append(make("p",methodKnown ? "Published method labels match. Check source tolerances and applicability." :
+       "These test conditions differ or are incomplete. Use the values as source references without ranking the films.","callout"));
+    panel.append(table(["Measurement",pairNames(a),pairNames(b)],[
+      ["Source",sourceLabel(a),sourceLabel(b)],["Test conditions",detail(a),detail(b)],
+      ...fields.map(f=>[metricNames[f],fmt(f,a.measurements[f]),fmt(f,b.measurements[f])])
+    ]));
+  }
+  byId("view").replaceChildren(panel);
+}
+function showCoverage() {
+  const panel=card("Manufacturer coverage");
+  panel.append(table(["Manufacturer","Mapped series","Spec rows","Warranty records","Source review"],
+    db.research.map(r => [r.brand,db.products.filter(p=>p.brand===r.brand).length,
+      db.records.filter(s=>s.brand===r.brand).length,db.warranties.filter(w=>w.brand===r.brand).length,r.notes])));
+  const arch=card("Architectural discoveries");
+  for (const s of Object.values(db.sources).filter(s=>s.scope==="architectural")) {
+    const p=make("p", s.brand + " · "); p.append(sourceLink(s)); arch.append(p);
+  }
+  byId("view").replaceChildren(panel, arch);
+}
+let active="catalog";
+function refresh() {
+  byId("catalog-controls").hidden = active!=="catalog";
+  byId("catalog-controls").style.display = active==="catalog" ? "grid" : "none";
+  if (active==="catalog") showCatalog();
+  else if (active==="compare") showCompare();
+  else showCoverage();
+}
+document.querySelectorAll("[data-tab]").forEach(btn=>btn.onclick=()=>{
+  active=btn.dataset.tab;
+  document.querySelectorAll("[data-tab]").forEach(item=>item.setAttribute("aria-pressed", String(item===btn)));
+  refresh();
+});
+options(byId("manufacturer"), db.brands.map(b=>[b.brand,b.brand]));
+for (const id of ["manufacturer","product","shade"]) byId(id).onchange=showCatalog;
+for (const [key,label] of [["manufacturers","manufacturers"],["series","series"],["shade_variants","shade variants"],["specification_records","specification records"],["warranty_records","warranty records"]]) {
+  const counter=make("span");
+  counter.append(make("b",String(db.counts[key])), document.createTextNode(" " + label)); byId("totals").append(counter);
+}
+refresh();
+</script>
+</body>
+</html>

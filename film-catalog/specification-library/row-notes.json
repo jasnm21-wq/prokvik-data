@@ -1,0 +1,26 @@
+[
+  {
+    "source": "L57",
+    "product_line": "CTX",
+    "shades": ["25"],
+    "note": "Manufacturer development data, subject to change (‡)."
+  },
+  {
+    "source": "L57",
+    "product_line": "IRX",
+    "shades": ["5", "15", "25", "30", "35", "40", "50"],
+    "note": "Manufacturer development data, subject to change (‡)."
+  },
+  {
+    "source": "L34",
+    "product_line": "Black Pearl Nano-Ceramic",
+    "shades": ["10"],
+    "note": "Shading coefficient is withheld. The source prints .0.45."
+  },
+  {
+    "source": "R-Global",
+    "product_line": "QDP Ceramic Charcoal",
+    "shades": ["70"],
+    "note": "Shading coefficient is withheld. The source prints 0.59% for this dimensionless coefficient."
+  }
+]

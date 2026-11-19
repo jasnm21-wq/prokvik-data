@@ -1,0 +1,397 @@
+# Values below were transcribed from the rendered chart using its printed column order.
+# Source | brand | existing product line | page | method | column order
+L56|FormulaOne|Classic|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 5 44 22 29 >99 94 5
+15 18 40 22 29 >99 79 5
+30 33 36 22 29 >99 63 6
+35 38 35 22 29 >99 57 6
+50 60 28 22 29 >99 32 7
+L56|FormulaOne|Comfort|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 6 59 51 69 >99 93 8
+15 14 58 54 72 >99 84 8
+30 31 46 40 54 >99 65 7
+38 38 41 34 46 >99 57 7
+50 52 35 32 44 >99 41 7
+L56|FormulaOne|Pinnacle|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 5 64 62 90 >99 94 5
+15 19 60 62 89 >99 78 5
+25 27 57 59 86 >99 70 5
+30 33 56 61 88 >99 63 6
+35 38 55 61 88 >99 57 6
+40 43 53 61 88 >99 51 6
+50 55 50 61 88 >99 38 7
+L56|FormulaOne|Stratos|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 7 65 65 94 >99 93 5
+15 17 63 66 95 >99 80 5
+30 32 59 66 96 >99 63 6
+35 39 58 67 97 >99 56 6
+40 42 57 67 97 >99 52 6
+50 56 54 67 97 >99 37 7
+70 69 49 66 96 >99 21 8
+L57|LLumar|ATC|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 5 44 22 29 >99 94 5
+15 18 40 22 29 >99 79 5
+20 25 38 22 29 >99 72 6
+30 33 36 22 29 >99 63 6
+35 38 35 22 29 >99 57 6
+40 43 33 22 28 >99 51 6
+50 60 28 22 28 >99 32 7
+L57|LLumar|ATR|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 5 61 54 68 >99 94 6
+15 18 48 38 51 >99 80 5
+20 25 47 39 52 >99 71 6
+30 34 44 38 51 >99 61 7
+35 37 44 40 53 >99 59 8
+40 46 41 38 51 >99 48 8
+50 53 35 29 37 >99 40 9
+L57|LLumar|CTX|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 5 58 50 72 >99 94 5
+15 20 53 49 69 >99 78 5
+25 28 50 47 66 >99 69 5
+30 34 49 48 68 >99 62 6
+35 37 48 48 69 >99 58 6
+40 44 47 49 69 >99 50 6
+50 55 43 48 68 >99 37 7
+L57|LLumar|IRX|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+05 6 62 60 86 >99 94 5
+15 20 59 61 88 >99 78 5
+25 26 57 59 85 >99 70 5
+30 33 56 60 87 >99 63 5
+35 39 54 60 87 >99 56 6
+40 42 53 60 87 >99 53 6
+50 54 50 60 87 >99 39 7
+L57|LLumar|AIR|1|eastman_clear6|measured_vlt_pct tser_pct irer_pct sirr_pct uv_rejection glare_reduction_pct vlr_unspecified_pct
+80 77 43 60 86 >99 13 9
+90 84 30 40 57 >99 5 9
+L53|SunTek|Evolve|1|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection irer_pct sirr_pct
+70 65 50 7 26 >99 64 93
+50 48 54 6 45 >99 65 94
+45 45 55 6 49 >99 64 93
+35 38 57 6 57 >99 64 93
+30 32 58 6 63 >99 64 93
+20 21 61 5 76 >99 64 93
+15 14 63 5 85 >99 64 93
+5 5 65 5 95 >99 65 94
+L53|SunTek|Ceramic|1|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection irer_pct sirr_pct
+80 78 42 8 11 >97 58 83
+70 71 46 8 19 >99 59 85
+60 63 47 7 28 >99 59 84
+50 52 50 7 40 >99 59 85
+40 44 52 6 50 >99 59 84
+30 33 55 6 63 >99 59 85
+20 22 58 5 75 >99 59 85
+15 15 60 5 83 >99 60 86
+5 5 62 5 94 >99 58 83
+L53|SunTek|CXP|1|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection irer_pct sirr_pct
+80 75 40 9 15 >99 55 78
+70 63 44 8 28 >99 56 79
+55 54 47 7 39 >99 54 77
+45 45 50 6 49 >99 54 78
+35 33 53 6 63 >99 55 79
+25 23 52 6 74 >99 54 76
+18 17 55 6 81 >99 54 77
+5 5 60 5 94 >99 54 77
+L53|SunTek|Carbon Series|1|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection
+85 81 28 9 8 >99
+70 67 27 8 24 >99
+55 55 31 7 38 >99
+45 44 34 7 50 >99
+38 38 37 6 57 >99
+35 36 38 6 59 >99
+25 25 40 6 72 >99
+18 18 44 5 80 >99
+5 5 46 5 94 >99
+L53|SunTek|High Performance|2|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection
+55 60 31 8 32 >98
+50 52 38 8 41 >98
+40 41 42 7 53 >98
+35 37 43 7 58 >98
+30 31 45 6 65 >98
+20 22 49 6 75 >98
+15 14 50 5 84 >98
+5 3 54 5 97 >99
+40:Bronze 42 41 7 52 >98
+18:Bronze 15 49 5 83 >98
+50:Blue 54 39 9 39 >98
+L53|SunTek|Standard Pro|2|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection
+88 81 22 9 8 >97
+50 57 28 7 35 >97
+40 39 34 6 56 >97
+35 32 36 6 64 >97
+20 19 39 6 78 >97
+15 14 41 5 84 >97
+5 4 44 5 95 >99
+L53|SunTek|Standard Series|2|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection
+70 66 25 7 25 >97
+50 49 30 7 44 >97
+40 40 33 6 55 >97
+35 32 35 6 64 >97
+20 19 39 6 78 >97
+5 4 44 5 95 >99
+L53|SunTek|CoolSight 90|2|eastman_clear6|measured_vlt_pct tser_pct vlr_unspecified_pct glare_reduction_pct uv_rejection irer_pct sirr_pct
+90 84 30 9 5 >99 40 57
+L10|Edge Film Technologies|Ceramic XR|1|unknown|tser_pct privacy_pct irr_pct uv_rejection
+5 69 95 78 99
+15 64 85 78 99
+20 64 80 78 99
+32 58 68 78 99
+43 55 57 78 99
+L35|Autobahn|Autobahn Black|1|autobahn|measured_vlt_pct vlr_unspecified_pct shading_coefficient solar_absorbance_pct tser_pct uv_rejection irr_pct glare_reduction_pct thickness_mil
+05 5 6 0.66 50 43 >99 13 94 1.5
+15 15 6 0.68 49 42 >99 13 83 1.5
+20 19 6 0.69 45 39 >99 13 79 1.5
+30 31 6 0.74 42 36 >99 13 66 1.5
+36 36 6 0.73 42 35 >99 13 63 1.5
+40 42 6 0.77 39 34 >99 13 54 1.5
+50 49 6 0.80 32 30 >99 13 46 1.5
+56 56 6 0.80 31 29 >99 13 41 1.5
+L36|Autobahn|Black Ceramic|1|autobahn|measured_vlt_pct vlr_unspecified_pct shading_coefficient solar_absorbance_pct tser_pct uv_rejection irr_pct glare_reduction_pct thickness_mil
+05 5 8 0.40 82 63 >99 60 95 1.5
+15 16 8 0.41 80 59 >99 60 82 1.5
+20 21 8 0.42 78 56 >99 60 79 1.5
+30 31 8 0.47 71 55 >99 60 68 1.5
+40 40 8 0.49 69 53 >99 60 60 1.5
+50 47 8 0.54 64 50 >99 60 50 1.5
+56 54 8 0.58 57 49 >99 60 42 1.5
+L37|Autobahn|Ceramic i3|1|autobahn|measured_vlt_pct vlr_unspecified_pct shading_coefficient solar_absorbance_pct tser_pct uv_rejection irr_pct glare_reduction_pct thickness_mil
+05 5 6 0.34 89 71 >99 93 95 1.5
+15 15 7 0.35 87 68 >99 93 89 1.5
+22 22 7 0.38 83 66 >99 93 79 1.5
+33 33 7 0.46 73 62 >99 93 59 1.5
+40 40 8 0.47 70 60 >99 93 50 1.5
+56 56 8 0.55 65 56 >99 93 38 1.5
+70 67 7 0.59 57 50 >99 93 27 2.0
+R-Global|Global|QDP Ceramic Charcoal|1|global_web|thickness_mil measured_vlt_pct vlr_unspecified_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct uv_transmittance_pct glare_reduction_pct shading_coefficient tser_pct narrow_band_ir_as_published_pct
+05 2.0 4 6 11 6 83 <1 96 0.39 66 76
+20 2.0 18 6 16 6 78 <1 82 0.40 62 76
+30 2.0 32 7 23 6 71 <1 65 0.49 58 76
+38 2.0 38 7 25 6 69 <1 58 0.51 56 76
+42 2.0 42 7 28 6 66 <1 54 0.54 53 76
+46 2.0 46 7 30 6 64 <1 49 0.55 52 76
+50 2.0 51 7 32 6 62 <1 44 0.56 51 76
+70 2.0 70 7 35 7 58 <1 23 - 49 88
+W-huper-traditional|Hüper Optik|Traditional Series||huper|measured_vlt_pct vlr_exterior_pct vlr_interior_pct uv_rejection tser_pct u_factor shading_coefficient shgc
+20 27 7 13 >99 48 1 0.59 0.52
+33 39 7 7 >99 37 1.06 0.72 0.63
+15:Black 17 6 7 >99 43 1.05 0.65 0.57
+L17|Global|HP Charcoal|19|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+05 5 94 >99 5 61 1.5 2
+L17|Global|HP Charcoal|20|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+10 10 89 >99 5 53 1.5 2
+L17|Global|HP Charcoal|21|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+20 20 78 >99 6 51 1.5 2
+L17|Global|HP Charcoal|22|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+30 28 69 >99 7 43 1.5 2
+L17|Global|HP Charcoal|23|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+40 39 57 >99 8 41 1.5 2
+L17|Global|HP Charcoal|24|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+45 44 52 >99 8 39 1.5 2
+L17|Global|HP Charcoal|25|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+50 54 41 >99 8 34 1.5 2
+L17|Global|QDP Ceramic Charcoal|33|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+05 4 96 >99 6 66 2.0 2
+L17|Global|QDP Ceramic Charcoal|34|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+18 18 80 >99 6 62 2.0 2
+L17|Global|QDP Ceramic Charcoal|35|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+33 32 65 >99 7 58 2.0 2
+L17|Global|QDP Ceramic Charcoal|36|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+38 38 58 >99 7 56 2.0 2
+L17|Global|QDP Ceramic Charcoal|37|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+42 42 54 >99 7 53 2.0 2
+L17|Global|QDP Ceramic Charcoal|38|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+46 46 49 >99 7 52 2.0 2
+L17|Global|QDP Ceramic Charcoal|39|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+50 51 44 >99 7 51 2.0 2
+L17|Global|QDP Ceramic Charcoal|40|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+70 69 24 >99 8 47 2.0 2
+L17|Global|QDP Ceramic Charcoal|41|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+80 78 14 >99 9 42 2.0 2
+L17|Global|QDP Ceramic Charcoal|42|unknown|measured_vlt_pct glare_reduction_pct uv_rejection vlr_exterior_pct tser_pct thickness_mil ply_count
+86 86 6 >99 6 27 1.5 2
+W-avery-pds|Avery Dennison|Encore Supreme IR|3|avery|measured_vlt_pct vlr_exterior_pct glare_reduction_pct irer_pct sirr_pct uv_rejection tser_pct
+05 5 6 94 65 93 >99 65
+15 17 6 81 66 93 >99 63
+25 30 6 65 65 93 >99 59
+35 38 6 56 65 93 >99 57
+45 45 7 48 65 92 >99 55
+55 54 7 38 65 92 >99 52
+W-nexfil-automotive|Nexfil|LUX IR80||unknown|irr_pct thickness_mil ply_count
+series 80 2 2
+W-nexfil-automotive|Nexfil|ONYVA IR90||unknown|irr_pct thickness_mil ply_count
+series 90 2 2
+W-nexfil-automotive|Nexfil|CENTURION IR30||unknown|irr_pct thickness_mil ply_count
+series 30 1.5 2
+W-nexfil-automotive|Nexfil|NUVO IR55||unknown|irr_pct thickness_mil ply_count
+series 55 2 2
+W-nexfil-automotive|Nexfil|Professional||unknown|thickness_mil ply_count
+series 1 1
+W-nexfil-automotive|Nexfil|Premium||unknown|thickness_mil ply_count
+series 1.5 2
+W-solargard-xenith|Solar Gard|XenithIR||solar_clear|measured_vlt_pct vlr_exterior_pct uv_rejection tser_pct irer_pct
+5 5 5 >99 64 64
+15 15 5 >99 63 65
+30 30 5 >99 60 66
+35 38 6 >99 59 65
+45 45 6 >99 56 65
+55 56 7 >99 51 63
+70 67 8 >99 50 64
+80 76 8 >99 45 61
+W-solargard-xenith|Solar Gard|XenithIR||solar_auto|measured_vlt_pct
+5 4
+15 13
+30 25
+35 32
+45 38
+55 47
+70 57
+80 64
+W-solargard-xenith|Solar Gard|XenithIR||solar_film|sirr_pct
+5 91
+15 93
+30 93
+35 93
+45 91
+55 91
+70 91
+80 82
+W-aswf-chart|ASWF|Classic Pro Black|1|aswf_clear|measured_vlt_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 5 5 5 1.5 45 99
+15 13 5 5 1.5 42 99
+20 22 5 5 1.5 39 99
+35 35 5 5 1.5 38 99
+50 51 5 5 1.5 34 99
+W-aswf-chart|ASWF|Classic Pro Charcoal|1|aswf_clear|measured_vlt_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 5 5 5 1.5 45 99
+15 13 5 5 1.5 42 99
+20 22 5 5 1.5 39 99
+35 35 5 5 1.5 38 99
+50 51 5 5 1.5 34 99
+W-aswf-chart|ASWF|Retro Black|1|aswf_clear|measured_vlt_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 5 5 5 1.5 45 99
+15 13 5 5 1.5 42 99
+20 22 5 5 1.5 39 99
+35 35 5 5 1.5 38 99
+50 51 5 5 1.5 34 99
+W-aswf-chart|ASWF|Retro Charcoal|1|aswf_clear|measured_vlt_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 5 5 5 1.5 45 99
+15 18 5 5 1.5 41 99
+20 22 5 5 1.5 39 99
+35 35 5 5 1.5 35 99
+40 43 5 5 1.5 33 99
+50 52 5 5 1.5 30 99
+W-aswf-chart|ASWF|Excel|1|aswf_clear|measured_vlt_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 7 5 5 1.5 48 99
+15 16 5 5 1.5 44 99
+20 22 5 5 1.5 40 99
+30 30 5 5 1.5 38 99
+35 35 5 5 1.5 37 99
+45 43 5 5 1.5 36 99
+50 50 5 5 1.5 35 99
+60 61 5 5 1.5 29 99
+70 68 5 5 1.5 25 99
+88 88 5 5 1.5 20 99
+W-aswf-chart|ASWF|Performer|1|aswf_clear|measured_vlt_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+3 4 9 6 1.5 66 99
+5 6 8 6 1.5 54 99
+15 16 11 8 1.5 52 99
+20 19 11 8 1.5 51 99
+30 30 11 8 1.5 50 99
+35 37 11 8 1.5 47 99
+55 55 11 8 1.5 40 99
+60 65 11 8 1.5 35 99
+W-aswf-chart|ASWF|Carbon SX|1|aswf_clear|measured_vlt_pct ir_aswf_78_25_pct ir_aswf_09_10_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+03 4 46 43 4.6 4.5 2.0 51.3 99
+05 7 46 43 4.9 4.5 2.0 49.8 99
+15 16 46 43 4.6 4.5 2.0 46.6 99
+20 22 46 43 4.5 4.6 2.0 44.5 99
+35 37 46 43 5.1 5.0 2.0 38.8 99
+40 42 46 43 5.7 5.4 2.0 35.8 99
+50 48 46 43 5.5 5.5 2.0 36.3 99
+70 77 67 63 7.6 7.3 1.5 35.6 99
+W-aswf-chart|ASWF|Carbon SIR II|1|aswf_clear|measured_vlt_pct ir_aswf_78_25_pct ir_aswf_09_10_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+03 3 64 63 4 4 2.0 59.0 99
+05 6 60 63 4 4 2.0 56.0 99
+15 14 60 63 4 4 2.0 54.0 99
+20 20 60 63 4 4 2.0 52.0 99
+35 35 60 63 4 4 2.0 57.0 99
+40 40 60 63 4 4 2.0 44.0 99
+50 48 60 63 5 5 2.0 42.0 99
+60 60 60 63 6 6 2.0 39.0 99
+70 80 60 63 6 7 2.0 33.0 99
+W-aswf-chart|ASWF|Carbon Ultra|1|aswf_clear|measured_vlt_pct ir_aswf_78_25_pct ir_aswf_09_10_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+05 7 84 80 4.8 4.8 2.0 64.3 99
+15 16 84 80 5.0 4.7 2.0 61.5 99
+20 20 84 80 5.1 4.8 2.0 59.6 99
+35 37 84 80 5.8 5.4 2.0 53.8 99
+40 43 84 80 5.9 5.4 2.0 52.0 99
+50 53 81 78 5.9 5.3 1.5 48.9 99
+70 73 81 78 7.3 7.1 1.5 42.6 99
+W-aswf-chart|ASWF|Carbon Ultra IR|1|aswf_clear|measured_vlt_pct ir_aswf_78_25_pct ir_aswf_09_10_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+05 5.0 93 90 5.2 4.3 2.4 69.9 99
+15 13.3 93 90 5.2 4.5 2.4 65.8 99
+20 15.6 93 90 5.4 4.6 2.4 66.0 99
+35 29.4 93 90 5.6 4.9 2.4 60.4 99
+50 55.0 93 90 6.0 6.5 2.4 52.0 99
+70 71.3 93 90 7.0 7.0 1.5 48.0 99
+W-aswf-chart|ASWF|Excel IRP|1|aswf_clear|measured_vlt_pct ir_aswf_78_25_pct ir_aswf_09_10_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 5 83 85 4 4 2.0 66 99
+15 16 78 83 4 4 1.5 62 99
+20 22 78 83 4 4 1.5 60 99
+35 35 78 83 5 5 1.5 56 99
+40 42 78 83 5 5 1.5 53 99
+50 53 78 83 5 5 1.5 50 99
+70 75 78 83 6 6 1.5 42 99
+80 79 75 76 6 6 1.5 40 99
+W-aswf-chart|ASWF|Dimension IRP|1|aswf_clear|measured_vlt_pct ir_aswf_78_25_pct ir_aswf_09_10_pct vlr_interior_pct vlr_exterior_pct thickness_mil tser_pct uv_rejection
+5 4 90 94 4 5 2.0 79 99
+15 15 90 94 4 4 1.5 65 99
+20 20 90 94 4 4 1.5 64 99
+35 38 90 94 5 4 1.5 58 99
+50 49 90 94 5 5 1.5 56 99
+70 70 90 94 6 6 1.5 49 99
+80 77 77 82 6 6 1.5 42 99
+W-maxpro-max-ir|MaxPro|Max IR||max_ir|measured_vlt_pct glare_reduction_pct ply_count thickness_mil tser_pct solar_reflectance_pct irr_pct uv_rejection irer_pct ssir_as_published_pct
+70 61 28 2 1.5 51 8 95 99 60 66
+45 46 43 2 1.5 55 6 95 99 60 66
+40 42 47 2 1.5 56 6 96 99 61 67
+35 34 58 2 1.5 58 7 96 99 61 67
+20 20 77 2 1.5 66 6 96 99 60 66
+15 16 84 2 1.5 68 6 96 99 60 66
+5 6 94 2 1.5 72 7 96 99 59 65
+W-glass-pender|GLASSTINT|Pender||glasstint|measured_vlt_pct vlr_exterior_pct vlr_interior_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct irr_short_pct irr_long_pct uv_rejection shading_coefficient tser_pct
+05 5 5 5 11 6 83 72 89 99 0.38 67
+15 15 5 5 19 5 76 71 87 99 0.45 61
+20 20 6 6 21 6 73 71 87 99 0.47 59
+35 35 5 5 28 6 66 70 88 99 0.53 54
+50 50 7 7 39 6 55 70 87 99 0.62 46
+W-glass-rode|GLASSTINT|Rode||glasstint|measured_vlt_pct vlr_exterior_pct vlr_interior_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct irr_short_pct irr_long_pct uv_rejection shading_coefficient tser_pct
+05 5 5 5 10 5 85 84 88 99 0.37 68
+15 15 5 5 15 5 80 84 91 99 0.41 64
+20 20 5 6 18 5 77 82 91 99 0.44 61
+35 35 5 5 25 6 69 83 92 99 0.50 57
+50 50 7 7 34 6 60 84 93 99 0.58 50
+70 70 8 8 43 6 51 83 92 99 0.65 44
+W-glass-rode|GLASSTINT|Rode Black||glasstint|measured_vlt_pct vlr_exterior_pct vlr_interior_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct irr_short_pct irr_long_pct uv_rejection shading_coefficient tser_pct
+05 5 5 5 10 5 85 84 88 99 0.37 68
+15 15 5 5 15 5 80 84 91 99 0.41 64
+20 20 5 6 18 5 77 82 91 99 0.44 61
+35 35 5 5 25 6 69 83 92 99 0.50 57
+50 50 7 7 34 6 60 84 93 99 0.58 50
+70 70 8 8 43 6 51 83 92 99 0.65 44
+W-glass-santana|GLASSTINT|Santana||glasstint|measured_vlt_pct vlr_exterior_pct vlr_interior_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct irr_short_pct irr_long_pct uv_rejection shading_coefficient tser_pct
+06 6 6 5 6 6 88 94 96 99 0.34 71
+12 12 6 5 9 6 85 94 97 99 0.36 68
+22 22 6 5 15 5 80 94 97 99 0.41 64
+32 32 6 6 22 6 72 93 97 99 0.47 59
+50 50 7 5 27 7 66 93 97 99 0.52 55
+70 70 8 8 35 7 58 93 97 99 0.58 50
+W-glass-shurex|GLASSTINT|Shure X||glasstint|measured_vlt_pct vlr_exterior_pct vlr_interior_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct irr_short_pct irr_long_pct uv_rejection shading_coefficient tser_pct
+06 6 6 5 5 6 89 97 99 99 0.33 72
+12 12 5 5 8 6 86 97 99 99 0.36 69
+20 20 5 5 10 6 84 97 99 99 0.37 68
+32 32 5 5 19 5 76 97 96 99 0.45 61
+50 50 6 7 26 6 68 97 98 99 0.51 56
+70 70 8 7 31 6 63 97 99 99 0.55 52
+W-glass-camo|GLASSTINT|Camo||glasstint|measured_vlt_pct vlr_exterior_pct vlr_interior_pct solar_transmittance_pct solar_reflectance_pct solar_absorbance_pct irr_short_pct irr_long_pct uv_rejection shading_coefficient tser_pct
+12 12 6 5 7 5 88 98 99 99 0.35 70
+32 32 6 6 17 6 77 98 99 99 0.43 62

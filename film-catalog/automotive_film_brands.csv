@@ -1,8 +1,8 @@
 brand,aliases,official_url,catalog_status,notes
 3M,3m,https://www.3m.com/3M/en_US/automotive-us/solutions/window-film/,mapped,
-ASWF,American Standard Window Film,https://aswf.com/product-category/automotive-films/,needs_product_review,Brand recognized; exact current automotive product map pending review.
+ASWF,American Standard Window Film,https://aswf.com/product-category/automotive-films/,mapped,Manufacturer chart confirms mapped automotive series. CarbonS 4Mil and unnumbered Carbon SIR remain under review.
 Autobahn,Autobahn Window Films,https://autobahnwindowfilms.com/products/window-tint/,mapped,
-Avery Dennison,Avery|Avery Window Films,https://graphics.averydennison.com/en/home/graphics-products/window-films/automotive-window-films.html,needs_product_review,Brand recognized; exact current automotive product map pending review.
+Avery Dennison,Avery|Avery Window Films,https://graphics.averydennison.com/en/home/graphics-products/window-films/automotive-window-films.html,mapped,Partial current product map from official information. Remaining aliases and market-specific series are in Phase 1 review.
 Ceramic Pro / KAVACA,Ceramic Pro|KAVACA|Kavaca,https://ceramicpro.com/window-tint/,mapped,Current automotive lineup mapped from official Ceramic Pro/KAVACA product pages.
 CoolVu,Cool Vu,https://www.coolvu.com/dealer-store/automotive-films/,needs_product_review,"CoolVu is primarily architectural; current public site lists automotive Color Stable and Premium IRX, but public manufacturer construction detail is insufficient for a canonical Prokvik film-type mapping."
 Edge Film Technologies,Edge|Program Edge|Edge Window Film,https://programedge.com/automotive-products/,mapped,Partial current automotive map: Carbon Crystalline and Ceramic XR have explicit manufacturer technology; Spectra HP and Clear Comfort remain pending exact construction verification.
@@ -10,23 +10,23 @@ Flexfilm,Flex Film,https://flexfilmstore.com/collections/automotive-window-tint,
 FormulaOne,Formula One|LLumar FormulaOne,https://llumar.com/na/en/automotive/window-tint/formulaone/,mapped,
 Garware Hi-Tech Films,Garware|Garware Hi Tech,https://www.garwarehitechfilms.com/,needs_product_review,Brand recognized; exact current automotive product map pending review.
 GeoShield,Geoshield|Geo Shield,https://geoshieldusa.com/collections/automotive-window-film,mapped,
-GLASSTINT,GlassTint|Glass Tint,https://www.glasstint.com/,needs_product_review,Brand recognized; exact current automotive product map pending review.
+GLASSTINT,GlassTint|Glass Tint,https://www.glasstint.com/en,mapped,Partial current product map from official information. Remaining aliases and market-specific series are in Phase 1 review.
 Global,Global Window Films|Global Hi-Tech Films|Global HP,https://globalwindowfilms.com/automotive-films/,mapped,
 Helios Window Films,Helios|Helios Films,https://helioswindowfilm.com/automotive/,mapped,"Current Orbit, Nova, and Super Nova automotive families mapped."
 HITEK,HiTek|Hitek Films|HITEK Films,https://hitekfilms.com/automotive-window-tint/,mapped,Current eight-series automotive lineup mapped.
-Hüper Optik,Huper Optik|Huper,https://www.huperoptikusa.com/automotive/,needs_product_review,Brand recognized; exact current automotive product map pending review.
+Hüper Optik,Huper Optik|Huper,https://www.huperoptik.com/automotive-solutions,mapped,Partial current product map from official information. Remaining aliases and market-specific series are in Phase 1 review.
 Johnson Window Films,Johnson|JWF,https://johnsonwindowfilms.com/automotive/window-film-products/,mapped,
 KDX,KDX Films,https://kdxfilms.com/automotive-film/,mapped,Current automotive lineup mapped from official performance tables.
-Kepler,Kepler Window Films,,needs_product_review,Brand recognized; official source and exact product map pending review.
+Kepler,Kepler Window Films,https://www.keplercoatings.com/automotive-window-film,mapped,Partial current product map from official information. Remaining aliases and market-specific series are in Phase 1 review.
 LLumar,Llumar|LLUMAR,https://llumar.com/na/en/automotive/window-tint/,mapped,
 Madico,Madico Window Films,https://madico.com/automotive/window-tint,mapped,
-MaxPro,Max Pro|MaxPro Window Films,https://maxprofilms.com/automotive-window-films/,needs_product_review,Brand recognized; exact current automotive product map pending review.
-Nexfil,Nexfil USA,https://nexfilusa.com/,needs_product_review,Brand recognized; exact current automotive product map pending review.
+MaxPro,Max Pro|MaxPro Window Films,https://maxprofilms.com/automotive-window-films/,mapped,Max IR is verified from its official product page. Remaining series need review.
+Nexfil,Nexfil USA,https://nexfilusa.com/automotive/,mapped,Verified manufacturer automotive listings; full shade-level testing remains under review.
 Rayno,Rayno Window Film,https://www.raynofilm.com/automotive,mapped,
 Rogue,Rogue Window Films,https://roguewindowfilms.com/auto-films/,mapped,
 Scorpion,Scorpion Window Film|Scorpion Window Films,https://scorpionwindowfilm.com/automotive-film/,mapped,Current automotive line names mapped; public performance data is incomplete for some series.
 Solar Free,SolarFree,,needs_product_review,Brand recognized; official source and exact product map pending review.
-Solar Gard,SolarGard,https://www.solargard.com/automotive/,needs_product_review,Brand recognized; exact current automotive product map pending review.
+Solar Gard,SolarGard,https://www.solargard.com/automotive/automotive-window-tint/,mapped,Partial current product map from official information. Remaining aliases and market-specific series are in Phase 1 review.
 SolarFX,Solar FX|SolarFX Window Films,https://solarfxwindowfilms.com/,mapped,
 STEK,STEK Automotive,https://www.stekautomotive.com/brands/stek/window-film,mapped,Standard automotive tint families mapped; safety/security variants are excluded from the normal tint catalog.
 SunTek,Suntek|Sun Tek,https://suntekfilms.com/na/en/automotive-window-tint/,mapped,
