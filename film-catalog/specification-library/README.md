@@ -55,3 +55,19 @@ python3 -m unittest discover -s film-catalog/specification-library -v
 Select an authoritative, product-specific revision and comparable test basis before surfacing numbers in customer-facing outputs. Review all same-method disagreements, glass and wavelength omissions, printed solar-energy totals outside rounding tolerance, and product identity conflicts. Expose only approved fields. Preserve historical data in the reference library and keep manufacturer warranties distinct from a shop's own warranty.
 
 Current open questions include the different Supreme IR results in Johnson's two charts, Global's QDP Ceramic Charcoal values with unknown comparability, the STEK ICY construction conflict, UCA's unusual printed wavelength unit, conflicting ASWF Classic Pro and XPEL transfer wording, and several unverified roll sizes. The manufacturer and product coverage reports record remaining access and data limitations.
+
+## Customer-facing application export
+
+`application-review.json` is the approval manifest for numerical fields, product descriptions, shade availability, and manufacturer warranty terms. An approval identifies the exact brand, series, shade, metric, source and method where applicable. The hash pins the full reviewed evidence set, including withheld records. If sources or data change, review the changed records and approve the new hash before regenerating the application export.
+
+From the repository root:
+
+```bash
+python film-catalog/specification-library/export_application.py /tmp/prokvik-reviewed-products.json
+python -m unittest discover -s film-catalog/specification-library -v
+sha256sum /tmp/prokvik-reviewed-products.json
+```
+
+Copy that file unchanged to `core/reviewed_film_products.json` in the backend and `src/lib/reviewedFilmProducts.json` in the frontend. The export includes the source library revision, evidence hash and approval hash so both applications can verify that they have the same pinned facts. Numeric overrides on the shop side are separate from this generated file.
+
+The approval manifest does not publish the rest of the library. Disputes, solar-balance warnings, historical revisions, and terms with unresolved product or regional scope remain accessible in the Phase 1 browser review. Nominal shades in manufacturer sources are availability references. A shop confirms its own offered and stocked shades. Manufacturer warranty terms describe the issuer's program, and shop warranty assignments retain their separate meaning.
