@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "L01",
+    "kind": "local",
+    "brand": "3M",
+    "products": [
+      "Ceramic IR"
+    ],
+    "paths": [
+      "3M/3M-Ceramic-IR-TDS.pdf"
+    ],
+    "sha256": "ff7718d1fc3e37ac82d1d6ad9d3fc6a36eff9a894a9ae66783093ac8fff890ca",
+    "pages": 2,
+    "bytes": 261516,
+    "revision": "Revision B, July 2021",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L02",
+    "kind": "local",
+    "brand": "3M",
+    "products": [
+      "Obsidian"
+    ],
+    "paths": [
+      "3M/3M-Obsidian-TDS.pdf"
+    ],
+    "sha256": "ec2783767c91255ae0ea856b527179fadafae68e3b50f886e0d5fd41d1b039f9",
+    "pages": 2,
+    "bytes": 228994,
+    "revision": "Revision A, August 2020",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L03",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "Black FX3 Series"
+    ],
+    "paths": [
+      "3M/Black-FX3-Series - Black-FX3-Series.pdf"
+    ],
+    "sha256": "74780a91e163eb9fada5e1265f7fbaedf9278482b10033d5806af7abbaf5ddae",
+    "pages": 2,
+    "bytes": 78227,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "The actual document is SolarFX, despite its folder."
+  },
+  {
+    "id": "L04",
+    "kind": "local",
+    "brand": "3M",
+    "products": [
+      "Color Stable Series"
+    ],
+    "paths": [
+      "3M/Color Stable Series TDS RC.pdf - 3M-Color-Stable-IR-Series-Technical-Data-Sheet.pdf"
+    ],
+    "sha256": "80d62c53446c8d7f2f1a4e97cc9469f0df1bc052d3b3251e79c7f674ad9cce89",
+    "pages": 4,
+    "bytes": 199881,
+    "revision": "Revision C, May 2024",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L05",
+    "kind": "local",
+    "brand": "3M",
+    "products": [
+      "Crystalline"
+    ],
+    "paths": [
+      "3M/Crystalline TDS RF.pdf - 3M-Crystalline-Black-Automotive-Window-Film-Tech-Data-Sheet.pdf"
+    ],
+    "sha256": "1df84537ca6fc7ecb18ded658361afd46256ac96ef4195102538601619bc34d3",
+    "pages": 3,
+    "bytes": 158047,
+    "revision": "Revision F, August 2025",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "Only Crystalline Black codes are represented in these tables."
+  },
+  {
+    "id": "L06",
+    "kind": "local",
+    "brand": "Ceramic Pro / KAVACA",
+    "products": [
+      "Carbon X"
+    ],
+    "paths": [
+      "Ceramic Pro/CarbonX.png"
+    ],
+    "sha256": "30bab3607e4cb387dab011cc7f9f34a5b966403600b85439f2755721bec1c57f",
+    "pages": 1,
+    "bytes": 498677,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L07",
+    "kind": "local",
+    "brand": "Ceramic Pro / KAVACA",
+    "products": [
+      "Ceramic IR"
+    ],
+    "paths": [
+      "Ceramic Pro/CeramicIR.png"
+    ],
+    "sha256": "5812aa36ce42703017d5874e79308fd73842bf0eba93042fd8d2c15d396a86ac",
+    "pages": 1,
+    "bytes": 582590,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L08",
+    "kind": "local",
+    "brand": "Ceramic Pro / KAVACA",
+    "products": [
+      "Ceramic X"
+    ],
+    "paths": [
+      "Ceramic Pro/CeramicX.png"
+    ],
+    "sha256": "05a41374b968be338fb90c94873af1a55de5cd4b6bdcc47ee28a7c832538700c",
+    "pages": 1,
+    "bytes": 207482,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L09",
+    "kind": "local",
+    "brand": "Ceramic Pro / KAVACA",
+    "products": [
+      "Ultimate IR"
+    ],
+    "paths": [
+      "Ceramic Pro/Ultimate IR.png"
+    ],
+    "sha256": "711065d6dad5301d37d74ab84db5de1caf8ce91d0bb0751f05a6b05ed5ef4d1c",
+    "pages": 1,
+    "bytes": 216004,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L10",
+    "kind": "local",
+    "brand": "Edge Film Technologies",
+    "products": [
+      "Ceramic XR"
+    ],
+    "paths": [
+      "Edge Films/Ceramic XR.png"
+    ],
+    "sha256": "94219c497882ce7d47bd73c19b646ce67d9d79e3bf785ce4bc9c2c4c318029d0",
+    "pages": 1,
+    "bytes": 103354,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L11",
+    "kind": "local",
+    "brand": "Edge Film Technologies",
+    "products": [
+      "Carbon Crystalline"
+    ],
+    "paths": [
+      "Edge Films/EdgeSpecs.png"
+    ],
+    "sha256": "6d707a8f16c198da8a3c37f6b74bc20be2e3a8aa2da5b58f51ed59d71a820283",
+    "pages": 1,
+    "bytes": 361037,
+    "revision": null,
+    "review_status": "Review",
+    "verified_at": "2026-11-18",
+    "notes": "The screenshot includes additional series; some values and footnotes need the original PDF or higher resolution."
+  },
+  {
+    "id": "L12",
+    "kind": "local",
+    "brand": "Flexfilm",
+    "products": [
+      "Nanoflex"
+    ],
+    "paths": [
+      "FlexFilms/Nanoflex-Spec-Table.webp"
+    ],
+    "sha256": "2d05a8dac6f3549abeaa12bada24f45d30eb9e2e305d32c43ef59013ee6084d4",
+    "pages": 1,
+    "bytes": 64332,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L13",
+    "kind": "local",
+    "brand": "Flexfilm",
+    "products": [
+      "Duraflex"
+    ],
+    "paths": [
+      "FlexFilms/duraflex_specs_1500px.webp"
+    ],
+    "sha256": "deab3050ecf281423ab183a244191b7181eea1c49ede91aab0d24dcbb319ee6c",
+    "pages": 1,
+    "bytes": 69846,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L14",
+    "kind": "local",
+    "brand": "Flexfilm",
+    "products": [
+      "Panaflex"
+    ],
+    "paths": [
+      "FlexFilms/panaflex_specs_1500px_sept_2024.webp"
+    ],
+    "sha256": "e83478b84e8e851ede603e0769f69a787b0d3da1bf1e3190fb620ba56f304606",
+    "pages": 1,
+    "bytes": 85664,
+    "revision": "September 2024 (filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L15",
+    "kind": "local",
+    "brand": "Flexfilm",
+    "products": [
+      "Terraflex"
+    ],
+    "paths": [
+      "FlexFilms/terraflex_specs_1500px_june_2024.webp"
+    ],
+    "sha256": "237807e3e74946646dfa249df8715417a48db16c245a64923246327ee556f69c",
+    "pages": 1,
+    "bytes": 62874,
+    "revision": "June 2024 (filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L16",
+    "kind": "local",
+    "brand": "GeoShield",
+    "products": [
+      "Pro Classic",
+      "C2",
+      "C2 Ceramic",
+      "ProNano",
+      "Apex Ultra"
+    ],
+    "paths": [
+      "GeoShield_Specs.png"
+    ],
+    "sha256": "19f0bf58791a62d32eef4cd7a4e46dd8d689d9eca7bf556516ba0b0a4fe01bed",
+    "pages": 1,
+    "bytes": 176008,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": "Series comparison rather than shade testing. C2 Carbon is the product label in this chart."
+  },
+  {
+    "id": "L17",
+    "kind": "local",
+    "brand": "Global",
+    "products": [
+      "HP Charcoal",
+      "QDP Ceramic Charcoal"
+    ],
+    "paths": [
+      "GlobalTechSpecs.pdf"
+    ],
+    "sha256": "de7406293359ec4c4665ad2a1d5a08428ed6be26bc141713235b816059e5d058",
+    "pages": 61,
+    "bytes": 8800076,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "HP Charcoal Premium appears separately from HP Black. QDP Ceramic is an existing catalog alias. Other editions and lines are retained for identity review."
+  },
+  {
+    "id": "L18",
+    "kind": "local",
+    "brand": "Helios Window Films",
+    "products": [
+      "Nova"
+    ],
+    "paths": [
+      "Helios Films/Nova.png"
+    ],
+    "sha256": "e8deb177f76efdd5e676553ce6351ff10705886635b0f4679df8c0353adf340e",
+    "pages": 1,
+    "bytes": 1141679,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L19",
+    "kind": "local",
+    "brand": "Helios Window Films",
+    "products": [
+      "Orbit"
+    ],
+    "paths": [
+      "Helios Films/Ordbit.png"
+    ],
+    "sha256": "553acff535758c31ed786a9ccd3601ecd0600bbf34e5fa3ee48e86fd076d7f8f",
+    "pages": 1,
+    "bytes": 934392,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": "The filename is misspelled. The chart title and official lineup identify Orbit."
+  },
+  {
+    "id": "L20",
+    "kind": "local",
+    "brand": "Helios Window Films",
+    "products": [
+      "Super Nova"
+    ],
+    "paths": [
+      "Helios Films/SuperNova.png"
+    ],
+    "sha256": "995a49322eb9c1c503ac08d2e506e6fcb3df65df738a5d3e58e20598138d4b41",
+    "pages": 1,
+    "bytes": 1065554,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L21",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Carbon IR"
+    ],
+    "paths": [
+      "Hitek/CarbonIR.png"
+    ],
+    "sha256": "a13a44938080e7a86720dc3abe17fc3aec75797de78c280be85d1c8144551df9",
+    "pages": 1,
+    "bytes": 448117,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L22",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Ceramic IR"
+    ],
+    "paths": [
+      "Hitek/CeramicIR.png"
+    ],
+    "sha256": "cf4ca24ff0bc823a5cfc14a8b65786a1b4dbc81a8d1b7531df8a9f7d6e710e8f",
+    "pages": 1,
+    "bytes": 782016,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L23",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Ceramic Plus"
+    ],
+    "paths": [
+      "Hitek/CeramicPlus.png"
+    ],
+    "sha256": "3a6ef0b46f624b9ef1fc7bc2700ae87281ce60bba49696e42e2171160a893d3b",
+    "pages": 1,
+    "bytes": 541370,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L24",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Ceramic Ultra"
+    ],
+    "paths": [
+      "Hitek/CeramicUltra.png"
+    ],
+    "sha256": "81fff17648670206b4d35d6259737e3bb00dbcc39f238cc204f3c2e1aa115504",
+    "pages": 1,
+    "bytes": 405166,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L25",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Classic Black"
+    ],
+    "paths": [
+      "Hitek/ClassicBlack.png"
+    ],
+    "sha256": "02d647c05aa423e90fe377846c75e5cc1f260c02f18a45d807ac06e3448c6271",
+    "pages": 1,
+    "bytes": 784071,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L26",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Standard Black"
+    ],
+    "paths": [
+      "Hitek/Hitek_StandardBlack.png"
+    ],
+    "sha256": "0f4f88846b85d55521a490699427dfba254ccb7ffb5a703b99dad17a112c8fe2",
+    "pages": 1,
+    "bytes": 1136049,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L27",
+    "kind": "local",
+    "brand": "HITEK",
+    "products": [
+      "Hybrid"
+    ],
+    "paths": [
+      "Hitek/Hybrid.png"
+    ],
+    "sha256": "a002ca70e135e6fbad156fdb69bcd9fa36f89e8094b2235d93384753d43c0a12",
+    "pages": 1,
+    "bytes": 1120086,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L28",
+    "kind": "local",
+    "brand": "KDX",
+    "products": [
+      "Cosmic IR"
+    ],
+    "paths": [
+      "KDX/Cosmis IR Carbon IR.png"
+    ],
+    "sha256": "aac2cb730a454e6e07b9e857cab8b00b7475f70bfbd8ecc65bf9ea79de507a15",
+    "pages": 1,
+    "bytes": 373117,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": "Canonical identity follows the current manufacturer spelling."
+  },
+  {
+    "id": "L29",
+    "kind": "local",
+    "brand": "KDX",
+    "products": [
+      "Nova Carbon"
+    ],
+    "paths": [
+      "KDX/Nova Carbon.png"
+    ],
+    "sha256": "4111d100ba009dd240a6d620685df8ce14434449d1a2e1e9e32cbfc2f325c796",
+    "pages": 1,
+    "bytes": 364187,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L30",
+    "kind": "local",
+    "brand": "KDX",
+    "products": [
+      "Stellar Ceramic"
+    ],
+    "paths": [
+      "KDX/Stellar Ceramic.png"
+    ],
+    "sha256": "5bb6a1d48144a146e63b8e3394c5892ca9ff5ccf9057a5171dfe6e522a808e19",
+    "pages": 1,
+    "bytes": 514598,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L31",
+    "kind": "local",
+    "brand": "KDX",
+    "products": [
+      "King"
+    ],
+    "paths": [
+      "KDX/king.png"
+    ],
+    "sha256": "c3bea6e06eb0538fb8ddc9f4bb1f0f08e61b4c310f4335cbf0d400f549a80f8b",
+    "pages": 1,
+    "bytes": 435186,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L32",
+    "kind": "local",
+    "brand": "Johnson Window Films",
+    "products": [
+      "Summit",
+      "Supreme IR",
+      "InsulatIR",
+      "Marathon",
+      "Renegade",
+      "Ray Guard Carbon",
+      "PlexShade"
+    ],
+    "paths": [
+      "Layout 1 - JLC-Automotive-Specifications.pdf"
+    ],
+    "sha256": "89cdf54b5e11acde30d35eda20fddde357091d785806d18d100bdf8376ef8e1c",
+    "pages": 2,
+    "bytes": 62995,
+    "revision": "JLC 2411",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L33",
+    "kind": "local",
+    "brand": "Johnson Window Films",
+    "products": [
+      "Supreme IR",
+      "InsulatIR",
+      "Marathon",
+      "Renegade",
+      "Ray Guard Carbon",
+      "PlexShade"
+    ],
+    "paths": [
+      "Layout 1 - JWF-Automotive-Spec-Sheet.pdf"
+    ],
+    "sha256": "2444f8f90c8af135909f74032fe6a1f097cffdc2768232bc9472d100258e8815",
+    "pages": 2,
+    "bytes": 216178,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "Older branded chart with a separate Solar IR column. Retained alongside the Summit chart."
+  },
+  {
+    "id": "L34",
+    "kind": "local",
+    "brand": "Madico",
+    "products": [
+      "Black Pearl HP",
+      "Black Pearl Non-Reflective",
+      "Charcool",
+      "GP Max",
+      "Shadow",
+      "Onyx",
+      "Black Pearl Nano-Ceramic",
+      "WINCOS"
+    ],
+    "paths": [
+      "MadicoTechSpecs.pdf"
+    ],
+    "sha256": "32a58baac0b5e9b043bf4c524e2389ef6bf505c4f519957617572e42b87f55d4",
+    "pages": 2,
+    "bytes": 81556,
+    "revision": "December 2025",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "Black Pearl NC 10 shading coefficient is printed .0.45. The ambiguous cell is withheld."
+  },
+  {
+    "id": "L35",
+    "kind": "local",
+    "brand": "Autobahn",
+    "products": [
+      "Autobahn Black"
+    ],
+    "paths": [
+      "New edge Marketing Materials #2 - Black - Technical Data Sheet.pdf"
+    ],
+    "sha256": "4d252324d75f45a8b269dce2ee4f0192b73d0c9a150920bc4dce7529c59f594f",
+    "pages": 1,
+    "bytes": 334014,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L36",
+    "kind": "local",
+    "brand": "Autobahn",
+    "products": [
+      "Black Ceramic"
+    ],
+    "paths": [
+      "New edge Marketing Materials #2 - Black Ceramic - Technical Data Sheet.pdf"
+    ],
+    "sha256": "dd57202338dc0bb10c13e3ac017e64e569158359ecd63c83662a583205c7cb74",
+    "pages": 1,
+    "bytes": 340581,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L37",
+    "kind": "local",
+    "brand": "Autobahn",
+    "products": [
+      "Ceramic i3"
+    ],
+    "paths": [
+      "New edge Marketing Materials #2 - Ceramaic i3 - Technical Data Sheet.pdf"
+    ],
+    "sha256": "e11d89eec9a54761400c44c283a83f13cf84eb6b06154dd797043ef05af46595",
+    "pages": 1,
+    "bytes": 225783,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L38",
+    "kind": "local",
+    "brand": "Scorpion",
+    "products": [
+      "Carbon Plus Series"
+    ],
+    "paths": [
+      "Scorpion/Carbon Plus.png"
+    ],
+    "sha256": "6a5ddffe035e82e636ed6071eb5024fd01658965aac1f735624529ea6893e5db",
+    "pages": 1,
+    "bytes": 933904,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L39",
+    "kind": "local",
+    "brand": "Scorpion",
+    "products": [
+      "Carbon Series"
+    ],
+    "paths": [
+      "Scorpion/Carbon.png"
+    ],
+    "sha256": "5ba5522d6f0b6d6fe58a34bbceac7def167ac8d35059e2aec16f7aeecac495c5",
+    "pages": 1,
+    "bytes": 837295,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L40",
+    "kind": "local",
+    "brand": "Scorpion",
+    "products": [
+      "King Pro Series"
+    ],
+    "paths": [
+      "Scorpion/King Pro.png"
+    ],
+    "sha256": "835f11b561e25f448a70a6f71a63c54fb678f83c129ee7261ce31208646ac523",
+    "pages": 1,
+    "bytes": 936566,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L41",
+    "kind": "local",
+    "brand": "Scorpion",
+    "products": [
+      "Shield Plus"
+    ],
+    "paths": [
+      "Scorpion/Shield Plus.png"
+    ],
+    "sha256": "887c9e7e7ad40875810b22dcaa92c0682c5d15a22413c9f7e8448092407dcdd4",
+    "pages": 1,
+    "bytes": 782178,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L42",
+    "kind": "local",
+    "brand": "Scorpion",
+    "products": [
+      "Shield Series"
+    ],
+    "paths": [
+      "Scorpion/Shield Series Ceramic.png"
+    ],
+    "sha256": "7a764826bb684d1aa2eaee6cb099ad54f94daf6f7e965db0b4a7bee80ba870b9",
+    "pages": 1,
+    "bytes": 901595,
+    "revision": null,
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L43",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "Black FX3 Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030038.png"
+    ],
+    "sha256": "145e7e9c3bedd7e930bd45290ddedd72170aeada2bc38a04174b2a78fa461d7c",
+    "pages": 1,
+    "bytes": 453354,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L44",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "CarbonFX Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030129.png"
+    ],
+    "sha256": "c4b003aa6d798b9d1173e15770dfd12986ecfd9339cb45a3451fd0b563f867bd",
+    "pages": 1,
+    "bytes": 435197,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L45",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "Classic Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030149.png"
+    ],
+    "sha256": "e8e1d793e26b9a933790c4009e65377fd11ea6c52a59384d9630d9138691e4ea",
+    "pages": 1,
+    "bytes": 366642,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L46",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "FX Plus Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030202.png"
+    ],
+    "sha256": "a5442f341bc446585d8a5c0f4dff334262d1f7ad21270e1124526ef735c04f6c",
+    "pages": 1,
+    "bytes": 447174,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L47",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "FXtreme2 Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030216.png"
+    ],
+    "sha256": "569c02c26fc31be25e85fdf1e9d0f5662300c247fe9f43945d1b83e964203067",
+    "pages": 1,
+    "bytes": 459210,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L48",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "HybridFX Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030231.png"
+    ],
+    "sha256": "6e2a9ef1f8fd29e9e29cbae5639ebb936b6e4ab169f2c67fa07c284980049138",
+    "pages": 1,
+    "bytes": 450290,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L49",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "IRFX Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030244.png"
+    ],
+    "sha256": "4ff37d420fe5f07aefb640dbafa640799598c68491e1c2705fbc7eace5bb03b4",
+    "pages": 1,
+    "bytes": 434016,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L50",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030258.png"
+    ],
+    "sha256": "9e63da7d47120f3f97c7557afb87901248e2739ad9185fc9fcf5084b09af5d0b",
+    "pages": 1,
+    "bytes": 446310,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Review",
+    "verified_at": "2026-11-18",
+    "notes": "The chart has its own series heading. Do not alias it to another SolarFX product without identity confirmation."
+  },
+  {
+    "id": "L51",
+    "kind": "local",
+    "brand": "SolarFX",
+    "products": [
+      "Vintage Series"
+    ],
+    "paths": [
+      "SolarFx/Screenshot_20260811_030312.png"
+    ],
+    "sha256": "5a0f3b9749d1961cfa8412b957718f768ea5812298b30817a735b98f3f50844f",
+    "pages": 1,
+    "bytes": 403538,
+    "revision": "2026-08-11 (capture filename)",
+    "review_status": "Mapped reference",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L52",
+    "kind": "local",
+    "brand": "STEK",
+    "products": [
+      "ACTION",
+      "VISION 70",
+      "ICY",
+      "SMART",
+      "NEX"
+    ],
+    "paths": [
+      "StekTechSpecs.pdf"
+    ],
+    "sha256": "af5dd603b6d75f84d115c37efddb0ca7c859748730e9116afd10305276eff44e",
+    "pages": 2,
+    "bytes": 12778029,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "Action Safety is a separate non-standard automotive product."
+  },
+  {
+    "id": "L53",
+    "kind": "local",
+    "brand": "SunTek",
+    "products": [
+      "Evolve",
+      "Ceramic",
+      "CXP",
+      "Carbon Series",
+      "High Performance",
+      "Standard Pro",
+      "Standard Series",
+      "CoolSight 90"
+    ],
+    "paths": [
+      "SunTek.pdf"
+    ],
+    "sha256": "7ea760c1ff9611a82e09e2c16fd11500c18eec50c3b87ee5b21cf85dee4f5c8e",
+    "pages": 2,
+    "bytes": 422686,
+    "revision": "April 2024",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "InfinityOP stays in the identity review queue."
+  },
+  {
+    "id": "L54",
+    "kind": "local",
+    "brand": "UCA Window Film",
+    "products": [
+      "UCArbon Series",
+      "Thermal IR Series",
+      "Redzone IR Series"
+    ],
+    "paths": [
+      "UCA.pdf"
+    ],
+    "sha256": "a38aaaf04b6dd0b4adcfedb781e0bf04153b5302522940a401c5185aea9a8781",
+    "pages": 1,
+    "bytes": 377130,
+    "revision": null,
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "The IR measurement line reads .9 to 1.0 nano-meters. Preserve the source wording and flag the unit."
+  },
+  {
+    "id": "L55",
+    "kind": "local",
+    "brand": "XPEL",
+    "products": [
+      "PRIME XR Plus",
+      "PRIME XR Black",
+      "PRIME XR Blue",
+      "PRIME HP",
+      "PRIME CS"
+    ],
+    "paths": [
+      "XPEL_PRIME_spec_sheet_USA_Rev0523.pdf"
+    ],
+    "sha256": "dbc70ecd77cbcfda1274ece9a52ec5bac622d1dd7547f33a6217a81768311901",
+    "pages": 2,
+    "bytes": 47367,
+    "revision": "R0523 (US)",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "Other chart rows retain their original names for identity review."
+  },
+  {
+    "id": "L56",
+    "kind": "local",
+    "brand": "FormulaOne",
+    "products": [
+      "Classic",
+      "Comfort",
+      "Pinnacle",
+      "Stratos"
+    ],
+    "paths": [
+      "formulaone-window-film-performance-data.pdf"
+    ],
+    "sha256": "64fd5b9187ea18694d94e7f8d25b9687cd2e95fe9b96ad400fb81c4889d4ef06",
+    "pages": 1,
+    "bytes": 242425,
+    "revision": "SP1117 (08/24)",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": null
+  },
+  {
+    "id": "L57",
+    "kind": "local",
+    "brand": "LLumar",
+    "products": [
+      "ATC",
+      "ATR",
+      "CTX",
+      "IRX",
+      "AIR"
+    ],
+    "paths": [
+      "llumar-automotive-window-film-performance-data.pdf"
+    ],
+    "sha256": "881e6173851992cb5fea03434257305daead2dbc994e79701768ebd014c04e26",
+    "pages": 1,
+    "bytes": 329582,
+    "revision": "L1748 (08/25), North America",
+    "review_status": "Parsed",
+    "verified_at": "2026-11-18",
+    "notes": "AU 85 is a separately labeled UV Protection product and requires a catalog identity decision."
+  }
+]

@@ -1,0 +1,167 @@
+{
+  "library_revision": "1ffd4593ba590b388a80f7777888e47b0ae86369",
+  "measurements": [
+    {
+      "brand": "3M",
+      "product_line": "Color Stable Series",
+      "source": "L04",
+      "method": "3m_clear89",
+      "fields": [
+        "measured_vlt_pct",
+        "tser_pct",
+        "irer_pct",
+        "uv_rejection"
+      ],
+      "shades": [
+        "15",
+        "25",
+        "30",
+        "35",
+        "50",
+        "70"
+      ]
+    },
+    {
+      "brand": "3M",
+      "product_line": "Color Stable Series",
+      "source": "L04",
+      "method": "3m_liner",
+      "fields": [
+        "irr_pct"
+      ],
+      "shades": [
+        "15",
+        "25",
+        "30",
+        "35",
+        "50",
+        "70"
+      ]
+    },
+    {
+      "brand": "LLumar",
+      "product_line": "ATC",
+      "source": "L57",
+      "method": "eastman_clear6",
+      "fields": [
+        "measured_vlt_pct",
+        "tser_pct",
+        "irer_pct",
+        "sirr_pct",
+        "uv_rejection"
+      ],
+      "shades": [
+        "5",
+        "15",
+        "20",
+        "30",
+        "35",
+        "40",
+        "50"
+      ]
+    },
+    {
+      "brand": "FormulaOne",
+      "product_line": "Pinnacle",
+      "source": "L56",
+      "method": "eastman_clear6",
+      "fields": [
+        "measured_vlt_pct",
+        "tser_pct",
+        "irer_pct",
+        "sirr_pct",
+        "uv_rejection"
+      ],
+      "shades": [
+        "5",
+        "15",
+        "25",
+        "30",
+        "35",
+        "40",
+        "50"
+      ]
+    },
+    {
+      "brand": "Solar Gard",
+      "product_line": "XenithIR",
+      "source": "W-solargard-xenith",
+      "method": "solar_clear",
+      "fields": [
+        "measured_vlt_pct",
+        "tser_pct",
+        "irer_pct",
+        "uv_rejection"
+      ],
+      "shades": [
+        "5",
+        "15",
+        "30",
+        "35",
+        "45",
+        "55",
+        "70",
+        "80"
+      ]
+    },
+    {
+      "brand": "Solar Gard",
+      "product_line": "XenithIR",
+      "source": "W-solargard-xenith",
+      "method": "solar_film",
+      "fields": [
+        "sirr_pct"
+      ],
+      "shades": [
+        "5",
+        "15",
+        "30",
+        "35",
+        "45",
+        "55",
+        "70",
+        "80"
+      ]
+    }
+  ],
+  "product_facts": [
+    [
+      "3M",
+      "Color Stable Series",
+      "L04"
+    ],
+    [
+      "Solar Gard",
+      "XenithIR",
+      "R-Solar Gard"
+    ],
+    [
+      "FormulaOne",
+      "Stratos",
+      "L56"
+    ],
+    [
+      "LLumar",
+      "CTX",
+      "L57"
+    ],
+    [
+      "Autobahn",
+      "Black Ceramic",
+      "L36"
+    ]
+  ],
+  "warranties": [
+    [
+      "Flexfilm",
+      "Duraflex",
+      "W-flex-warranty"
+    ],
+    [
+      "Flexfilm",
+      "Nanoflex",
+      "W-flex-warranty"
+    ]
+  ],
+  "library_sha256": "5e206bd7d5ed55bdfab9fa440b8f3b9c6568c0a0ad56213772e0edd61694f513"
+}

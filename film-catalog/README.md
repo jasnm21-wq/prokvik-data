@@ -11,6 +11,13 @@ This directory is the canonical Prokvik source for automotive window-film brands
 - `automotive_film_default_content.csv` — conservative customer-facing default copy that shops may override.
 - `automotive_film_catalog.manifest.json` — generated counts and source fingerprint.
 
+## Manufacturer specification library
+
+The [Phase 1 specification library](specification-library/README.md) extends the
+same automotive catalog with source-specific shade tables, test conditions,
+warranty evidence, and per-brand coverage. Generate its viewer and normalized
+JSON locally. Phase 2 application integration is separate.
+
 ## Accuracy rules
 
 1. Manufacturer technical data sheets and manufacturer product pages are the only canonical numeric sources.

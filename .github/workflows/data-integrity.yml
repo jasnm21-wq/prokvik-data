@@ -31,6 +31,11 @@ jobs:
       - name: Validate automotive film catalog
         run: python film-catalog/validate_automotive_film_catalog.py
 
+      - name: Validate manufacturer specification library
+        run: |
+          python film-catalog/specification-library/build_library.py
+          python -m unittest discover -s film-catalog/specification-library -v
+
       - name: Validate vehicle lookup corrections
         run: python vehicle-lookup/validate_vehicle_lookup_corrections.py
 

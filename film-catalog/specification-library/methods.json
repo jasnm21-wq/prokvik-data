@@ -1,0 +1,166 @@
+{
+  "unknown": {
+    "basis": "unknown",
+    "notes": "The chart does not establish the substrate, standard, or infrared method. Do not assume the measurement basis."
+  },
+  "3m_auto75": {
+    "basis": "film_on_glass",
+    "glass": "automotive green, 73% baseline VLT",
+    "glass_mm": "6",
+    "standard": "ANSI/NFRC 200",
+    "wavelength_nm": {
+      "irer_pct": "780–2500"
+    }
+  },
+  "3m_clear89": {
+    "basis": "film_on_glass",
+    "glass": "clear, 89% baseline VLT",
+    "glass_mm": "6",
+    "standard": "ANSI/NFRC 200",
+    "wavelength_nm": {
+      "irer_pct": "780–2500"
+    }
+  },
+  "3m_liner": {
+    "basis": "film_with_liner",
+    "wavelength_nm": {
+      "irr_pct": "900–1000"
+    },
+    "notes": "Film and liner. No glass."
+  },
+  "eastman_clear6": {
+    "basis": "film_on_glass",
+    "glass": "single pane clear",
+    "glass_mm": "6",
+    "standard": "NFRC guidelines",
+    "wavelength_nm": {
+      "irer_pct": "780–2500",
+      "sirr_pct": "780–2500",
+      "uv_rejection": "300–380"
+    }
+  },
+  "xpel": {
+    "basis": "film_on_glass",
+    "glass": "glass plates (type unspecified)",
+    "glass_mm": "3",
+    "standard": "EN 410 for visible/solar; LAMBDA 1050+ UV/Vis/NIR spectrophotometer",
+    "wavelength_nm": {
+      "irr_pct": "1025",
+      "irer_pct": "780–2500"
+    },
+    "notes": "Published visible/solar/UV/IR tolerances ±3%. Thickness is nominal."
+  },
+  "stek": {
+    "basis": "film_on_glass",
+    "glass": "not specified",
+    "standard": "STEK internal testing",
+    "wavelength_nm": {
+      "irer_pct": "780–2500",
+      "sirr_pct": "900–1000"
+    },
+    "notes": "Representative values. Obtain official product TDS for full conditions."
+  },
+  "uca": {
+    "basis": "film_on_glass",
+    "glass": "automotive glass",
+    "glass_mm": "6.35",
+    "notes": "IRR footnote applies to ¼ inch automotive glass; the source prints .9 to 1.0 nano-meters. Unit unresolved. Other metric conditions are not stated separately."
+  },
+  "madico": {
+    "basis": "film_on_glass",
+    "glass": "single pane clear",
+    "glass_mm": "6",
+    "standard": "NFRC",
+    "wavelength_nm": {
+      "irr_pct": "780–2500"
+    },
+    "notes": "Published typical properties. NC 10's invalid shading coefficient token .0.45 is withheld."
+  },
+  "johnson": {
+    "basis": "film_on_glass",
+    "glass": "clear",
+    "glass_mm": "6",
+    "standard": "ASTM, ANSI and NFRC; LBNL Optics/Window 6",
+    "wavelength_nm": {
+      "irer_pct": "780–2500",
+      "sirr_pct": "780–2500"
+    },
+    "notes": "The published glass test claim does not establish performance on PlexShade's intended plastic application."
+  },
+  "autobahn": {
+    "basis": "unknown",
+    "wavelength_nm": {
+      "irr_pct": "1025"
+    },
+    "notes": "Construction diagram shows clear glass. The table does not specify glass thickness or the IR test substrate."
+  },
+  "global_web": {
+    "basis": "unknown",
+    "notes": "The source lists narrow-band IR (NB). Keep it separate from reported IRER. The 70 shade's coefficient is printed with a percent sign and held for confirmation."
+  },
+  "huper": {
+    "basis": "film_on_glass",
+    "glass": "single pane clear",
+    "glass_mm": "3",
+    "standard": "NFRC guidelines",
+    "notes": "Official global chart. Klassisch Black 15 is distinct from the non-Black chart entries."
+  },
+  "avery": {
+    "basis": "film_on_glass",
+    "glass": "clear",
+    "glass_mm": "6",
+    "standard": "NFRC; LBNL Window 5.2",
+    "notes": "The PDS labels IR Energy Rejection and Selective Infrared Rejection separately; wavelengths are not disclosed in this table."
+  },
+  "solar_clear": {
+    "basis": "film_on_glass",
+    "glass": "clear",
+    "glass_mm": "6",
+    "standard": "NFRC; LBNL Window",
+    "wavelength_nm": {
+      "uv_rejection": "300–380",
+      "irer_pct": "780–2500"
+    },
+    "notes": "The table calls out automotive glass only for the separate VLT column. Typical estimates."
+  },
+  "solar_auto": {
+    "basis": "film_on_glass",
+    "glass": "representative automotive glass, 75% baseline VLT",
+    "standard": "NFRC; LBNL Window",
+    "notes": "Manufacturer reports VLT separately for this substrate."
+  },
+  "solar_film": {
+    "basis": "film_only",
+    "standard": "SS2450 Solar Spectrum meter",
+    "wavelength_nm": {
+      "sirr_pct": "780–1700"
+    }
+  },
+  "aswf_clear": {
+    "basis": "film_on_glass",
+    "glass": "clear",
+    "glass_mm": "6.35",
+    "standard": "industry standard tests, unspecified",
+    "notes": "The brochure prints IR headers 78-25 and 09-10. Kept as separate published bands without assuming a standardized IRR/IRER/SIRR definition."
+  },
+  "max_ir": {
+    "basis": "unknown",
+    "wavelength_nm": {
+      "irer_pct": "780–2500",
+      "ssir_as_published_pct": "780–2500"
+    },
+    "notes": "SSIR is the manufacturer’s printed label. Neither the substrate nor the single IR Rejection column’s wavelength is confirmed."
+  },
+  "nexfil": {
+    "basis": "unknown",
+    "notes": "The chart does not state glass or infrared test method. A few solar transmission/reflection/absorption sums are inconsistent; preserved for review."
+  },
+  "glasstint": {
+    "basis": "unknown",
+    "wavelength_nm": {
+      "irr_short_pct": "900–1000",
+      "irr_long_pct": "780–2500"
+    },
+    "notes": "Both columns are labeled IRR in the source and use different wavelength bands. Test substrate is not disclosed."
+  }
+}
